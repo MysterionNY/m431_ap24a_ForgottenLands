@@ -26,3 +26,12 @@
 
 ## Documentation
 * The whole Document can be found in the Repository or by clicking the links below
+ * [Inform]
+  * [Plan]
+  * [Decide]
+  * Realize
+    * [Design]
+    * [Setup]
+    * [Implement]
+  * [Control]
+  * [Assess]
