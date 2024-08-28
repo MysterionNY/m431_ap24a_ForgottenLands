@@ -17,11 +17,17 @@
  
 ## Important Dates
 * 27.08.2024 Receive Approval for the Product
-* 29.10.2024 Present the Product
+* 03.09-01.10.2024 IPERKA
+* 29.10.2024 Hand in the Assignment
+* 05.11.2024 Present the Assignment
 
 ## Team
 * Mert Bal (Creator/Main Dev)
   * Tasks: Create the code, design the UI, realize the product
+
+## StakeHolder
+* Lehrmeister
+* Neil Devlin
 
 
 ## Documentation
