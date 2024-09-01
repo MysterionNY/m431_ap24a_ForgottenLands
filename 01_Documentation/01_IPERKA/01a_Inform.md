@@ -6,9 +6,8 @@
 ## Inspiration
 Certain inspiration I am going to be using in my tool comes from different games. Which I will be listing down below. Certain games have functions, which I enjoy a lot, but sometimes I wish that I could comebine those functions from several games into a single game, therefore I have these:
 * Metin 2 - Upgrade items at a Blacksmith
-* Metin 2 - Alchemy
 * Elden Ring - Dash/Roll to get IFrames and prevent getting damaged
-* Devil May Cry - Combo Attacks
+* Devil May Cry - Attacks
 * World of Warcraft - Questing
 
 ## Tools

@@ -1,0 +1,3 @@
+01.09.2024
+Character is spinning when I walk at the end of a collision
+Fix: Check Freeze Rotation at the Z axis for Rigidbody 2D
