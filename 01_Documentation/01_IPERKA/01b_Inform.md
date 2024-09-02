@@ -3,8 +3,8 @@
 * Have atleast 3 people speedrun the game
 
 ## Functional Requirements
-* The Player can use a dash to move through the map and have IFrames to dodge enemy attacks
-* The Player can collect items, go to the Blacksmith and upgrade his Weapon
+* The Player can use a dash to move through the map
+* The Player can collect items, go to the Questgiver NPC & upgrade his damage with gold
 * The Player can have a variety of attacks
 * The Player can choose has 3 different Quests
 * The Player can affect his games difficulty by: dying = game gets easier

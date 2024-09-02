@@ -5,8 +5,8 @@
 
 ## Inspiration
 Certain inspiration I am going to be using in my tool comes from different games. Which I will be listing down below. Certain games have functions, which I enjoy a lot, but sometimes I wish that I could comebine those functions from several games into a single game, therefore I have these:
-* Metin 2 - Upgrade items at a Blacksmith
-* Elden Ring - Dash/Roll to get IFrames and prevent getting damaged
+* Metin 2 - Upgrade items at an NPC
+* Elden Ring - Dash/Roll
 * Devil May Cry - Attacks
 * World of Warcraft - Questing
 
@@ -18,5 +18,5 @@ In Unity I will be coding the game Forgotten Lands. Its a free Game Engine, whic
 ### Visual Studio Code/2022
 These tools are Source code editors with certain features, which I can make use of in this project. I chose VSCode for this, because I like the way it handles the writing aspect of texts, so I dont just use this for coding, but also to document stuff. In there I will have my MarkDown Files and I will be editing them that way. For the coding aspect of my game, I will be using Visual Studio 2022. With the given options in Unity and their easy to use User Experience, I can achieve clean coding in VS2022, which will then be used in my Unity project.
 
-### Illustrator
-For this project I chose to do everything from scratch and not use the Unity marketplace. Therefore I am using Illustrator to create my designs. Illustrator is a graphic and drawing based tool, which can be used to create graphics or animations. Since I am going with a pixelated 2D platformer, I can use my Drawing Pad and Illustrator to draw Pixelated Assets, but I can also use it to create animations and therefore give my Characters a walking, slashing, getting damaged animation and so on.
+### Paint.net
+For this project I chose to do everything from scratch and not use the Unity marketplace. Therefore I am using paint.net to create my designs. paint.net is a graphic and drawing based tool, which can be used to create graphics. Since I am going with a pixelated 2D platformer, I can use my Drawing Pad and Illustrator to draw Pixelated Assets. For the animations I will be drawing the different frames, put them into a spreadsheet & animate them inside Unity
