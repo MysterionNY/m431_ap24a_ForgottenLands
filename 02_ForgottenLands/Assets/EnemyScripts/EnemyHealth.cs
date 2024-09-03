@@ -34,6 +34,7 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
+            StartCoroutine(FlashRed());
             Die();
         }
         else
