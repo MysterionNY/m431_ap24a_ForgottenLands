@@ -32,12 +32,25 @@
 
 ## Documentation
 * The whole Document can be found in the Repository or by clicking the links below
- * [Inform]
-  * [Plan]
-  * [Decide]
-  * Realize
-    * [Design]
-    * [Setup]
-    * [Implement]
-  * [Control]
-  * [Assess]
+ * Inform
+   * [Brainstorm]
+   * [Goals]
+ * [Plan]
+ * [Decide]
+ * Realize
+   * [Design]
+   * [Setup]
+   * [Implement]
+ * [Control]
+ * [Assess]
+
+[Brainstorm]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/01a_Inform.md
+[Goals]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/01b_Inform.md
+[Plan]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/02_Plan.md
+[Decide]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/03_Decide.md
+[Design]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/04a_Design.md
+[Setup]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/04b_Setup.md
+[Implement]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/04c_Implement.md
+[Control]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/05_Control.md
+[Assess]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/06_Control.md
+
