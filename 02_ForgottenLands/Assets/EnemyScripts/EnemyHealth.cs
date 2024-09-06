@@ -23,8 +23,6 @@ public class EnemyHealth : MonoBehaviour
 
     void Update()
     {
-        // Update the text to show the current HP
-        HPText.text = "HP: " + currentHealth.ToString();
     }
 
     public void TakeDamage(int damage)

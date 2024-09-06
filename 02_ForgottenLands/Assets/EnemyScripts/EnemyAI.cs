@@ -3,11 +3,16 @@ using System.Collections;
 
 public class EnemyAI : MonoBehaviour
 {
-    public Transform player; // Assign the player in the Inspector
+    public Transform player;
     public float moveSpeed = 3f;
     public float attackRange = 1.5f;
     public float attackCooldown = 1f;
     public int attackDamage = 10;
+    public float detectionRadius = 5f;  // Radius where enemy can detect player
+
+    public Transform idleCenter;  // Center of the idle area
+    public float idleRadius = 3f; // Idle wander radius around the center
+    public float idleWaitTime = 2f; // Time spent at each idle point
 
     private float attackCooldownTimer;
     private Animator animator;
@@ -15,6 +20,9 @@ public class EnemyAI : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool isAttacking;
     private bool isMoving;
+    private Vector2 idleTarget;
+    private bool isIdle = true; // Track whether enemy is idling
+    private bool isChasingPlayer = false;
 
     void Start()
     {
@@ -24,12 +32,35 @@ public class EnemyAI : MonoBehaviour
         attackCooldownTimer = 0f;
         isAttacking = false;
         isMoving = false;
+
+        // Set first random idle target within radius
+        SetNewIdleTarget();
     }
 
     void Update()
     {
         if (player == null) return;
 
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        // Check if player is within detection radius
+        if (distanceToPlayer <= detectionRadius)
+        {
+            isChasingPlayer = true;
+            ChasePlayer();
+        }
+        else
+        {
+            isChasingPlayer = false;
+            IdleBehavior();
+        }
+
+        // Update cooldown timer for attacks
+        attackCooldownTimer -= Time.deltaTime;
+    }
+
+    void ChasePlayer()
+    {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         if (distanceToPlayer <= attackRange)
@@ -47,19 +78,51 @@ public class EnemyAI : MonoBehaviour
         else
         {
             // Move towards the player if out of range
-            MoveTowardsPlayer();
+            MoveTowards(player.position);
         }
-
-        // Update cooldown timer
-        attackCooldownTimer -= Time.deltaTime;
     }
 
-    void MoveTowardsPlayer()
+    void IdleBehavior()
+    {
+        if (isIdle)
+        {
+            float distanceToIdleTarget = Vector2.Distance(transform.position, idleTarget);
+
+            if (distanceToIdleTarget <= 0.2f)
+            {
+                // Reached the idle target, wait for a bit and set a new target
+                StopMovement();
+                StartCoroutine(WaitBeforeNewIdleTarget());
+            }
+            else
+            {
+                // Move towards the idle target
+                MoveTowards(idleTarget);
+            }
+        }
+    }
+
+    void SetNewIdleTarget()
+    {
+        // Pick a random point within the idle radius around the idle center
+        Vector2 randomPoint = Random.insideUnitCircle * idleRadius;
+        idleTarget = (Vector2)idleCenter.position + randomPoint;
+    }
+
+    IEnumerator WaitBeforeNewIdleTarget()
+    {
+        isIdle = false;
+        yield return new WaitForSeconds(idleWaitTime);
+        SetNewIdleTarget(); // Choose a new idle point
+        isIdle = true;
+    }
+
+    void MoveTowards(Vector2 target)
     {
         if (isAttacking) return; // Do not move if attacking
 
         isMoving = true;
-        Vector2 direction = (player.position - transform.position).normalized;
+        Vector2 direction = (target - (Vector2)transform.position).normalized;
         rb.velocity = direction * moveSpeed;
 
         // Flip the sprite based on movement direction

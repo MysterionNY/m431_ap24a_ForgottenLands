@@ -1,12 +1,16 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private Animator animator;
-    public TextMeshProUGUI HPText;
+    public Image hpBarForeground;
+    private Color originalColor;
+    private Color flashColor = new Color(1f, 0f, 0f, 0.5f); // Solid red color
 
     public int maxHealth = 100;
     private int currentHealth;
@@ -17,8 +21,7 @@ public class PlayerHealth : MonoBehaviour
     private float flashDuration = 0.1f; // Time for each flash
     private int flashCount = 3; // Number of flashes
     private int currentFlash = 0;
-    private Color originalColor;
-    private Color flashColor = new Color(1f, 0f, 0f, 0.5f); // Solid red color
+    private float originalWidth;
 
     void Start()
     {
@@ -26,38 +29,24 @@ public class PlayerHealth : MonoBehaviour
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
         originalColor = spriteRenderer.color;
+        UpdateHealthBar(); // Set initial HP bar value
+
+        // Set original width
+        originalWidth = hpBarForeground.rectTransform.sizeDelta.x;
     }
 
     void Update()
     {
-        // Update the text to show the current HP
-        HPText.text = "HP: " + currentHealth.ToString();
-
         // Handle flashing
-        if (isFlashing)
-        {
-            flashTimer += Time.deltaTime;
-
-            if (flashTimer >= flashDuration)
-            {
-                flashTimer = 0f;
-                spriteRenderer.color = spriteRenderer.color == originalColor ? flashColor : originalColor;
-                currentFlash++;
-
-                if (currentFlash >= flashCount * 2)
-                {
-                    // Reset everything after flashing is done
-                    spriteRenderer.color = originalColor;
-                    isFlashing = false;
-                    currentFlash = 0;
-                }
-            }
-        }
+        HandleFlashingEffect();
     }
 
     public void TakeDamage(int damage)
     {
+        if (isDead) return;  // Prevent damage if the player is dead
+
         currentHealth -= damage;
+
         if (currentHealth <= 0)
         {
             Die();
@@ -69,18 +58,22 @@ public class PlayerHealth : MonoBehaviour
             flashTimer = 0f;
             currentFlash = 0;
         }
+
+        UpdateHealthBar();
     }
 
     void Die()
     {
-        if (isDead) return;
+        if (isDead) return;  // Prevent multiple death triggers
         isDead = true;
 
+        // Trigger the death animation
         if (animator != null)
         {
             animator.SetTrigger("DieTrigger");
         }
 
+        // Disable player movement and interactions
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
@@ -91,9 +84,44 @@ public class PlayerHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
 
-        if (spriteRenderer != null)
+        // Hide the sprite renderer after death
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    void HandleFlashingEffect()
+    {
+        if (isFlashing)
         {
-            spriteRenderer.enabled = false;
+            flashTimer += Time.deltaTime;
+
+            if (flashTimer >= flashDuration)
+            {
+                flashTimer = 0f;
+                spriteRenderer.color = spriteRenderer.color == originalColor ? flashColor : originalColor;
+                currentFlash++;
+
+                // Stop flashing after reaching the flash count
+                if (currentFlash >= flashCount * 2)
+                {
+                    spriteRenderer.color = originalColor;
+                    isFlashing = false;
+                    currentFlash = 0;
+                }
+            }
         }
+    }
+
+    void UpdateHealthBar()
+    {
+        if (hpBarForeground == null)
+        {
+            Debug.LogError("hpBarForeground is not assigned!");
+            return;
+        }
+
+        float healthPercentage = Mathf.Clamp01((float)currentHealth / maxHealth);
+        Debug.Log($"Health Percentage: {healthPercentage}");
+
+        hpBarForeground.fillAmount = healthPercentage;
     }
 }
