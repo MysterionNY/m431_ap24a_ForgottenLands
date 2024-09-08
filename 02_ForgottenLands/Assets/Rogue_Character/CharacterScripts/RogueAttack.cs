@@ -10,10 +10,24 @@ public class RogueAttack : MonoBehaviour
     public int attackDamage = 10;
     private bool isAttacking = false;
 
+    public float attackStaminaCost = 0.1f; // 20% stamina cost per attack
+
+    private PlayerStamina ps;
+
+    void Start()
+    {
+        // Find the RogueMovement component (assumed to be on the same GameObject)
+        ps = GetComponent<PlayerStamina>();
+        if (ps == null)
+        {
+            Debug.LogError("RogueMovement script not found on the same GameObject!");
+        }
+    }
+
     void Update()
     {
-        // Check if attack button is pressed and enough time has passed since last attack
-        if (Input.GetKeyDown(KeyCode.J) && Time.time >= lastAttackTime + attackCooldown && !isAttacking)
+        // Check if the attack button is pressed, enough time has passed since last attack, and enough stamina is available
+        if (Input.GetKeyDown(KeyCode.J) && Time.time >= lastAttackTime + attackCooldown && !isAttacking && ps.currentStamina >= attackStaminaCost)
         {
             StartCoroutine(PerformAttack());
         }
@@ -24,6 +38,12 @@ public class RogueAttack : MonoBehaviour
         isAttacking = true;
         lastAttackTime = Time.time;
 
+        ps.currentStamina -= attackStaminaCost;
+        ps.currentStamina = Mathf.Clamp01(ps.currentStamina); // Ensure it stays between 0 and 1
+
+        // Set the last action time to delay stamina regeneration (affects dash too)
+        ps.lastActionTime = Time.time;
+        
         // Trigger attack animation
         animator.SetTrigger("SlashAttack01");
 

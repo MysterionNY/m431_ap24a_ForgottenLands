@@ -324,7 +324,6 @@ MonoBehaviour:
   newGameButton: {fileID: 1091715564}
   loadGameButton: {fileID: 83241115}
   exitButton: {fileID: 1019031427}
-  mainMenuPanel: {fileID: 658087537}
 --- !u!1 &165021963
 GameObject:
   m_ObjectHideFlags: 0

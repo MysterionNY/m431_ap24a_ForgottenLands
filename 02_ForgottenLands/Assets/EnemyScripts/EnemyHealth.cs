@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using TMPro;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -10,8 +9,10 @@ public class EnemyHealth : MonoBehaviour
     private Animator animator;
     public TextMeshProUGUI HPText;
     public int maxHealth = 100;
-    private int currentHealth;
-    private bool isDead = false;
+    public int currentHealth;
+    public bool isDead = false;
+
+    private HealthPotion healthPotion; // Reference to the PotionManager
 
     void Start()
     {
@@ -19,10 +20,6 @@ public class EnemyHealth : MonoBehaviour
         shadowRenderer = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
-    }
-
-    void Update()
-    {
     }
 
     public void TakeDamage(int damage)
@@ -60,7 +57,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    void Die()
+    public void Die()
     {
         if (isDead) return; // Prevent Die from being called multiple times
         isDead = true;
@@ -84,6 +81,7 @@ public class EnemyHealth : MonoBehaviour
     {
         // Wait for the animation to finish (assuming the animation length is 1.5 seconds)
         yield return new WaitForSeconds(1.5f);
+
 
         // Deactivate the enemy GameObject and its children
         gameObject.SetActive(false);

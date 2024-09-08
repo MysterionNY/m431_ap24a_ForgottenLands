@@ -8,7 +8,6 @@ public class EscapeMenu : MonoBehaviour
 
     void Start()
     {
-        // Ensure escape menu is hidden initially
         escapeMenuUI.SetActive(false);
     }
 
@@ -43,9 +42,21 @@ public class EscapeMenu : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        Time.timeScale = 1f; // Ensure the game is unpaused
-        SceneManager.LoadScene("MainMenu"); // Change "MainMenu" to your main menu scene name
+        Time.timeScale = 1f;
+        // Save game data before loading the main menu
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        if (gameManager != null)
+        {
+            gameManager.SaveGameData(); // Save game data
+        }
+        else
+        {
+            Debug.LogError("GameManager not found!");
+        }
+        SceneManager.LoadScene("MainMenu");
     }
+
+
 
     public void QuitGame()
     {

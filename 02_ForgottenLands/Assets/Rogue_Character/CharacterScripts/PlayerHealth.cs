@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
     private Color flashColor = new Color(1f, 0f, 0f, 0.5f); // Solid red color
 
     public int maxHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
     private bool isDead = false;
 
     private bool isFlashing = false;
@@ -27,7 +27,13 @@ public class PlayerHealth : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        currentHealth = maxHealth;
+
+        // Check if we have loaded health data
+        if (currentHealth <= 0 || currentHealth == maxHealth)
+        {
+            // Initialize currentHealth if not set (when starting a new game)
+            currentHealth = maxHealth;
+        }
         originalColor = spriteRenderer.color;
         UpdateHealthBar(); // Set initial HP bar value
 
@@ -88,6 +94,14 @@ public class PlayerHealth : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+
+        UpdateHealthBar();
+    }
+
     void HandleFlashingEffect()
     {
         if (isFlashing)
@@ -111,7 +125,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    void UpdateHealthBar()
+    public void UpdateHealthBar()
     {
         if (hpBarForeground == null)
         {
@@ -120,7 +134,6 @@ public class PlayerHealth : MonoBehaviour
         }
 
         float healthPercentage = Mathf.Clamp01((float)currentHealth / maxHealth);
-        Debug.Log($"Health Percentage: {healthPercentage}");
 
         hpBarForeground.fillAmount = healthPercentage;
     }
