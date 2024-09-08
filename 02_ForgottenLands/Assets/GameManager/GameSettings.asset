@@ -15,4 +15,7 @@ MonoBehaviour:
   playerStartPosition: {x: 0, y: 0, z: 0}
   enemyStartPositions: []
   initialPlayerHealth: 150
-  enemyInitialHealths: 
+  enemyInitialHealths: 3200000032000000
+  healthPotions: 0
+  staminaPotions: 0
+  quests: []

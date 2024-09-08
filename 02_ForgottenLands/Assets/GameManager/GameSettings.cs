@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "GameSettings", menuName = "Game/GameSettings")]
@@ -9,6 +10,14 @@ public class GameSettings : ScriptableObject
     public int[] enemyInitialHealths; // If each enemy starts with different health values
     public int healthPotions;
     public int staminaPotions;
+    public List<QuestSettings> quests; // Add this line
 
-    // Add other static game settings here
+    [System.Serializable]
+    public class QuestSettings
+    {
+        public string questName;
+        public bool isActive;
+        public bool isCompleted;
+        public int progress; // Example: progress in quest steps
+    }
 }

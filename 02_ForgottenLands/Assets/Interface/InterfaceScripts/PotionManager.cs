@@ -83,13 +83,13 @@ public class PotionManager : MonoBehaviour
         }
     }
 
-    // Save both potion counts
+    /* Save both potion counts
     public GameData SavePotionData(GameData data)
     {
         data.healthPotions = healthPotionsAvailable;
         data.staminaPotions = staminaPotionsAvailable;
         return data;
-    }
+    }*/
 
     // Load both potion counts
     public void LoadPotionData(GameData data)
