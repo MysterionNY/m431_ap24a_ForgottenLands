@@ -4,29 +4,41 @@ using UnityEngine;
 
 public class RogueAttack : MonoBehaviour
 {
-    public Animator animator; // Drag your Animator component here in the Inspector
-    public float attackCooldown = 0.2f; // Cooldown time in seconds
+    public Animator animator;
+    public float attackCooldown = 0.2f;
     private float lastAttackTime = 0f;
-    public int attackDamage = 10;
+    public float attackDamage = 10;
     private bool isAttacking = false;
 
-    public float attackStaminaCost = 0.1f; // 20% stamina cost per attack
-
+    public float attackStaminaCost = 0.1f;
     private PlayerStamina ps;
+
+    // Leveling and Upgrade System
+    public int currentAttackLevel = 1;     // Starting attack level
+    public int maxAttackLevel = 10;        // Max attack level
+    public float upgradeCost = 50f;        // Base cost of first upgrade
+    public float costMultiplier = 1.75f;   // Multiplier to increase cost per upgrade
+    public float damageIncrease = 1.5f;    // Damage increase per upgrade
+
+    private CurrencyManager currencyManager; // Reference to the currency manager
 
     void Start()
     {
-        // Find the RogueMovement component (assumed to be on the same GameObject)
         ps = GetComponent<PlayerStamina>();
         if (ps == null)
         {
-            Debug.LogError("RogueMovement script not found on the same GameObject!");
+            Debug.LogError("PlayerStamina script not found!");
+        }
+
+        currencyManager = FindObjectOfType<CurrencyManager>(); // Find the CurrencyManager in the scene
+        if (currencyManager == null)
+        {
+            Debug.LogError("CurrencyManager not found!");
         }
     }
 
     void Update()
     {
-        // Check if the attack button is pressed, enough time has passed since last attack, and enough stamina is available
         if (Input.GetKeyDown(KeyCode.J) && Time.time >= lastAttackTime + attackCooldown && !isAttacking && ps.currentStamina >= attackStaminaCost)
         {
             StartCoroutine(PerformAttack());
@@ -39,26 +51,21 @@ public class RogueAttack : MonoBehaviour
         lastAttackTime = Time.time;
 
         ps.currentStamina -= attackStaminaCost;
-        ps.currentStamina = Mathf.Clamp01(ps.currentStamina); // Ensure it stays between 0 and 1
+        ps.currentStamina = Mathf.Clamp01(ps.currentStamina);
 
-        // Set the last action time to delay stamina regeneration (affects dash too)
         ps.lastActionTime = Time.time;
-        
-        // Trigger attack animation
+
         animator.SetTrigger("SlashAttack01");
 
-        // Wait for the attack animation to complete
-        yield return new WaitForSeconds(0.5f); // Adjust this duration to match your animation length
+        yield return new WaitForSeconds(0.5f);
 
-        // Return to idle state
         isAttacking = false;
         animator.SetTrigger("Idle");
     }
 
-    // Called by Animation Event
     void DealDamage()
     {
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, 0.5f); // Adjust radius as needed
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, 0.5f); 
         foreach (Collider2D enemy in hitEnemies)
         {
             if (enemy.CompareTag("Enemy"))
@@ -66,9 +73,40 @@ public class RogueAttack : MonoBehaviour
                 EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
                 if (enemyHealth != null)
                 {
-                    enemyHealth.TakeDamage(attackDamage);
+                    enemyHealth.TakeDamage((int)attackDamage); // Cast to int if needed
                 }
             }
         }
+    }
+
+    // Method to handle upgrading attack damage
+    public bool UpgradeAttack()
+    {
+        if (currentAttackLevel < maxAttackLevel && currencyManager.gold >= upgradeCost)
+        {
+            // Deduct the cost from the player's gold
+            currencyManager.SubtractGold((int)upgradeCost);
+            
+            // Increase attack damage and level
+            attackDamage += damageIncrease;
+            currentAttackLevel++;
+
+            // Update the cost for the next upgrade
+            upgradeCost *= costMultiplier;
+
+            return true; // Upgrade successful
+        }
+        else
+        {
+            Debug.Log("Not enough gold or already at max level!");
+            return false; // Upgrade failed
+        }
+    }
+
+    public void LoadAttackData(GameData data)
+    {
+        attackDamage = data.attackDamage;
+        currentAttackLevel = data.curAttackLvl;
+        upgradeCost = data.upgradeCost;
     }
 }

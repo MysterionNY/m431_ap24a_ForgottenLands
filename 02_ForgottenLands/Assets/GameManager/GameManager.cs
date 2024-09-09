@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public PotionManager potionManager;
     public QuestManager questManager; // Ensure this is assigned in the editor
     public CurrencyManager currencyManager;
+    public RogueAttack rogueAttack;
 
     private void Awake()
     {
@@ -31,6 +32,7 @@ public class GameManager : MonoBehaviour
         player = FindObjectOfType<PlayerHealth>();
         questManager = FindObjectOfType<QuestManager>(); // Ensure this assignment is correct
         currencyManager = FindObjectOfType<CurrencyManager>();
+        rogueAttack = FindObjectOfType<RogueAttack>();
         Debug.Log("GameManager initialized.");
     }
 
@@ -59,7 +61,7 @@ public class GameManager : MonoBehaviour
 
     public void SaveGameData()
     {
-        SaveData.SaveGameData(player, enemies, potionManager, questManager.allQuests, currencyManager);
+        SaveData.SaveGameData(player, enemies, potionManager, questManager.allQuests, currencyManager, rogueAttack);
         Debug.Log("Game data saved.");
     }
 
@@ -88,6 +90,7 @@ public class GameManager : MonoBehaviour
 
             potionManager.LoadPotionData(data);
             currencyManager.LoadCurrencyManager(data);
+            rogueAttack.LoadAttackData(data);
             questManager.LoadQuestData(data.quests);
 
             Debug.Log("Game data loaded.");

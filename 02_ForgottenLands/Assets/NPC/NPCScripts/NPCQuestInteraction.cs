@@ -10,7 +10,8 @@ public class NPCQuestInteraction : MonoBehaviour
     public GameObject questInProgressCanvas;            // Shown when the quest is in progress
     public GameObject player;
     public Button acceptButton;                         // Reference to the Accept button
-    public float interactionRadius = 3f;
+    public float interactionRadius = 1f;
+    public float closeDistance = 3f;
 
     private int currentQuestIndex = 0;                  // Tracks the current quest in the list
 
@@ -29,7 +30,7 @@ public class NPCQuestInteraction : MonoBehaviour
             HandleQuestInteraction();
         }
         // If the player walks too far away, deactivate both canvases
-        else if (distance > interactionRadius)
+        else if (distance > closeDistance)
         {
             if (questAcceptCanvas.activeSelf)
             {

@@ -13,10 +13,13 @@ public class GameData
     public int healthPotions;       // Store health potion count
     public int staminaPotions;      // Store stamina potion count
     public int gold;
+    public float attackDamage;
+    public int curAttackLvl;
+    public float upgradeCost;
 
     public List<QuestData> quests = new List<QuestData>(); // Store quest data
 
-    public GameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> activeQuests, CurrencyManager currencyManager)
+    public GameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> activeQuests, CurrencyManager currencyManager, RogueAttack rogueAttack)
     {
         gold = currencyManager.gold;
         Playerhealth = player.currentHealth;
@@ -41,6 +44,10 @@ public class GameData
 
         healthPotions = potionManager.healthPotionsAvailable;
         staminaPotions = potionManager.staminaPotionsAvailable;
+
+        attackDamage = rogueAttack.attackDamage;
+        curAttackLvl = rogueAttack.currentAttackLevel;
+        upgradeCost = rogueAttack.upgradeCost;
 
         // Quest data
         quests = new List<QuestData>();
