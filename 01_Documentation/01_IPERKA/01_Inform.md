@@ -1,3 +1,5 @@
+# Inform
+## Collect Ideas
 ### Brainstorm
 * Developing games in my free time
 * Wanting to become a game developer in the future
@@ -30,7 +32,13 @@ Certain inspiration I am going to be using in my tool comes from different games
 
 ## Goals
 * Get atleast 3 downloads on Github in 1 Week after release
-* 
+    * Measured by checking the downloads on the Release section in Github
+    * Achievable and realistic
+    * Time: 1 Week after uploading a Release on Github
+* Get atleast 1 person to write a feedback on Github
+    * Measured by checking the Issues section on Github
+    * Achievable and realistic
+    * Time: 1 after the first goal was achieved
 
 ## Tools
 

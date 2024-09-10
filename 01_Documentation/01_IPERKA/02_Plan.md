@@ -16,6 +16,7 @@
 * When I can work on it, when the due dates are & dates I set myself
 * I marked the days when I will work on it and for how long in green
 * I marked the important dates as red
+![Resource Plan][RP]
 
 
 ## Using GitHub as a task list
@@ -27,6 +28,7 @@
 
 ## Milestones
 * With Githubs milestones, I was able to track my goals for certain dates and also my time consumption
+![Milestones][MS]
 
 ## How I created the task list
 * I identified which Major Tasks I had
@@ -35,6 +37,7 @@
     * I estimated how long a task would take
     * I tracked my time how long I actually took
     * I've checked whether a Task would create a bigger Subtask or not
+![Tasklist][TL]
 
 ## Managing the task list
 * I could track my tasks by putting them as ToDo, In Progress or Done
@@ -43,3 +46,8 @@
 * When Ive noticed that a Task created a bigger Subtask, I also added that as a Task itself
 
 ## Checking my progress
+
+
+[RP]: ../02_Resources/Images/02_ResourcePlan.png
+[TL]: ../02_Resources/Images/02_TaskList.png
+[MS]: ../02_Resources/Images/Milestones.png
