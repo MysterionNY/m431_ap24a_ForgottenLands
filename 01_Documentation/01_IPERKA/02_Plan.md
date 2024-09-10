@@ -50,4 +50,4 @@
 
 [RP]: ../02_Resources/Images/02_ResourcePlan.png
 [TL]: ../02_Resources/Images/02_TaskList.png
-[MS]: ../02_Resources/Images/Milestones.png
+[MS]: ../02_Resources/Images/02_Milestones.png
