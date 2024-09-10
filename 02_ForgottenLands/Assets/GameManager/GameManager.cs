@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public QuestManager questManager; // Ensure this is assigned in the editor
     public CurrencyManager currencyManager;
     public RogueAttack rogueAttack;
+    public QuestStep questSteps;
 
     private void Awake()
     {
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
     public void StartNewGame()
     {
         SaveData.DeleteSaveFile();
+        /*
         player.currentHealth = gameSettings.initialPlayerHealth;
         player.transform.position = gameSettings.playerStartPosition;
         potionManager.healthPotionsAvailable = gameSettings.healthPotions;
@@ -55,13 +57,13 @@ public class GameManager : MonoBehaviour
         questManager.activeQuests.Clear(); // Clear active quests
         questManager.completedQuests.Clear(); // Clear completed quests
         questManager.turnedInQuests.Clear(); // Clear turned in quests
-
+        */
         Debug.Log("New Game started. Save file deleted, and game state reset.");
     }
 
     public void SaveGameData()
     {
-        SaveData.SaveGameData(player, enemies, potionManager, questManager.allQuests, currencyManager, rogueAttack);
+        SaveData.SaveGameData(player, enemies, potionManager, questManager.allQuests, questManager.activeQuests, questManager.completedQuests, questManager.turnedInQuests, currencyManager, rogueAttack, questSteps);
         Debug.Log("Game data saved.");
     }
 
@@ -91,7 +93,7 @@ public class GameManager : MonoBehaviour
             potionManager.LoadPotionData(data);
             currencyManager.LoadCurrencyManager(data);
             rogueAttack.LoadAttackData(data);
-            questManager.LoadQuestData(data.quests);
+            questManager.LoadQuestData(data.quests, data.questStepsData);
 
             Debug.Log("Game data loaded.");
         }

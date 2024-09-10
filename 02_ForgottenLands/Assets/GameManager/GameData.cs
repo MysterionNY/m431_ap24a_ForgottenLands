@@ -18,8 +18,9 @@ public class GameData
     public float upgradeCost;
 
     public List<QuestData> quests = new List<QuestData>(); // Store quest data
+    public List<QuestStepData> questStepsData = new List<QuestStepData>();
 
-    public GameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> activeQuests, CurrencyManager currencyManager, RogueAttack rogueAttack)
+    public GameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> allQuests, List<Quest> activeQuests, List<Quest> completedQuests, List<Quest> turnedInQuests, CurrencyManager currencyManager, RogueAttack rogueAttack, QuestStep questStep)
     {
         gold = currencyManager.gold;
         Playerhealth = player.currentHealth;
@@ -51,9 +52,39 @@ public class GameData
 
         // Quest data
         quests = new List<QuestData>();
+        foreach (var quest in allQuests)
+        {
+            quests.Add(new QuestData(quest));
+        }
         foreach (var quest in activeQuests)
         {
             quests.Add(new QuestData(quest));
+        }
+        foreach (var quest in completedQuests)
+        {
+            quests.Add(new QuestData(quest));
+        }
+        foreach (var quest in turnedInQuests)
+        {
+            quests.Add(new QuestData(quest));
+        }
+        questStepsData = new List<QuestStepData>();
+        foreach (var quest in allQuests)
+        {
+            quests.Add(new QuestData(quest)); // Store quest data
+
+            foreach (var step in quest.steps)
+            {
+                questStepsData.Add(new QuestStepData
+                {
+
+                    questName = quest.questName,
+                    stepDescription = step.stepDescription,
+                    questType = step.stepType,
+                    targetCount = step.targetCount,
+                    currentCount = step.currentCount
+                });
+            }
         }
     }
 }
@@ -62,14 +93,21 @@ public class GameData
 public class QuestData
 {
     public string questName;
+    public string questDescription;
+    public int rewardGold;
     public bool isActive;
     public bool isCompleted;
     public bool isTurnedIn;
     public List<QuestStepData> steps;
+    public QuestStepType stepType;       // Define the type of quest step
+    public int targetCount;              // The target count for kills or items to collect
+    public int currentCount;
 
     public QuestData(Quest quest)
     {
         questName = quest.questName;
+        questDescription = quest.questDescription;
+        rewardGold = quest.rewardGold;
         isActive = quest.questState == QuestState.InProgress || quest.questState == QuestState.Accepted;
         isCompleted = quest.questState == QuestState.Completed;
         isTurnedIn = quest.questState == QuestState.TurnedIn;
@@ -78,7 +116,7 @@ public class QuestData
         steps = new List<QuestStepData>();
         foreach (var step in quest.steps)
         {
-            steps.Add(new QuestStepData(step));
+            steps.Add(new QuestStepData(step, quest.questName));
         }
     }
 }
@@ -86,15 +124,20 @@ public class QuestData
 [System.Serializable]
 public class QuestStepData
 {
+    public string questName;
     public string stepDescription;
     public int currentCount;  // Track how many of the target have been completed
     public int targetCount;
-
-    public QuestStepData(QuestStep step)
+    public QuestStepType questType;
+    public bool isCompleted;
+    public QuestStepData() { }
+    public QuestStepData(QuestStep step, string questName)
     {
+        this.questName = questName;
         stepDescription = step.stepDescription;
         currentCount = step.currentCount;
         targetCount = step.targetCount;
+        questType = step.stepType;
     }
 }
 

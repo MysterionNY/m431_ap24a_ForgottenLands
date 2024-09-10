@@ -41,6 +41,7 @@ public enum QuestStepType { KillEnemies, CollectItems, TalkToNPC }
 [System.Serializable]
 public class QuestStep
 {
+    public string questName;
     public string stepDescription;
     public QuestStepType stepType;       // Define the type of quest step
     public int targetCount;              // The target count for kills or items to collect

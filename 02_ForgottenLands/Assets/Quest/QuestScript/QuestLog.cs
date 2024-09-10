@@ -46,6 +46,23 @@ public class QuestLog : MonoBehaviour
 
     public void UpdateQuestLogUI()
     {
+        if (questListParent == null)
+        {
+            Debug.LogError("QuestListParent is not assigned.");
+            return;
+        }
+
+        if (questButtonPrefab == null)
+        {
+            Debug.LogError("QuestButtonPrefab is not assigned.");
+            return;
+        }
+
+        if (questManager == null)
+        {
+            Debug.LogError("QuestManager is not assigned.");
+            return;
+        }
         // Clear existing buttons
         foreach (Transform child in questListParent)
         {

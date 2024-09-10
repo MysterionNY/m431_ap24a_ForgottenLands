@@ -62,8 +62,9 @@ public class NPCQuestInteraction : MonoBehaviour
             questAcceptCanvas.SetActive(true);  // Show quest accept canvas
             DisplayQuestDetails(currentQuest);
         }
-        else if (quest.questState == QuestState.Accepted || quest.questState == QuestState.InProgress)
+        else if (quest.questState == QuestState.Accepted)
         {
+            quest.questState = QuestState.Accepted;
             questInProgressCanvas.SetActive(true);  // Show in-progress canvas
         }
         else if (quest.questState == QuestState.Completed)

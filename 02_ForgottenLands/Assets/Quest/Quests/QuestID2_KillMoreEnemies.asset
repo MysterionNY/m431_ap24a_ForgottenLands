@@ -15,7 +15,8 @@ MonoBehaviour:
   questName: More!
   questDescription: Kill another 3 Bandits!
   steps:
-  - stepDescription: Kill Bandits
+  - questName: 
+    stepDescription: Kill Bandits
     stepType: 0
     targetCount: 3
     currentCount: 0

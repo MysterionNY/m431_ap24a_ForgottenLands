@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour
@@ -17,7 +18,10 @@ public class QuestManager : MonoBehaviour
 
     public QuestLog questLog;
     public CurrencyManager currencyManager;
-
+    private void Awake()
+    {
+            DontDestroyOnLoad(gameObject);
+    }
     public void EnemyKilled(string enemyType)
     {
         // Temporary list to store quests that need to be processed
@@ -105,7 +109,7 @@ public class QuestManager : MonoBehaviour
     }
 
 
-    public void LoadQuestData(List<QuestData> savedQuests)
+    public void LoadQuestData(List<QuestData> savedQuests, List<QuestStepData> questStepData)
     {
         Debug.Log("Loading quest data...");
 
@@ -115,34 +119,44 @@ public class QuestManager : MonoBehaviour
 
         foreach (var questData in savedQuests)
         {
-            Debug.Log($"Loading Quest: {questData.questName}, Active: {questData.isActive}, Completed: {questData.isCompleted}, Turned In: {questData.isTurnedIn}");
-
-            Quest quest = ScriptableObject.CreateInstance<Quest>();  // Create a new instance if necessary
+            Quest quest = ScriptableObject.CreateInstance<Quest>(); // Create a new quest instance
             quest.questName = questData.questName;
+            quest.questDescription = questData.questDescription;
+            quest.rewardGold = questData.rewardGold;
+            quest.steps = new List<QuestStep>(); // Initialize quest steps list
 
             if (questData.isActive)
-                quest.questState = QuestState.InProgress;
+                quest.questState = QuestState.Accepted;
             else if (questData.isCompleted)
                 quest.questState = QuestState.Completed;
             else if (questData.isTurnedIn)
                 quest.questState = QuestState.TurnedIn;
 
-            for (int i = 0; i < quest.steps.Count; i++)
-            {
-                if (i < questData.steps.Count)
-                {
-                    quest.steps[i].currentCount = questData.steps[i].currentCount;
-                }
-            }
-
-            if (quest.questState == QuestState.InProgress)
+            // Add the quest to the appropriate list based on its state
+            if (quest.questState == QuestState.Accepted)
                 activeQuests.Add(quest);
             else if (quest.questState == QuestState.Completed)
                 completedQuests.Add(quest);
             else if (quest.questState == QuestState.TurnedIn)
                 turnedInQuests.Add(quest);
+
+            foreach (var stepData in questStepData)
+            {
+                if (quest.questName == stepData.questName) // Match step to the correct quest
+                {
+                    Debug.Log("Test");
+                    QuestStep step = new QuestStep
+                    {
+                        stepDescription = stepData.stepDescription,
+                        stepType = stepData.questType,
+                        targetCount = stepData.targetCount,
+                        currentCount = stepData.currentCount,
+                    };
+                    quest.steps.Add(step);
+                }
+            }
+
+            questLog.UpdateQuestLogUI(); // Update the UI
         }
     }
-
-
 }
