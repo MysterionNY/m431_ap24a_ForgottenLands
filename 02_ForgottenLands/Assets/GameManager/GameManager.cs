@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public CurrencyManager currencyManager;
     public RogueAttack rogueAttack;
     public QuestStep questSteps;
+    public NPCQuestInteraction npcQuestInteraction;
 
     private void Awake()
     {
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
         questManager = FindObjectOfType<QuestManager>(); // Ensure this assignment is correct
         currencyManager = FindObjectOfType<CurrencyManager>();
         rogueAttack = FindObjectOfType<RogueAttack>();
+        npcQuestInteraction = FindObjectOfType<NPCQuestInteraction>();
         Debug.Log("GameManager initialized.");
     }
 
@@ -63,7 +65,7 @@ public class GameManager : MonoBehaviour
 
     public void SaveGameData()
     {
-        SaveData.SaveGameData(player, enemies, potionManager, questManager.allQuests, questManager.activeQuests, questManager.completedQuests, questManager.turnedInQuests, currencyManager, rogueAttack, questSteps);
+        SaveData.SaveGameData(player, enemies, potionManager, questManager.allQuests, questManager.activeQuests, questManager.completedQuests, questManager.turnedInQuests, currencyManager, rogueAttack, questSteps, npcQuestInteraction);
         Debug.Log("Game data saved.");
     }
 
@@ -79,7 +81,7 @@ public class GameManager : MonoBehaviour
 
             for (int i = 0; i < enemies.Count; i++)
             {
-                Vector3 enemyPosition = new Vector3(data.EnemyPositions[i * 3], data.EnemyPositions[i * 3 + 1], data.EnemyPositions[i * 3 + 2]);
+                //Vector3 enemyPosition = new Vector3(data.EnemyPositions[i * 3], data.EnemyPositions[i * 3 + 1], data.EnemyPositions[i * 3 + 2]);
                 enemies[i].transform.position = enemyPosition;
                 enemies[i].currentHealth = data.EnemyHealths[i];
                 enemies[i].isDead = data.EnemyIsDead[i];
@@ -93,6 +95,7 @@ public class GameManager : MonoBehaviour
             potionManager.LoadPotionData(data);
             currencyManager.LoadCurrencyManager(data);
             rogueAttack.LoadAttackData(data);
+            npcQuestInteraction.currentQuestIndex = data.questIndex;
             questManager.LoadQuestData(data.quests, data.questStepsData);
 
             Debug.Log("Game data loaded.");

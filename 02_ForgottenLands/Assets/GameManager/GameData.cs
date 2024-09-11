@@ -16,11 +16,12 @@ public class GameData
     public float attackDamage;
     public int curAttackLvl;
     public float upgradeCost;
+    public int questIndex;
 
     public List<QuestData> quests = new List<QuestData>(); // Store quest data
     public List<QuestStepData> questStepsData = new List<QuestStepData>();
 
-    public GameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> allQuests, List<Quest> activeQuests, List<Quest> completedQuests, List<Quest> turnedInQuests, CurrencyManager currencyManager, RogueAttack rogueAttack, QuestStep questStep)
+    public GameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> allQuests, List<Quest> activeQuests, List<Quest> completedQuests, List<Quest> turnedInQuests, CurrencyManager currencyManager, RogueAttack rogueAttack, QuestStep questStep, NPCQuestInteraction npcQuestInteraction)
     {
         gold = currencyManager.gold;
         Playerhealth = player.currentHealth;
@@ -52,6 +53,7 @@ public class GameData
 
         // Quest data
         quests = new List<QuestData>();
+        questIndex = npcQuestInteraction.currentQuestIndex;
         foreach (var quest in allQuests)
         {
             quests.Add(new QuestData(quest));

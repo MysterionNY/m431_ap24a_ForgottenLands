@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class NPCQuestInteraction : MonoBehaviour
 {
     public QuestManager questManager;
-    public List<Quest> assignedQuests;  // List of quests assigned to the NPC
+    public List<Quest> assignedQuests;                  // List of quests assigned to the NPC
     public GameObject questAcceptCanvas;                // The panel that shows the quest
     public GameObject questInProgressCanvas;            // Shown when the quest is in progress
     public GameObject player;
@@ -13,7 +13,7 @@ public class NPCQuestInteraction : MonoBehaviour
     public float interactionRadius = 1f;
     public float closeDistance = 3f;
 
-    private int currentQuestIndex = 0;                  // Tracks the current quest in the list
+    public int currentQuestIndex = 0;                  // Tracks the current quest in the list
 
     void Start()
     {
