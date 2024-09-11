@@ -19,6 +19,6 @@ MonoBehaviour:
     stepDescription: Kill the Bandits
     stepType: 0
     targetCount: 2
-    currentCount: 0
+    currentCount: 2
   rewardGold: 50
   questState: 0

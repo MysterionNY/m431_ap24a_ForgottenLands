@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
             for (int i = 0; i < enemies.Count; i++)
             {
                 //Vector3 enemyPosition = new Vector3(data.EnemyPositions[i * 3], data.EnemyPositions[i * 3 + 1], data.EnemyPositions[i * 3 + 2]);
-                enemies[i].transform.position = enemyPosition;
+                //enemies[i].transform.position = enemyPosition;
                 enemies[i].currentHealth = data.EnemyHealths[i];
                 enemies[i].isDead = data.EnemyIsDead[i];
 

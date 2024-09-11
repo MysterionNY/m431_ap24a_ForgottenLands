@@ -12,8 +12,9 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth;
     public bool isDead = false;
 
-    private HealthPotion healthPotion; // Reference to the PotionManager
+    public PotionManager potionManager;
     public QuestManager questManager;
+    public CurrencyManager currencyManager;
 
     void Start()
     {
@@ -22,6 +23,8 @@ public class EnemyHealth : MonoBehaviour
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
         questManager = FindObjectOfType<QuestManager>();
+        potionManager = FindObjectOfType<PotionManager>();
+        currencyManager = FindObjectOfType<CurrencyManager>();
     }
 
     public void TakeDamage(int damage)
@@ -63,7 +66,15 @@ public class EnemyHealth : MonoBehaviour
     {
         if (isDead) return; // Prevent Die from being called multiple times
         isDead = true;
-
+        if(potionManager.isHealthPotionActive){
+            potionManager.healthPotionsAvailable += 1;
+            potionManager.UpdatePotionDisplay();
+        } else{
+            potionManager.staminaPotionsAvailable += 1;
+            potionManager.UpdatePotionDisplay();
+        }
+        currencyManager.gold += 25;
+        currencyManager.UpdateCurrencyUI();
         questManager.EnemyKilled("Enemy");
 
         // Trigger the death animation

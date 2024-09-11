@@ -32,7 +32,7 @@ public class CurrencyManager : MonoBehaviour
         }
     }
 
-    private void UpdateCurrencyUI()
+    public void UpdateCurrencyUI()
     {
         if (goldText != null)
         {

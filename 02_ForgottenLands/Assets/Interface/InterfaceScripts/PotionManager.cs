@@ -14,7 +14,7 @@ public class PotionManager : MonoBehaviour
     public Sprite staminaPotionSprite;  // Sprite for stamina potion
     public Sprite emptyPotionSprite;    // Sprite for empty potion (for both types)
 
-    private bool isHealthPotionActive = true; // Tracks whether health potion is active
+    public bool isHealthPotionActive = true; // Tracks whether health potion is active
     private PlayerHealth playerHealth;        // Reference to PlayerHealth
     private PlayerStamina playerStamina;      // Reference to PlayerStamina
 
@@ -68,7 +68,7 @@ public class PotionManager : MonoBehaviour
         UpdatePotionDisplay();
     }
 
-    void UpdatePotionDisplay()
+    public void UpdatePotionDisplay()
     {
         // Update the UI based on the active potion
         if (isHealthPotionActive)
