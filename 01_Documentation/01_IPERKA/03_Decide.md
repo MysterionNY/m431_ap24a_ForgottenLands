@@ -3,6 +3,9 @@
 * Since I was doing this project on my own, I was able to make my own decisions, but still had to decide whether I for example use a certain Program or a different one.
 
 ## Decision log
+* Decision: Choose the amount of offered Quests
+    * Solution: I chose to only do 3 Quests in total, for the time management and the resources it takes to create a Quest, I chose 3 for a clean quick play through
+    * Date: 08.09.2024
 * Decision: Choose between Paint.net or Illustrator
     * Solution: I chose Paint.net because I was able to animate my stuff in Unity and Paint.net is much easier to use and free
     * Date: 29.08.2024
@@ -12,3 +15,7 @@
 
 ## Decision Matrix
 * The biggest decision I had to make was to choose my Engine I am going to create the game in. Therefore I created a decision matrix to make the decision easier.
+* My criteria were definetly full 2D support from the Engine and also the provided coding language which we code in.
+![Decision Matrix][DM]
+
+[DM]: ../02_Resources/Images/03_DecisionMatrix.png

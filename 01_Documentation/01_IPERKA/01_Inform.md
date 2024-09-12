@@ -30,7 +30,7 @@ Certain inspiration I am going to be using in my tool comes from different games
 ### Requirements for the Product
 
 
-## Goals
+## SMART Goals
 * Get atleast 3 downloads on Github in 1 Week after release
     * Measured by checking the downloads on the Release section in Github
     * Achievable and realistic
@@ -53,3 +53,6 @@ For this project I chose to do everything from scratch and not use the Unity mar
 
 ### Github Desktop
 I used Github Desktop to track my files, my changes and upload my commits to Github. Because I was using both my laptop and my computer, I was able to work on both and constantly keep my files updated, whether I worked on a different Device.
+
+## References
+No References were needed for this section, because I was already fairly familiar with all these products and information.
