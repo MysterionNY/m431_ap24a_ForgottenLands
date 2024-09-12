@@ -41,6 +41,7 @@ public class QuestLog : MonoBehaviour
         if (isQuestLogOpen)
         {
             UpdateQuestLogUI();
+            ClearQuestDetails();
         }
     }
 
@@ -87,10 +88,17 @@ public class QuestLog : MonoBehaviour
         questStepsText.text = "";
         foreach (var step in quest.steps)
         {
-            questStepsText.text += step.stepDescription + " - " + (step.isCompleted ? "Completed" : "Not Completed") + "\n";
+            questStepsText.text += step.stepDescription + " - " + step.currentCount + "/" + step.targetCount + "\n";
         }
 
         // Show rewards
         questRewardText.text = "Gold Reward: " + quest.rewardGold.ToString();
+    }
+    public void ClearQuestDetails()
+    {
+        questNameText.text = "";
+        questDescriptionText.text = "";
+        questStepsText.text = "";
+        questRewardText.text = "";
     }
 }

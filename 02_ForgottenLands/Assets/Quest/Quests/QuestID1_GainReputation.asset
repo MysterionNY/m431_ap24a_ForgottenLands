@@ -16,9 +16,9 @@ MonoBehaviour:
   questDescription: Hello Tarnished, kill the 2 bandits outside the village!
   steps:
   - questName: 
-    stepDescription: Kill the Bandits
+    stepDescription: Kill Bandits!
     stepType: 0
     targetCount: 2
-    currentCount: 2
+    currentCount: 0
   rewardGold: 50
   questState: 0

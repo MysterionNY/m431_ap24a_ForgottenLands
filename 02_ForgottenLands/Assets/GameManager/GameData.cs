@@ -102,8 +102,6 @@ public class QuestData
     public bool isTurnedIn;
     public List<QuestStepData> steps;
     public QuestStepType stepType;       // Define the type of quest step
-    public int targetCount;              // The target count for kills or items to collect
-    public int currentCount;
 
     public QuestData(Quest quest)
     {
@@ -128,7 +126,7 @@ public class QuestStepData
 {
     public string questName;
     public string stepDescription;
-    public int currentCount;  // Track how many of the target have been completed
+    public int currentCount;
     public int targetCount;
     public QuestStepType questType;
     public bool isCompleted;

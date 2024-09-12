@@ -44,7 +44,6 @@ public class QuestManager : MonoBehaviour
                 }
             }
         }
-
         // Process completed quests after the iteration
         foreach (var quest in questsToComplete)
         {
