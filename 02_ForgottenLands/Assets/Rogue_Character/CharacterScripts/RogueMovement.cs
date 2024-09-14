@@ -10,6 +10,8 @@ public class RogueMovement : MonoBehaviour
     public float dashDistance = 3.5f;     // Distance to dash (2 blocks wide)
     public float dashDuration = 0.2f;   // How long the dash lasts
     public float dashCooldown = 1f;     // Cooldown between dashes
+    public float minPitch = 0.8f;       // Minimum pitch of the walking sound
+    public float maxPitch = 1.2f;
 
     public bool isDashing = false;
     private bool canDash = true;
@@ -20,6 +22,7 @@ public class RogueMovement : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private PlayerStamina ps;
+    private AudioSource walkingSound;
 
     void Start()
     {
@@ -27,6 +30,7 @@ public class RogueMovement : MonoBehaviour
         animator = GetComponent<Animator>();        // Get the Animator component
         spriteRenderer = GetComponent<SpriteRenderer>();  // Get the SpriteRenderer component
         ps = GetComponent<PlayerStamina>();
+        walkingSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -63,6 +67,8 @@ public class RogueMovement : MonoBehaviour
         {
             spriteRenderer.flipX = true;  // Face left
         }
+
+        
     }
 
     void FixedUpdate()

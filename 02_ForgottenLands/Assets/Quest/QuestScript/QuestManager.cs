@@ -18,9 +18,20 @@ public class QuestManager : MonoBehaviour
 
     public QuestLog questLog;
     public CurrencyManager currencyManager;
+    public static QuestManager instance;
+
     private void Awake()
     {
-            DontDestroyOnLoad(gameObject);
+        // If an instance already exists and it's not this one, destroy this one
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        // Set the instance and mark this GameObject to persist across scenes
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     public void EnemyKilled(string enemyType)
     {
@@ -50,6 +61,43 @@ public class QuestManager : MonoBehaviour
             CompleteQuest(quest);
             Debug.Log("Quest Completed: " + quest.questName);
         }
+    }
+
+    public void ItemCollected(string questName)
+    {
+        List<Quest> questsToComplete = new List<Quest>();
+
+        // Iterate through active quests and check their steps
+        foreach (var quest in activeQuests)
+        {
+            if (quest.questName == questName)  // Match the overall quest name
+            {
+                foreach (var step in quest.steps)
+                {
+                    // Check if the quest step is about collecting items and if it's incomplete
+                    if (step.stepType == QuestStepType.CollectItems && !step.isCompleted)
+                    {
+                        step.IncrementCount();  // Increment the count for collected items
+
+                        // Check if the whole quest is completed
+                        if (quest.CheckCompletion())
+                        {
+                            questsToComplete.Add(quest);  // Add the quest to the completion list
+                        }
+                    }
+                }
+            }
+        }
+
+        // Complete quests that are finished
+        foreach (var quest in questsToComplete)
+        {
+            CompleteQuest(quest);
+            Debug.Log("Quest Completed: " + quest.questName);
+        }
+
+        // Update the quest log UI after collection
+        questLog.UpdateQuestLogUI();
     }
 
     public void AcceptQuest(Quest quest)

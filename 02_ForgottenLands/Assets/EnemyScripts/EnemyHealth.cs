@@ -4,17 +4,19 @@ using TMPro;
 
 public class EnemyHealth : MonoBehaviour
 {
-    private SpriteRenderer spriteRenderer;
-    private SpriteRenderer shadowRenderer;
-    private Animator animator;
-    public TextMeshProUGUI HPText;
+    
     public int maxHealth = 100;
     public int currentHealth;
     public bool isDead = false;
+    public bool dropsKeyItem = false;
+    public GameObject keyItemPrefab;
 
     public PotionManager potionManager;
     public QuestManager questManager;
     public CurrencyManager currencyManager;
+    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer shadowRenderer;
+    private Animator animator;
 
     void Start()
     {
@@ -66,6 +68,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (isDead) return; // Prevent Die from being called multiple times
         isDead = true;
+
         if(potionManager.isHealthPotionActive){
             potionManager.healthPotionsAvailable += 1;
             potionManager.UpdatePotionDisplay();
@@ -77,7 +80,11 @@ public class EnemyHealth : MonoBehaviour
         currencyManager.UpdateCurrencyUI();
         questManager.EnemyKilled("Enemy");
 
-        // Trigger the death animation
+        if (dropsKeyItem)
+        {
+            DropKeyItem();
+        }
+
         if (animator != null)
         {
             animator.SetTrigger("DieTrigger");
@@ -90,6 +97,11 @@ public class EnemyHealth : MonoBehaviour
 
         // Turn off the GameObject after the animation finishes
         StartCoroutine(HandleDeathAfterAnimation());
+    }
+
+    private void DropKeyItem()
+    {
+        Instantiate(keyItemPrefab, transform.position, Quaternion.identity);
     }
 
     private IEnumerator HandleDeathAfterAnimation()
