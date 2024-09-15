@@ -34,4 +34,4 @@
 [mapSketch1]: ../02_Resources/Images/04_MapSketch1.jpg
 [mapSketch2]: ../02_Resources/Images/04_MapSketch2.jpg
 [mapSketch3]: ../02_Resources/Images/04_MapSketch3.jpg
-[composedSong]: ../02_Resources/Videos/ForgottenLands_PianoTheme_Creation.mov
+[composedSong]: ../02_Resources/Videos/ForgottenLands_PianoTheme_Creation.mp4
