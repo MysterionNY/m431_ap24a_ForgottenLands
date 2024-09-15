@@ -24,7 +24,10 @@
 ## Compose a theme [issue 35]
 * I composed a theme song with my piano
 * I used Unitys loop function, to loop through the song
-![Composing the song on Piano][composedSong]
+
+https://github.com/user-attachments/assets/5e12be21-8c75-4faf-b605-bff890f14364
+
+
 
 [issue 16]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/16
 [issue 35]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/35
