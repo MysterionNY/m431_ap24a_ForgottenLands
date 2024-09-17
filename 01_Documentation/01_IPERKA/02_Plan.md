@@ -11,7 +11,7 @@
 * I set myself a few goals and structurized my task list
 
 
-## Resource plan
+## Resource plan [issue 42]
 * I created a Resource plan to track my time
 * When I can work on it, when the due dates are & dates I set myself
 * I marked the days when I will work on it and for how long in green
@@ -19,14 +19,14 @@
 ![Resource Plan][RP]
 
 
-## Using GitHub as a task list
+## Using GitHub as a task list [issue 40]
 * I used Githubs internal Project function to identify my tasks and my time limit for each task.
 * For my tracking I used
     * Tasks: What tasks I have
     * Time est.: my time estimate for the task/issue 
     * Actual Time: how much time it actually took
 
-## Milestones
+## Milestones [issue 43]
 * With Githubs milestones, I was able to track my goals for certain dates and also my time consumption
 ![Milestones][MS]
 
@@ -51,3 +51,7 @@
 [RP]: ../02_Resources/Images/02_ResourcePlan.png
 [TL]: ../02_Resources/Images/02_TaskList.png
 [MS]: ../02_Resources/Images/02_Milestones.png
+
+[issue 40]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/40
+[issue 42]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/42
+[issue 43]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/43

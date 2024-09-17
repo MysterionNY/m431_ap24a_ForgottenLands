@@ -40,7 +40,7 @@ Certain inspiration I am going to be using in my tool comes from different games
     * Achievable and realistic
     * Time: 1 after the first goal was achieved
 
-## Tools
+## Tools [issue 41]
 
 ### Unity
 In Unity I will be coding the game Forgotten Lands. Its a free Game Engine, which can be used to develop games of any kind. It provides templates to have a starting point, but you also have the option to just use the core and do everything from Scratch. With the given UI, the User gets a User Experience, which makes the work with the tool much easier. Also there is a Unity Marketplace in the internet, where people can share their templates, assets & code for free or for money, which can either be used commercially or for studying purposes only.
@@ -56,3 +56,6 @@ I used Github Desktop to track my files, my changes and upload my commits to Git
 
 ## References
 No References were needed for this section, because I was already fairly familiar with all these products and information.
+
+
+[issue 41]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/41
