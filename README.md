@@ -8,7 +8,8 @@
   * Explore Areas
   * Collect Items
   * Upgrade items
-  * Clean UX
+  * Complete quests
+  * Save your progress
 
 ## What will be delievered?
 * Code
