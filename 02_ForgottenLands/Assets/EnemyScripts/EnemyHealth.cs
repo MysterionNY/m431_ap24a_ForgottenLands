@@ -4,7 +4,6 @@ using TMPro;
 
 public class EnemyHealth : MonoBehaviour
 {
-    
     public int maxHealth = 100;
     public int currentHealth;
     public bool isDead = false;
@@ -17,6 +16,9 @@ public class EnemyHealth : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private SpriteRenderer shadowRenderer;
     private Animator animator;
+
+    public delegate void EnemyDeathHandler(GameObject enemy);
+    public event EnemyDeathHandler OnDeath;
 
     void Start()
     {
@@ -69,7 +71,9 @@ public class EnemyHealth : MonoBehaviour
         if (isDead) return; // Prevent Die from being called multiple times
         isDead = true;
 
-        if(potionManager.isHealthPotionActive){
+        OnDeath?.Invoke(gameObject);
+
+        if (potionManager.isHealthPotionActive){
             potionManager.healthPotionsAvailable += 1;
             potionManager.UpdatePotionDisplay();
         } else{

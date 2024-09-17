@@ -33,6 +33,15 @@ public class EnemyAI : MonoBehaviour
         isAttacking = false;
         isMoving = false;
 
+        if (player == null)
+        {
+            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+            if (playerObj != null)
+            {
+                player = playerObj.transform;
+            }
+        }
+
         // Set first random idle target within radius
         SetNewIdleTarget();
     }
