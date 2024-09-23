@@ -10,9 +10,9 @@ public static class SaveData
         return Application.persistentDataPath + "/savegame.dat";
     }
 
-    public static void SaveGameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> allQuests, List<Quest> activeQuests, List<Quest> completedQuests, List<Quest> turnedInQuests, CurrencyManager currencyManager, RogueAttack rogueAttack, QuestStep questSteps, NPCQuestInteraction npcQuestInteraction)
+    public static void SaveGameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> allQuests, List<Quest> activeQuests, List<Quest> completedQuests, List<Quest> turnedInQuests, CurrencyManager currencyManager, RogueAttack rogueAttack, QuestStep questSteps, NPCQuestInteraction npcQuestInteraction, List<ChestInteraction> chestInteraction)
     {
-        GameData data = new GameData(player, enemies, potionManager, allQuests, activeQuests, completedQuests, turnedInQuests, currencyManager, rogueAttack, questSteps, npcQuestInteraction);
+        GameData data = new GameData(player, enemies, potionManager, allQuests, activeQuests, completedQuests, turnedInQuests, currencyManager, rogueAttack, questSteps, npcQuestInteraction, chestInteraction);
 
         BinaryFormatter formatter = new BinaryFormatter();
         FileStream stream = new FileStream(GetFilePath(), FileMode.Create);

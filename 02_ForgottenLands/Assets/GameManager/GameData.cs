@@ -17,11 +17,12 @@ public class GameData
     public int curAttackLvl;
     public float upgradeCost;
     public int questIndex;
+    public bool[] chestOpened;
 
     public List<QuestData> quests = new List<QuestData>(); // Store quest data
     public List<QuestStepData> questStepsData = new List<QuestStepData>();
 
-    public GameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> allQuests, List<Quest> activeQuests, List<Quest> completedQuests, List<Quest> turnedInQuests, CurrencyManager currencyManager, RogueAttack rogueAttack, QuestStep questStep, NPCQuestInteraction npcQuestInteraction)
+    public GameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> allQuests, List<Quest> activeQuests, List<Quest> completedQuests, List<Quest> turnedInQuests, CurrencyManager currencyManager, RogueAttack rogueAttack, QuestStep questStep, NPCQuestInteraction npcQuestInteraction, List<ChestInteraction> chestInteraction)
     {
         gold = currencyManager.gold;
         Playerhealth = player.currentHealth;
@@ -33,6 +34,8 @@ public class GameData
         EnemyPositions = new float[enemies.Count * 3];
         EnemyIsDead = new bool[enemies.Count];
         EnemyHealths = new int[enemies.Count];
+
+        chestOpened = new bool[chestInteraction.Count];
 
         for (int i = 0; i < enemies.Count; i++)
         {
@@ -50,6 +53,11 @@ public class GameData
         attackDamage = rogueAttack.attackDamage;
         curAttackLvl = rogueAttack.currentAttackLevel;
         upgradeCost = rogueAttack.upgradeCost;
+
+        for (int i = 0; i < chestInteraction.Count; i++)
+        {
+            chestOpened[i] = chestInteraction[i].chestOpened;
+        }
 
         // Quest data
         quests = new List<QuestData>();
@@ -88,6 +96,7 @@ public class GameData
                 });
             }
         }
+
     }
 }
 

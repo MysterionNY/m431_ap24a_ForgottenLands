@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameSettings gameSettings;
     public PotionManager potionManager;
     public QuestManager questManager; // Ensure this is assigned in the editor
+    public List<ChestInteraction> chestInteraction;
     public CurrencyManager currencyManager;
     public RogueAttack rogueAttack;
     public QuestStep questSteps;
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
         currencyManager = FindObjectOfType<CurrencyManager>();
         rogueAttack = FindObjectOfType<RogueAttack>();
         npcQuestInteraction = FindObjectOfType<NPCQuestInteraction>();
+        chestInteraction = new List<ChestInteraction>(FindObjectsOfType<ChestInteraction>());
         Debug.Log("GameManager initialized.");
     }
 
@@ -65,7 +67,7 @@ public class GameManager : MonoBehaviour
 
     public void SaveGameData()
     {
-        SaveData.SaveGameData(player, enemies, potionManager, questManager.allQuests, questManager.activeQuests, questManager.completedQuests, questManager.turnedInQuests, currencyManager, rogueAttack, questSteps, npcQuestInteraction);
+        SaveData.SaveGameData(player, enemies, potionManager, questManager.allQuests, questManager.activeQuests, questManager.completedQuests, questManager.turnedInQuests, currencyManager, rogueAttack, questSteps, npcQuestInteraction, chestInteraction);
         Debug.Log("Game data saved.");
     }
 
@@ -97,6 +99,12 @@ public class GameManager : MonoBehaviour
             rogueAttack.LoadAttackData(data);
             npcQuestInteraction.currentQuestIndex = data.questIndex;
             questManager.LoadQuestData(data.quests, data.questStepsData);
+            
+
+            for (int i = 0; i < chestInteraction.Count; i++)
+            {
+                chestInteraction[i].chestOpened = data.chestOpened[i];
+            }
 
             Debug.Log("Game data loaded.");
         }
