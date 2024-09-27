@@ -9,6 +9,7 @@
 ## Brainstorm
 * I thought of how long certain Tasks will take and what I will have to do
 * I set myself a few goals and structurized my task list
+![Brainstorm][BS]
 
 
 ## Resource plan [issue 42]
@@ -51,6 +52,7 @@
 [RP]: ../02_Resources/Images/02_ResourcePlan.png
 [TL]: ../02_Resources/Images/02_TaskList.png
 [MS]: ../02_Resources/Images/02_Milestones.png
+[BS]: ../02_Resources/Images/02_Brainstorm.jpeg
 
 [issue 40]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/40
 [issue 42]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/42

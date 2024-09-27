@@ -20,6 +20,6 @@ MonoBehaviour:
     stepDescription: Collect the key
     stepType: 1
     targetCount: 1
-    currentCount: 1
+    currentCount: 0
   rewardGold: 350
   questState: 0

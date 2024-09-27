@@ -65,7 +65,7 @@ public class AttackUpgradePanel : MonoBehaviour
         if (rogueAttack != null)
         {
             // Update the panel with the player's current stats and upgrade info
-            currentLevelText.text = "+" + rogueAttack.currentAttackLevel.ToString();
+            currentLevelText.text = "+" + rogueAttack.currentAttackLevel.ToString() + " Damage";
             currentDamageText.text = "" + rogueAttack.attackDamage.ToString();
             upgradeCostText.text = "Cost: " + rogueAttack.upgradeCost.ToString("0");
             if(rogueAttack.currentAttackLevel == 10){
