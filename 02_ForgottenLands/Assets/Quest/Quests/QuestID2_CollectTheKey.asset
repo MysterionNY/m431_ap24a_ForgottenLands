@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: QuestID2_CollectTheKey
   m_EditorClassIdentifier: 
   questName: Bring back the Key
-  questDescription: The bandits stole the key that leads to a locked area, bring
-    back the key!
+  questDescription: The goblins stole an important key, I've heard they are at the
+    bottom of the village, could you retrieve the key?
   steps:
   - questName: 
     stepDescription: Collect the key
     stepType: 1
     targetCount: 1
-    currentCount: 1
+    currentCount: 0
   rewardGold: 350
   questState: 0

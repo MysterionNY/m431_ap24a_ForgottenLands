@@ -4,18 +4,25 @@ using UnityEngine.SceneManagement;
 public class EscapeMenu : MonoBehaviour
 {
     public GameObject escapeMenuUI; // Assign in Inspector
+    public GameObject controlsUI;
     private bool isPaused = false;
+    private bool showingControls = false;
 
     void Start()
     {
         escapeMenuUI.SetActive(false);
+        controlsUI.SetActive(false);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (isPaused)
+            if (showingControls)
+            {
+                BackToMenu(); // Return from Controls screen
+            }
+            else if (isPaused)
             {
                 Resume();
             }
@@ -40,23 +47,25 @@ public class EscapeMenu : MonoBehaviour
         isPaused = true;
     }
 
+    public void Controls()
+    {
+        escapeMenuUI.SetActive(false);  // Hide the escape menu UI
+        controlsUI.SetActive(true);     // Show the controls image
+        showingControls = true;         // Mark that we are on the Controls screen
+    }
+
+    public void BackToMenu()
+    {
+        controlsUI.SetActive(false);   // Hide controls image
+        escapeMenuUI.SetActive(true);  // Return to the escape menu UI
+        showingControls = false;       // No longer in Controls screen
+    }
+
     public void LoadMainMenu()
     {
         Time.timeScale = 1f;
-        // Save game data before loading the main menu
-        GameManager gameManager = FindObjectOfType<GameManager>();
-        if (gameManager != null)
-        {
-            gameManager.SaveGameData(); // Save game data
-        }
-        else
-        {
-            Debug.LogError("GameManager not found!");
-        }
         SceneManager.LoadScene("MainMenu");
     }
-
-
 
     public void QuitGame()
     {

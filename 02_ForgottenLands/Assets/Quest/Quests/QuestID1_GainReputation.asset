@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: QuestID1_GainReputation
   m_EditorClassIdentifier: 
   questName: Gain Reputation
-  questDescription: Hello Tarnished, kill the 2 bandits outside the village!
+  questDescription: Hello Stranger, can you help us? There are goblins outside the
+    village and they are causing a lot of troubles.
   steps:
   - questName: 
-    stepDescription: Kill Bandits!
+    stepDescription: Kill 2 Goblins
     stepType: 0
     targetCount: 2
-    currentCount: 2
+    currentCount: 0
   rewardGold: 150
   questState: 0
