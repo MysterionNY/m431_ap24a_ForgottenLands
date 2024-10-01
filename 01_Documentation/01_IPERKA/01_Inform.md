@@ -37,7 +37,6 @@ Certain inspiration I am going to be using in my tool comes from different games
 ![Document Requirements 2][DR02]
 ![Presentation Requirements][PR]
 ![Functional Requirements][FR]
-![Non Functional Requirements][NFR]
 
 
 ## SMART Goals
@@ -74,7 +73,6 @@ No References were needed for this section, because I was already fairly familia
 [DR01]: ../02_Resources/Images/01_DocumentRequirements01.png
 [DR02]: ../02_Resources/Images/01_DocumentRequirements02.png
 [FR]: ../02_Resources/Images/01_FunctionalRequirements.png
-[NFR]: ../02_Resources/Images/01_NonFunctionalRequirements.png
 [PR]: ../02_Resources/Images/01_PresentationRequirements.png
 [PDR]: ../02_Resources/Images/01_ProductRequirements.png
 [SG]: ../02_Resources/Images/01_SmartGoals.png
