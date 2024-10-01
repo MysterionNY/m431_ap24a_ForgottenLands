@@ -54,6 +54,9 @@ For this project I chose to do everything from scratch and not use the Unity mar
 ### Github Desktop
 I used Github Desktop to track my files, my changes and upload my commits to Github. Because I was using both my laptop and my computer, I was able to work on both and constantly keep my files updated, whether I worked on a different Device.
 
+### ShareX (Screenshot-tool)
+I used ShareX to capture my screenshots, which I have added into my documentation.
+
 ## References
 No References were needed for this section, because I was already fairly familiar with all these products and information.
 

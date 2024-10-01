@@ -4,10 +4,7 @@
 
 ## Functional Requirements
 * The Player can use a dash to move through the map
-* The Player can collect items, go to the Questgiver NPC & upgrade his damage with gold
-* The Player can have a variety of attacks
-* The Player can choose has 3 different Quests
-* The Player can affect his games difficulty by: dying = game gets easier
+* The Player can collect gold, go to the Questgiver NPC & upgrade his damage
 
 ## Non-Functional Requirements
 * When the Player goes to different areas of the game, there will be a transition, so the game wont have every area loaded, therefore saving performance

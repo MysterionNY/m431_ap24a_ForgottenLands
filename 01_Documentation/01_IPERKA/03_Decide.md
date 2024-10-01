@@ -4,13 +4,13 @@
 
 ## Decision log
 * Decision: Choose the amount of offered Quests
-    * Solution: I chose to only do 3 Quests in total, for the time management and the resources it takes to create a Quest, I chose 3 for a clean quick play through
+    * Reason: I chose to only do 3 Quests in total, for the time management and the resources it takes to create a Quest, I chose 3 for a clean quick play through
     * Date: 08.09.2024
 * Decision: Choose between Paint.net or Illustrator
-    * Solution: I chose Paint.net because I was able to animate my stuff in Unity and Paint.net is much easier to use and free
+    * Reason: I chose Paint.net because I was able to animate my stuff in Unity and Paint.net is much easier to use and free
     * Date: 29.08.2024
 * Decision: Choose between the Engine Unity or Unreal Engine
-    * Solution: I chose Unity, because the main coding language is C# and I am fairly familiar with that language. Also Unity is more Pixel design friendly, unlike Unreal Engine
+    * Reason: I chose Unity, because the main coding language is C# and I am fairly familiar with that language. Also Unity is more Pixel design friendly, unlike Unreal Engine
     * Date: 28.08.2024
 
 ## Decision Matrix

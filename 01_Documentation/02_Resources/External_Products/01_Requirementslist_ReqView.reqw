@@ -1,0 +1,1834 @@
+{
+  "id": "123",
+  "documents": [
+    {
+      "id": "1234",
+      "guid": "c316d86a-db1d-4aa7-862a-8eee4e3fb2ee",
+      "name": "Requirements",
+      "lastId": 36,
+      "createdOn": "2024-10-01T12:19:50.756Z",
+      "createdBy": {
+        "name": "Mert Bal",
+        "email": "mert2003@live.com",
+        "company": ""
+      },
+      "lastChangedOn": "2024-10-01T13:54:20.409Z",
+      "lastChangedBy": {
+        "name": "Mert Bal",
+        "email": "mert2003@live.com",
+        "company": ""
+      },
+      "data": [
+        {
+          "id": "1",
+          "guid": "2d72f416-7aa5-4b45-8395-c7f1243cbba6",
+          "heading": "Product Requirements (Teacher)",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T12:19:51.116Z",
+              "docId": "1234",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T12:20:02.952Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "2",
+              "guid": "11e560de-43d3-4fda-9adc-55293bab376e",
+              "heading": "Personal Touch",
+              "text": "<ul><li>The Product must show a personal touch</li><li>Own jpegs</li><li>unique features</li><li>Variable names are unique</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "2",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T12:20:12.249Z",
+                  "docId": "SRS",
+                  "structureAction": "Copy"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>The Product must show a personal touch</p><p>- Own jpegs</p><p>- unique features</p><p>- Variable names are unique</p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:15:09.459Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>The Product must show a personal touch</p><ul><li>Own jpegs</li><li>unique features</li><li>Variable names are unique</li></ul>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:15:29.811Z"
+                }
+              ]
+            },
+            {
+              "id": "3",
+              "guid": "a0e60d17-81a2-4339-aed2-b659c95eee04",
+              "heading": "Code comments",
+              "text": "<ul><li>All code must be commented</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "3",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T12:20:12.249Z",
+                  "docId": "SRS",
+                  "structureAction": "Copy"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>All code must be commented</p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:15:25.557Z"
+                }
+              ]
+            },
+            {
+              "id": "4",
+              "guid": "d4542e37-b70d-49ef-a271-f909ef7fb411",
+              "heading": "Availbility",
+              "text": "<ul><li>The code must be available</li><li>The product must be downloadable</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "4",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T12:20:12.249Z",
+                  "docId": "SRS",
+                  "structureAction": "Copy"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>- The code must be available</p><p>- The product must be downloadable</p><p><br></p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:15:38.903Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<ul><li>The code must be available</li><li>The product must be downloadable</li><li><br></li></ul>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:15:43.772Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "guid": "f82a2daa-6093-4ddd-9b2c-b25ab08428df",
+          "heading": "Document Requirements (Teacher)",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T12:20:37.090Z",
+              "docId": "1234",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T12:20:48.208Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "12",
+              "guid": "0941f6b6-82ec-426a-adc7-cd6a90ce7148",
+              "heading": "Inform",
+              "text": "<ul><li><span style=\"text-align: left;\">&nbsp;A summary of how you gathered / inspired or brainstormed ideas</span></li><li><span style=\"text-align: left;\">&nbsp;a list of all sources (websites etc) that you used to gather information,</span></li><li><span style=\"text-align: left;\">&nbsp;a list of all the tools that you will need,</span></li><li><span style=\"text-align: left;\">&nbsp;describe each tool what it does and why you need it</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "5",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:12:18.969Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:12:23.609Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:13:33.184Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p><span style=\"text-align: left;\">- A summary of how you gathered / inspired or brainstormed ideas</span></p><p><span style=\"text-align: left;\">- a list of all sources (websites etc) that you used to gather information,</span></p><p><span style=\"text-align: left;\">&nbsp;- a list of all the tools that you will need,</span></p><p><span style=\"text-align: left;\">&nbsp;- describe each tool what it does and why you need it</span></p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:14:39.280Z"
+                }
+              ]
+            },
+            {
+              "id": "13",
+              "guid": "a32c4f73-78a7-4587-a80c-4ae09dddeea8",
+              "heading": "Inform",
+              "text": "<ul><li><span style=\"text-align: left;\">&nbsp;2 SMART goals</span></li><li><span style=\"text-align: left;\">&nbsp;A minimum of 2 functional requirements</span></li><li><span style=\"text-align: left;\">&nbsp;A minimum of 2 non-functional requirements</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "5",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:13:56.467Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:14:22.653Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<ol><li><span style=\"text-align: left;\">&nbsp;2 SMART goals</span></li><li><span style=\"text-align: left;\">&nbsp;A minimum of 2 functional requirements</span></li><li><span style=\"text-align: left;\">&nbsp;A minimum of 2 non-functional requirements</span></li></ol>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:14:28.550Z"
+                }
+              ]
+            },
+            {
+              "id": "14",
+              "guid": "1925e4c5-5f53-4fdd-88d9-33fcad9730f6",
+              "heading": "Plan",
+              "text": "<ul><li><span style=\"text-align: left;\">a milestone list,&nbsp;</span></li><li><span style=\"text-align: left;\">a tasklist,&nbsp;</span></li><li><span style=\"text-align: left;\">a resource plan and&nbsp;</span></li><li><span style=\"text-align: left;\">a work schedule</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "5",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:15:47.115Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:15:49.503Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:16:09.578Z"
+                }
+              ]
+            },
+            {
+              "id": "15",
+              "guid": "a3aeccc8-cf6e-4b29-a925-b4743c3ae243",
+              "heading": "Decide",
+              "text": "<ul><li><span style=\"text-align: left;\">a decision log,&nbsp;</span></li><li><span style=\"text-align: left;\">a decision matrix</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "5",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:16:11.700Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:16:29.079Z"
+                }
+              ]
+            },
+            {
+              "id": "16",
+              "guid": "2fe2442f-85de-462e-b97e-e63db25cce4a",
+              "heading": "Realize",
+              "text": "<ul><li><span style=\"text-align: left; text-decoration: none;\">Design</span><span style=\"text-align: left; text-decoration: none;\">: mindmaps, flowcharts, sketches, naming coventions etc</span></li><li><span style=\"text-align: left; text-decoration: none;\">Setup</span><span style=\"text-align: left; text-decoration: none;\">: download, installation, configuration</span></li><li><span style=\"text-align: left; text-decoration: none;\">Implement</span><span style=\"text-align: left; text-decoration: none;\">: step by step description</span></li><li><span style=\"text-align: left; text-decoration: none;\">Issues encountered</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "5",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:16:31.783Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:16:58.609Z"
+                }
+              ]
+            },
+            {
+              "id": "19",
+              "guid": "3df03b60-94ca-4e71-9f97-e8c165e23883",
+              "heading": "Realize",
+              "text": "<ul><li><span style=\"text-align: left; text-decoration: none;\">For each step you should summarize: what you are doing &amp; why you are doing it.&nbsp;</span></li><li><span style=\"text-align: left; text-decoration: none;\">You should explain what each feature/tool/function that you use does &amp; why it is relevant to your assignment.&nbsp;</span></li><li><span style=\"text-align: left; text-decoration: none;\">It should contain screenshots (and video clip where appropriate) of the implementation.&nbsp;</span></li><li><span style=\"text-align: left; text-decoration: none;\">Code&nbsp;</span><span style=\"text-align: left; text-decoration: none;\">must</span><span style=\"text-align: left; text-decoration: none;\">&nbsp;have comments.&nbsp;</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "5",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:17:50.051Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:17:53.400Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:18:23.862Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<ul><li><span style=\"text-align: left; text-decoration: none;\">For each step you should summarize: what you are doing &amp; why you are doing it.&nbsp;</span></li><li><span style=\"text-align: left; text-decoration: none;\">You should explain what each feature/tool/function that you use does &amp; why it is relevant to your assignment.&nbsp;</span></li><li><span style=\"text-align: left; text-decoration: none;\">It should contain screenshots (and video clip where appropriate) of the implementation.&nbsp;</span></li><li><span style=\"text-align: left; text-decoration: none;\">Code&nbsp;</span><span style=\"text-align: left; text-decoration: none;\">must</span><span style=\"text-align: left; text-decoration: none;\">&nbsp;have comments.&nbsp;</span></li><li><span style=\"text-align: left; text-decoration: none;\">In summary - it is a transparent account of how you created your product</span></li></ul>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:18:37.542Z"
+                }
+              ]
+            },
+            {
+              "id": "17",
+              "guid": "65763644-b017-4fd6-9aa2-b6df8de788ce",
+              "heading": "Control",
+              "text": "<ul><li><span style=\"text-align: left;\">Should show how the product was tested, the testcases and the result of the tests</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "5",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:17:00.119Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:17:33.692Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:17:44.932Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p><span style=\"text-align: left;\">Should show how the product was tested, the testcases and the result of the tests</span></p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:51:29.377Z"
+                }
+              ]
+            },
+            {
+              "id": "18",
+              "guid": "1b23219f-afa8-4a09-a505-4224ecb06d5b",
+              "heading": "Assess",
+              "history": [
+                {
+                  "affectedNodeId": "5",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:17:46.889Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:17:49.389Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "guid": "cc671a4a-4bd5-4244-8ca5-07e8e4d3ee5e",
+          "heading": "Presentation Requirements (Teachter)",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:09:17.970Z",
+              "docId": "1234",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:09:24.157Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "11",
+              "guid": "e62fddb8-3e86-43fe-8f5d-a9ae9b1b649d",
+              "heading": "Presenter",
+              "text": "<ul><li><span style=\"text-align: left;\">The assignment presentation document is to be Microsoft Powerpoint or Google Presentation</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "9",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:09:31.776Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:20:36.115Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p><span style=\"text-align: left;\">The assignment presentation document is to be Microsoft Powerpoint or Google Presentation</span></p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:50:43.834Z"
+                }
+              ]
+            },
+            {
+              "id": "22",
+              "guid": "156bf1f2-cfde-458e-9f7e-9073fb5fab00",
+              "heading": "Slides",
+              "text": "<ul><li><span style=\"text-align: left;\">The presentation should have no more that 5 slides excluding the title slide</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "9",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:20:46.299Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:21:17.145Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p><span style=\"text-align: left;\">The presentation should have no more that 5 slides excluding the title slide</span></p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:50:49.678Z"
+                }
+              ]
+            },
+            {
+              "id": "23",
+              "guid": "9f9913a3-08cf-4727-bf84-fac49b69862e",
+              "heading": "Time",
+              "text": "<ul><li><span style=\"text-align: left;\">The presentation of the slides should take a minimum of 3 minutes and no more than 5</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "9",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:21:36.772Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:21:42.752Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p><span style=\"text-align: left;\">The presentation of the slides should take a minimum of 3 minutes and no more than 5</span></p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:50:46.776Z"
+                }
+              ]
+            },
+            {
+              "id": "24",
+              "guid": "5b5dc647-6fc1-4cde-aa63-002cef314305",
+              "heading": "Demonstration time",
+              "text": "<ul><li><span style=\"text-align: left;\">Any technical demonstration should last no longer than 5 minutes</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "9",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:21:52.469Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:22:04.875Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p><span style=\"text-align: left;\">Any technical demonstration should last no longer than 5 minutes</span></p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:50:55.566Z"
+                }
+              ]
+            },
+            {
+              "id": "25",
+              "guid": "0df0fd2f-a45b-4cf8-9eab-db1876465edb",
+              "heading": "Submit Date",
+              "text": "<ul><li><span style=\"text-align: left;\">The assignment presentation document is to be submitted on the following date</span></li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "9",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:23:08.535Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:23:19.531Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p><span style=\"text-align: left;\">The assignment presentation document is to be submitted on the following date</span></p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:50:52.732Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "guid": "8c282ac3-b79e-4847-b44f-911e0f5917d1",
+          "heading": "Functional Requirements (Mert)",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T12:20:52.086Z",
+              "docId": "1234",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T12:21:03.597Z"
+            },
+            {
+              "attributesChanged": {
+                "heading": "Product Requirements (Mert)"
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T12:21:30.834Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "30",
+              "guid": "2527e094-aab8-44e8-8d4e-da3ac51dc630",
+              "heading": "Dashing",
+              "text": "<ul><li>The Player can use a dash to move through the map</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "6",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:44:03.375Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:44:07.571Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:44:10.986Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:44:45.074Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:44:59.234Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>The Player can use a dash to move through the map</p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:50:28.448Z"
+                }
+              ]
+            },
+            {
+              "id": "29",
+              "guid": "82a94018-763c-426f-b234-642ecf6ccc29",
+              "heading": "Upgrade",
+              "text": "<ul><li>The Player can collect gold, go to the Questgiver NPC &amp; upgrade his damage</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "6",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:43:54.847Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "affectedNodeId": "30",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:44:16.816Z",
+                  "docId": "1234",
+                  "structureAction": "SwapDown"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:45:25.329Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>The Player can collect gold, go to the Questgiver NPC &amp; upgrade his damage</p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:50:31.979Z"
+                }
+              ]
+            },
+            {
+              "id": "31",
+              "guid": "ffc903a2-c807-4507-bb4a-d1fb11cb2375",
+              "heading": "Interaction",
+              "text": "<ul><li>The Player can interact with NPCs</li><li>The Player can interact with chests</li><li>The Player can interact with Items on the floor</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "6",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:45:33.209Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:47:29.765Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<ul><li>The Player can interact with NPCs</li><li>The Player can interact with chests</li><li>The Player can interact with Items on the floor</li><li><br></li></ul>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:48:18.250Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<ul><li>The Player can interact with NPCs</li><li>The Player can interact with chests</li><li>The Player can interact with Items on the floor</li><li>The Player can use Health &amp; Stamina Potions</li><li><br></li></ul>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:48:53.712Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<ul><li>The Player can interact with NPCs</li><li>The Player can interact with chests</li><li>The Player can interact with Items on the floor</li><li>The Player can use Health &amp; Stamina Potions</li><li>The Player can interact with a bonfire to save the game progress</li></ul>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:49:09.817Z"
+                }
+              ]
+            },
+            {
+              "id": "32",
+              "guid": "09237e0a-86a3-49bc-8280-d8d7c957048e",
+              "heading": "Potions",
+              "text": "<ul><li>The Player can use Health &amp; Stamina Potions</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "6",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:49:11.888Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:49:19.999Z"
+                }
+              ]
+            },
+            {
+              "id": "33",
+              "guid": "749aaa63-e0d4-419d-8ca6-ebb8271b04b1",
+              "heading": "Savestate",
+              "text": "<ul><li>The Player can interact with a bonfire to save the game progress</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "6",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:49:21.798Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:50:24.275Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "guid": "84d7702e-581b-4574-8473-a2f81b1d3201",
+          "heading": "Non-Functional Requirements (Mert)",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T12:21:15.982Z",
+              "docId": "1234",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T12:21:24.155Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "27",
+              "guid": "fbf2ee30-4693-4284-aff8-7d8c96f52cc3",
+              "heading": "Storage",
+              "text": "<ul><li>When installing the game, it shouldnt take up more than 1gb of your storage</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "8",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:41:11.868Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:41:18.995Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>When installing the game, it shouldnt take up more than 1gb of your storage</p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:51:14.037Z"
+                }
+              ]
+            },
+            {
+              "id": "28",
+              "guid": "1c322d41-b144-47db-9ee0-149503ac424c",
+              "heading": "Time-Saver",
+              "text": "<ul><li>There will no transitions throughout the gameplay, the game will have a consistent path and has no loading screens, therefore the player wont have to waste time in a loading screen</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "8",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:41:26.415Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:42:08.418Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>There will no transitions throughout the gameplay, the game will have a consistent path and has no loading screens, therefore the player wont have to waste time in a loading screen</p>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:51:17.603Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "guid": "6631fb7c-ee5b-4d5a-b9c6-4a1a6b5b6ff6",
+          "heading": "S.M.A.R.T Goals",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T12:21:05.884Z",
+              "docId": "1234",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T12:21:12.992Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "35",
+              "guid": "7b426a8d-1f60-44f5-ba03-898511033af9",
+              "heading": "Feedback",
+              "text": "<ul><li>Get atleast 1 person to write a feedback on Github</li><li>&nbsp; &nbsp; Measured by checking the Issues section on Github</li><li>&nbsp; &nbsp; Achievable and realistic</li><li>&nbsp; &nbsp; Time: 1 after the first goal was achieved</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "34",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:52:53.920Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:53:20.748Z"
+                },
+                {
+                  "affectedNodeId": "34",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:54:18.065Z",
+                  "docId": "1234",
+                  "structureAction": "Promote"
+                },
+                {
+                  "affectedNodeId": "34",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:54:20.409Z",
+                  "docId": "1234",
+                  "structureAction": "SwapUp"
+                }
+              ]
+            },
+            {
+              "id": "34",
+              "guid": "5d49bfa6-c7db-4af3-9c1f-badb81cae568",
+              "heading": "Downloads",
+              "text": "<ul><li>Get atleast 3 downloads on Github in 1 Week after release</li><li>&nbsp; &nbsp; Measured by checking the downloads on the Release section in Github</li><li>&nbsp; &nbsp; Achievable and realistic</li><li>&nbsp; &nbsp; Time: 1 Week after uploading a Release on Github</li></ul>",
+              "history": [
+                {
+                  "affectedNodeId": "7",
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:52:08.384Z",
+                  "docId": "1234",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:52:24.337Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<ul><li><br></li><li>Get atleast 3 downloads on Github in 1 Week after release</li><li>&nbsp; &nbsp; Measured by checking the downloads on the Release section in Github</li><li>&nbsp; &nbsp; Achievable and realistic</li><li>&nbsp; &nbsp; Time: 1 Week after uploading a Release on Github</li></ul>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:52:34.223Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p><br></p><ul><li>Get atleast 3 downloads on Github in 1 Week after release</li><li>&nbsp; &nbsp; Measured by checking the downloads on the Release section in Github</li><li>&nbsp; &nbsp; Achievable and realistic</li><li>&nbsp; &nbsp; Time: 1 Week after uploading a Release on Github</li></ul>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert Bal"
+                  },
+                  "changedOn": "2024-10-01T13:52:50.696Z"
+                }
+              ],
+              "children": [
+                {
+                  "id": "36",
+                  "guid": "3298d665-f5ab-4366-8cd6-c82510cd99cb",
+                  "history": [
+                    {
+                      "affectedNodeId": "34",
+                      "changedBy": {
+                        "company": "",
+                        "email": "mert2003@live.com",
+                        "name": "Mert Bal"
+                      },
+                      "changedOn": "2024-10-01T13:54:09.438Z",
+                      "docId": "1234",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "affectedNodeId": "35",
+                      "changedBy": {
+                        "company": "",
+                        "email": "mert2003@live.com",
+                        "name": "Mert Bal"
+                      },
+                      "changedOn": "2024-10-01T13:54:15.596Z",
+                      "docId": "1234",
+                      "structureAction": "SwapDown"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "guid": "89c0b0f3-5c7a-4783-8550-4f1290af3059",
+          "deleted": true,
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:09:27.424Z",
+              "docId": "1234",
+              "structureAction": "Create"
+            },
+            {
+              "affectedNodeId": "6",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:34.888Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "8",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:35.850Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "7",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:36.332Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:59.276Z"
+            }
+          ]
+        },
+        {
+          "id": "26",
+          "guid": "56ee2ae8-06e0-4430-84df-a35afa4cf917",
+          "deleted": true,
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:23:37.869Z",
+              "docId": "1234",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:03.454Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": true
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:03.676Z"
+            },
+            {
+              "affectedNodeId": "20",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:38.464Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "6",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:38.588Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "8",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:38.750Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "7",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:38.868Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "10",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:39.087Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:59.276Z"
+            }
+          ]
+        },
+        {
+          "id": "21",
+          "guid": "24d254f8-1701-4acd-b16a-a96d69695714",
+          "deleted": true,
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:20:09.668Z",
+              "docId": "1234",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:23:26.630Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": true
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:42.491Z"
+            },
+            {
+              "affectedNodeId": "20",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:43.471Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "6",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:43.610Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "8",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:43.745Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "7",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:43.884Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "10",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:44.043Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "26",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:44.263Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:59.276Z"
+            }
+          ]
+        },
+        {
+          "id": "20",
+          "guid": "e6294eb1-3de8-4e2c-9b9d-e5538b951fb9",
+          "deleted": true,
+          "heading": "Presenter",
+          "text": "<p><span style=\"text-align: left;\">The assignment presentation document is to be Microsoft Powerpoint or Google Presentation</span></p>",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:19:53.321Z",
+              "docId": "1234",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null,
+                "text": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:20:06.427Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:20:19.043Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": true
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:20:22.554Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:20:22.740Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": true
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:20:22.942Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:20:23.780Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": true
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:46.341Z"
+            },
+            {
+              "affectedNodeId": "6",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:47.493Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "8",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:50.932Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "7",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:51.059Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "10",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:51.206Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "26",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:51.350Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "affectedNodeId": "21",
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:51.576Z",
+              "docId": "1234",
+              "structureAction": "SwapDown"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert Bal"
+              },
+              "changedOn": "2024-10-01T13:24:59.276Z"
+            }
+          ]
+        }
+      ],
+      "attributes": {
+      },
+      "templateColumns": {
+      },
+      "views": {
+        "Primary": {
+          "columns": [
+            {
+              "columnId": "id",
+              "width": 65
+            },
+            {
+              "columnId": "description",
+              "width": 500
+            }
+          ],
+          "default": true
+        }
+      }
+    }
+  ],
+  "attachments": {
+  },
+  "traceability": {
+  },
+  "metadata": {
+    "format": "2.17",
+    "saveHistory": true
+  }
+}
