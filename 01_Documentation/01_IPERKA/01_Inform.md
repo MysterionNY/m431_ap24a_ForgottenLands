@@ -33,7 +33,8 @@ Certain inspiration I am going to be using in my tool comes from different games
 * From the teacher I've received the: Document, Product and Presentation Requirements
 * I used ReqView to create an overview of all the Requirements
 ![Product Requirements][PDR]
-![Document Requirements][DR]
+![Document Requirements][DR01]
+![Document Requirements 2][DR02]
 ![Presentation Requirements][PR]
 ![Functional Requirements][FR]
 ![Non Functional Requirements][NFR]
