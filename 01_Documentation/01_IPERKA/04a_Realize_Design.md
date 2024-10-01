@@ -4,14 +4,18 @@
 1. Define how I want to structure my File names
 2. Define a structure for my Github Directories
 3. Define how to structure my Version updates
-4. Design a player character & Animations
+4. Create an UML of the projects scripts
+4. Design a player character with animations
 5. Design two NPCS (A Questgiver & a blacksmith)
 6. Design an interface
 7. Design Quests
-8. Design two Enemies & Animations
+8. Design an Enemy with animations
+9. Design a boss
 9. Sketch a map for my ingame world
 10. Design the map (Houses, paths, etc)
 11. Compose a main theme for my game
+12. Create SFX sounds for the game
+13. Design testcases
 
 ## Structure Files [issue 39]
 * Define my naming conventions for files

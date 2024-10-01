@@ -38,6 +38,7 @@
     * I estimated how long a task would take
     * I tracked my time how long I actually took
     * I've checked whether a Task would create a bigger Subtask or not
+* After creating the tasks and making up my estimate, I tried to not exceed my available hours from my resource plan
 ![Tasklist][TL]
 
 ## Managing the task list
@@ -47,7 +48,10 @@
 * When Ive noticed that a Task created a bigger Subtask, I also added that as a Task itself
 
 ## Checking my progress
-
+* I checked my tasklist what tasks I had open
+* I used due dates to track whether I can still finish the task to that date or if I already finished it
+* By keeping an eye on my clock how much time I had spent for a certain task, I was able to make sure whether I am in my estimated time range or not
+* I compared my project with the requirements and the due date suggestions from the teacher, to know if I am doing good with my progression
 
 [RP]: ../02_Resources/Images/02_ResourcePlan.png
 [TL]: ../02_Resources/Images/02_TaskList.png

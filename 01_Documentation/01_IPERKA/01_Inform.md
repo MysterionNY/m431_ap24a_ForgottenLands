@@ -28,17 +28,20 @@ Certain inspiration I am going to be using in my tool comes from different games
 * World of Warcraft - Questing
 
 ### Requirements for the Product
+* I had to differenciate between my requirements. I myself set me requirements for this product, but also my teacher set me requirements
+* For myself I have the Functional-NonFunctional Requirements
+* From the teacher I've received the: Document, Product and Presentation Requirements
+* I used ReqView to create an overview of all the Requirements
+![Product Requirements][PDR]
+![Document Requirements][DR]
+![Presentation Requirements][PR]
+![Functional Requirements][FR]
+![Non Functional Requirements][NFR]
 
 
 ## SMART Goals
-* Get atleast 3 downloads on Github in 1 Week after release
-    * Measured by checking the downloads on the Release section in Github
-    * Achievable and realistic
-    * Time: 1 Week after uploading a Release on Github
-* Get atleast 1 person to write a feedback on Github
-    * Measured by checking the Issues section on Github
-    * Achievable and realistic
-    * Time: 1 after the first goal was achieved
+* My S.M.A.R.T goals are as followed
+![Smart Goals][SG]
 
 ## Tools [issue 41]
 
@@ -57,8 +60,20 @@ I used Github Desktop to track my files, my changes and upload my commits to Git
 ### ShareX (Screenshot-tool)
 I used ShareX to capture my screenshots, which I have added into my documentation.
 
+### ReqView
+I used ReqView to create an Overview of my Requirements for this project. I created 6 categories to differenciate between the Requirements and created sub-categories to collect all the requirements.
+
 ## References
 No References were needed for this section, because I was already fairly familiar with all these products and information.
 
 
 [issue 41]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/41
+
+
+[DR01]: ../02_Resources/Images/01_DocumentRequirements01.png
+[DR02]: ../02_Resources/Images/01_DocumentRequirements02.png
+[FR]: ../02_Resources/Images/01_FunctionalRequirements.png
+[NFR]: ../02_Resources/Images/01_NonFunctionalRequirements.png
+[PR]: ../02_Resources/Images/01_PresentationRequirements.png
+[PDR]: ../02_Resources/Images/01_ProductRequirements.png
+[SG]: ../02_Resources/Images/01_SmartGoals.png
