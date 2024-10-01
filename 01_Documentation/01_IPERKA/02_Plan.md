@@ -24,9 +24,11 @@
 * I used Githubs internal Project function to identify my tasks and my time limit for each task.
 * For my tracking I used
     * Tasks: What tasks I have
-    * Time est.: my time estimate for the task/issue 
-    * Actual Time: how much time it actually took
-
+    * Time est.: My time estimate for the task/issue 
+    * Actual Time: How much time it actually took
+    * Date begin: The date I want to start work on the task
+    * Date due: The latest time that the task should be finished
+  
 ## Milestones [issue 43]
 * With Githubs milestones, I was able to track my goals for certain dates and also my time consumption
 ![Milestones][MS]
