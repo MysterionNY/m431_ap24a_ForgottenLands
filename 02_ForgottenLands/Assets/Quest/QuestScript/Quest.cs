@@ -27,6 +27,7 @@ public class Quest : ScriptableObject
 
 
 
+
 public enum QuestState
 {
     NotStarted,
@@ -38,13 +39,14 @@ public enum QuestState
 
 public enum QuestStepType { KillEnemies, CollectItems, TalkToNPC }
 
-[System.Serializable]
+[Serializable]
 public class QuestStep
 {
     public string questName;
     public string stepDescription;
     public QuestStepType stepType;       // Define the type of quest step
     public int targetCount;              // The target count for kills or items to collect
+    [NonSerialized]
     public int currentCount;             // Tracks how many have been completed
     public bool isCompleted
     {
@@ -58,4 +60,9 @@ public class QuestStep
             currentCount++;
         }
     }
+    public void ResetCount()
+    {
+        currentCount = 0;
+    }
+
 }

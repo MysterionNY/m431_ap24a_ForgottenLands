@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public List<ChestInteraction> chestInteraction;
     public CurrencyManager currencyManager;
     public RogueAttack rogueAttack;
+    public Quest quest;
     public QuestStep questSteps;
     public NPCQuestInteraction npcQuestInteraction;
 
@@ -33,12 +34,11 @@ public class GameManager : MonoBehaviour
         potionManager = FindObjectOfType<PotionManager>();
         enemies = new List<EnemyHealth>(FindObjectsOfType<EnemyHealth>());
         player = FindObjectOfType<PlayerHealth>();
-        questManager = FindObjectOfType<QuestManager>(); // Ensure this assignment is correct
+        questManager = FindObjectOfType<QuestManager>();
         currencyManager = FindObjectOfType<CurrencyManager>();
         rogueAttack = FindObjectOfType<RogueAttack>();
         npcQuestInteraction = FindObjectOfType<NPCQuestInteraction>();
         chestInteraction = new List<ChestInteraction>(FindObjectsOfType<ChestInteraction>());
-        Debug.Log("GameManager initialized.");
     }
 
     public void StartNewGame()
@@ -57,11 +57,8 @@ public class GameManager : MonoBehaviour
             enemies[i].isDead = false;
             enemies[i].gameObject.SetActive(true);
         }
+*/
 
-        questManager.activeQuests.Clear(); // Clear active quests
-        questManager.completedQuests.Clear(); // Clear completed quests
-        questManager.turnedInQuests.Clear(); // Clear turned in quests
-        */
         Debug.Log("New Game started. Save file deleted, and game state reset.");
     }
 

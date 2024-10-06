@@ -17,7 +17,7 @@ MonoBehaviour:
     bottom of the village, could you retrieve the key?
   steps:
   - questName: 
-    stepDescription: Collect the key
+    stepDescription: Collect the Key
     stepType: 1
     targetCount: 1
     currentCount: 0

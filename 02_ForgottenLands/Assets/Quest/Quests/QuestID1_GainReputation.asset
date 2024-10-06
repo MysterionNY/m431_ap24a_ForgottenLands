@@ -17,7 +17,7 @@ MonoBehaviour:
     village and they are causing a lot of troubles.
   steps:
   - questName: 
-    stepDescription: Kill 2 Goblins
+    stepDescription: Kill Goblins
     stepType: 0
     targetCount: 2
     currentCount: 0

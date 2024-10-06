@@ -117,7 +117,7 @@ public class QuestData
         questName = quest.questName;
         questDescription = quest.questDescription;
         rewardGold = quest.rewardGold;
-        isActive = quest.questState == QuestState.InProgress || quest.questState == QuestState.Accepted;
+        isActive = quest.questState == QuestState.Accepted;
         isCompleted = quest.questState == QuestState.Completed;
         isTurnedIn = quest.questState == QuestState.TurnedIn;
 

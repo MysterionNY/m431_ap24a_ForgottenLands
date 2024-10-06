@@ -31,8 +31,13 @@ public class QuestManager : MonoBehaviour
 
         // Set the instance and mark this GameObject to persist across scenes
         instance = this;
-        DontDestroyOnLoad(gameObject);
     }
+
+    public Quest CreateQuestInstance(Quest quest)
+    {
+        return Instantiate(quest);  // Creates a runtime copy
+    }
+
     public void EnemyKilled(string enemyType)
     {
         // Temporary list to store quests that need to be processed
@@ -88,6 +93,8 @@ public class QuestManager : MonoBehaviour
                 }
             }
         }
+
+
 
         // Complete quests that are finished
         foreach (var quest in questsToComplete)
