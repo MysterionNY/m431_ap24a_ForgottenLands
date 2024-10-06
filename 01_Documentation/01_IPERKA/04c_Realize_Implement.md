@@ -1,6 +1,6 @@
 # Realize_Implement
 
-## High Level
+# High Level
 1. Implement Player
     * Code Camera Follow
     * Code Player Health & Health Bar
@@ -28,9 +28,9 @@
 9. Create Enemy Prefabs
 
 
-## Implement Player
+# Implement Player
 
-### Camera Follow [issue 53]
+## Camera Follow [issue 53]
 1. Add a camera object to the hierachy
 2. code and add CameraFollow.cs to the camera object
 3. Add Player object to the script
@@ -39,7 +39,7 @@
 https://github.com/user-attachments/assets/3119ed5f-6dcb-4ca9-adec-56c4de09c5fe
 
 
-### Player Health [issue 8]
+## Player Health [issue 8]
 1. Add UI Image
 2. Create Children Background and Foreground
 3. Code and add script Player Health to Health object
