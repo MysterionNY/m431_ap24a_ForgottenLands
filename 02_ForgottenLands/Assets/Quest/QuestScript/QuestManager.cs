@@ -44,22 +44,46 @@ public class QuestManager : MonoBehaviour
         List<Quest> questsToComplete = new List<Quest>();
 
         // Iterate through the active quests
-        foreach (var quest in activeQuests)
+        if(enemyType == "Enemy")
         {
-            foreach (var step in quest.steps)
+            foreach (var quest in activeQuests)
             {
-                if (step.stepType == QuestStepType.KillEnemies && !step.isCompleted)
+                foreach (var step in quest.steps)
                 {
-                    step.IncrementCount();
-
-                    // Check if all steps of the quest are completed
-                    if (quest.CheckCompletion())
+                    if (step.stepType == QuestStepType.KillEnemies && !step.isCompleted)
                     {
-                        questsToComplete.Add(quest);
+                        step.IncrementCount();
+
+                        // Check if all steps of the quest are completed
+                        if (quest.CheckCompletion())
+                        {
+                            questsToComplete.Add(quest);
+                        }
                     }
                 }
             }
         }
+
+        if(enemyType == "Boss")
+        {
+            foreach (var quest in activeQuests)
+            {
+                foreach (var step in quest.steps)
+                {
+                    if (step.stepType == QuestStepType.KillBoss && !step.isCompleted)
+                    {
+                        step.IncrementCount();
+
+                        // Check if all steps of the quest are completed
+                        if (quest.CheckCompletion())
+                        {
+                            questsToComplete.Add(quest);
+                        }
+                    }
+                }
+            }
+        }
+        
         // Process completed quests after the iteration
         foreach (var quest in questsToComplete)
         {

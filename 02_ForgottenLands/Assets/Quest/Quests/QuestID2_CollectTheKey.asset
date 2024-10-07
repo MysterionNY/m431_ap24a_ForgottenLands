@@ -14,12 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questName: Bring back the Key
   questDescription: The goblins stole an important key, I've heard they are at the
-    bottom of the village, could you retrieve the key?
+    south of the village, could you retrieve the key?
   steps:
   - questName: 
     stepDescription: Collect the Key
     stepType: 1
     targetCount: 1
-    currentCount: 0
   rewardGold: 350
   questState: 0

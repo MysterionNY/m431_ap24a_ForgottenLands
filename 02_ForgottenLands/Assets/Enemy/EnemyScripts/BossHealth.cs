@@ -16,7 +16,7 @@ public class BossHealth : MonoBehaviour
     private int currentFlash = 0;
 
     private SpriteRenderer spriteRenderer;
-    private SpriteRenderer shadowRenderer;
+    public QuestManager questManager;
     private Animator animator;
     public Image hpBarForeground;
     private Color originalColor;
@@ -28,7 +28,7 @@ public class BossHealth : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        shadowRenderer = GetComponentInChildren<SpriteRenderer>();
+        questManager = FindObjectOfType<QuestManager>();
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
 
@@ -86,8 +86,14 @@ public class BossHealth : MonoBehaviour
 
     void Die()
     {
-        // Handle the boss's death
+        if (isDead) return;
+        isDead = true;
+
+        OnDeath?.Invoke(gameObject);
         Debug.Log("Boss defeated!");
+        questManager.EnemyKilled("Enemy");
+        GetComponent<Collider2D>().enabled = false;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         HandleDeathAfterAnimation();
     }
 

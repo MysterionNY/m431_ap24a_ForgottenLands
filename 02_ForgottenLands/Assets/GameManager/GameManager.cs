@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public Quest quest;
     public QuestStep questSteps;
     public NPCQuestInteraction npcQuestInteraction;
+    public AudioManager audioManager;
 
     private void Awake()
     {
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
         rogueAttack = FindObjectOfType<RogueAttack>();
         npcQuestInteraction = FindObjectOfType<NPCQuestInteraction>();
         chestInteraction = new List<ChestInteraction>(FindObjectsOfType<ChestInteraction>());
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     public void StartNewGame()
@@ -64,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     public void SaveGameData()
     {
-        SaveData.SaveGameData(player, enemies, potionManager, questManager.allQuests, questManager.activeQuests, questManager.completedQuests, questManager.turnedInQuests, currencyManager, rogueAttack, questSteps, npcQuestInteraction, chestInteraction);
+        SaveData.SaveGameData(player, enemies, potionManager, questManager.allQuests, questManager.activeQuests, questManager.completedQuests, questManager.turnedInQuests, currencyManager, rogueAttack, questSteps, npcQuestInteraction, chestInteraction, audioManager);
         Debug.Log("Game data saved.");
     }
 
@@ -74,6 +76,14 @@ public class GameManager : MonoBehaviour
 
         if (data != null)
         {
+            AudioClip loadedClip = Resources.Load<AudioClip>("SFX/" + data.currentAudioClipName);
+            audioManager.audioSource.clip = loadedClip;
+            audioManager.audioSource.Play();
+            audioManager.targetVolume = data.targetAudioVolume;
+            audioManager.audioSource.volume = data.targetAudioVolume;
+            audioManager.audioSource.loop = true;
+            Debug.LogError("Failed to load audio clip: " + data.currentAudioClipName);
+            Debug.LogError("Failed to load audio clip: " + loadedClip);
             player.currentHealth = data.Playerhealth;
             Vector3 playerPosition = new Vector3(data.Playerposition[0], data.Playerposition[1], data.Playerposition[2]);
             player.transform.position = playerPosition;

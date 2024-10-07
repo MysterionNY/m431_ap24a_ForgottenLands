@@ -14,12 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questName: Gain Reputation
   questDescription: Hello Stranger, can you help us? There are goblins outside the
-    village and they are causing a lot of troubles.
+    village, southwest of us. They are causing a lot of trouble.
   steps:
   - questName: 
     stepDescription: Kill Goblins
     stepType: 0
     targetCount: 2
-    currentCount: 0
   rewardGold: 150
   questState: 0

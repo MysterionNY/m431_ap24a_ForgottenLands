@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 [System.Serializable]
 public class GameData
@@ -18,12 +19,16 @@ public class GameData
     public float upgradeCost;
     public int questIndex;
     public bool[] chestOpened;
+    public string currentAudioClipName;
+    public float targetAudioVolume;
 
     public List<QuestData> quests = new List<QuestData>(); // Store quest data
     public List<QuestStepData> questStepsData = new List<QuestStepData>();
 
-    public GameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> allQuests, List<Quest> activeQuests, List<Quest> completedQuests, List<Quest> turnedInQuests, CurrencyManager currencyManager, RogueAttack rogueAttack, QuestStep questStep, NPCQuestInteraction npcQuestInteraction, List<ChestInteraction> chestInteraction)
+    public GameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> allQuests, List<Quest> activeQuests, List<Quest> completedQuests, List<Quest> turnedInQuests, CurrencyManager currencyManager, RogueAttack rogueAttack, QuestStep questStep, NPCQuestInteraction npcQuestInteraction, List<ChestInteraction> chestInteraction, AudioManager audioManager)
     {
+        targetAudioVolume = audioManager.targetVolume;
+        currentAudioClipName = audioManager.audioSource.clip.name;
         gold = currencyManager.gold;
         Playerhealth = player.currentHealth;
         Playerposition = new float[3];

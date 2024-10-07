@@ -51,7 +51,7 @@ public class MainMenuController : MonoBehaviour
     public void OnNewGame()
     {
         SaveData.DeleteSaveFile();
-        SceneManager.LoadScene("Ingame");
+        SceneManager.LoadScene("EnteringTheVillageCS");
     }
 
     public void OnLoadGame()

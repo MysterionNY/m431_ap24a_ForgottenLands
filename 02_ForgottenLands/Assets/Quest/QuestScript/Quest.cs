@@ -37,7 +37,7 @@ public enum QuestState
     TurnedIn
 }
 
-public enum QuestStepType { KillEnemies, CollectItems, TalkToNPC }
+public enum QuestStepType { KillEnemies, CollectItems, TalkToNPC, KillBoss }
 
 [Serializable]
 public class QuestStep
@@ -60,9 +60,4 @@ public class QuestStep
             currentCount++;
         }
     }
-    public void ResetCount()
-    {
-        currentCount = 0;
-    }
-
 }
