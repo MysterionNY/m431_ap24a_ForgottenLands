@@ -73,9 +73,23 @@ public class RogueAttack : MonoBehaviour
                 EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
                 if (enemyHealth != null)
                 {
-                    enemyHealth.TakeDamage((int)attackDamage); // Cast to int if needed
+                    enemyHealth.TakeDamage(attackDamage);
                 }
             }
+        }
+
+        Collider2D[] hitBosses = Physics2D.OverlapCircleAll(transform.position, 0.5f);
+        foreach (Collider2D bosses in hitBosses)
+        {
+            if (bosses.CompareTag("Boss"))
+            {
+                BossHealth bossHealth = bosses.GetComponent<BossHealth>();
+                if (bossHealth != null)
+                {
+                    bossHealth.TakeDamage(attackDamage);
+                }
+            }
+
         }
     }
 

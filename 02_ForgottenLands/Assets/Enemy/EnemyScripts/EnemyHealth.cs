@@ -4,8 +4,8 @@ using TMPro;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int currentHealth;
+    public float maxHealth = 100;
+    public float currentHealth;
     public bool isDead = false;
     public bool dropsKeyItem = false;
     public GameObject keyItemPrefab;
@@ -31,7 +31,7 @@ public class EnemyHealth : MonoBehaviour
         currencyManager = FindObjectOfType<CurrencyManager>();
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if (isDead) return;
 

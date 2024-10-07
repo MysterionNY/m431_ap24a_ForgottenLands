@@ -12,8 +12,8 @@ public class PlayerHealth : MonoBehaviour
     private Color originalColor;
     private Color flashColor = new Color(1f, 0f, 0f, 0.5f); // Solid red color
 
-    public int maxHealth = 100;
-    public int currentHealth;
+    public float maxHealth = 100;
+    public float currentHealth;
     private bool isDead = false;
 
     private bool isFlashing = false;
@@ -47,7 +47,7 @@ public class PlayerHealth : MonoBehaviour
         HandleFlashingEffect();
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if (isDead) return;  // Prevent damage if the player is dead
 

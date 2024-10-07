@@ -3,12 +3,12 @@ using System.Collections.Generic;
 [System.Serializable]
 public class GameData
 {
-    public int Playerhealth;
+    public float Playerhealth;
     public float[] Playerposition;
 
     public float[] EnemyPositions;  // Store all enemy positions
     public bool[] EnemyIsDead;      // Store all enemy states
-    public int[] EnemyHealths;      // Store all enemy health values
+    public float[] EnemyHealths;      // Store all enemy health values
 
     public int healthPotions;       // Store health potion count
     public int staminaPotions;      // Store stamina potion count
@@ -33,7 +33,7 @@ public class GameData
 
         EnemyPositions = new float[enemies.Count * 3];
         EnemyIsDead = new bool[enemies.Count];
-        EnemyHealths = new int[enemies.Count];
+        EnemyHealths = new float[enemies.Count];
 
         chestOpened = new bool[chestInteraction.Count];
 
