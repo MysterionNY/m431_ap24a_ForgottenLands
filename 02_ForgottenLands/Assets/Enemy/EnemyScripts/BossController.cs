@@ -96,12 +96,14 @@ public class BossController : MonoBehaviour
 
     private void UseSpecialAttack()
     {
+        if (isUsingSpecialAttack) return;
+
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         if (distanceToPlayer <= attackRange)
         {
             isUsingSpecialAttack = true;
             specialAttackTimer = specialAttackCooldown; // Reset the cooldown
-            GetComponent<Animator>().SetTrigger("SpecialAttack");
+            animator.SetBool("IsUsingSpecialAttack", true);
             if (fireSound != null)
             {
                 StartCoroutine(AdjustFireSoundVolume(true));
@@ -142,6 +144,7 @@ public class BossController : MonoBehaviour
             fireAOECollider.enabled = false;
         }
         isUsingSpecialAttack = false;
+        animator.SetBool("IsUsingSpecialAttack", false);
 
         if (fireSound != null)
         {
