@@ -73,7 +73,7 @@ public class BossController : MonoBehaviour
                 }
                 else if (!isAttacking)
                 {
-                    StartCoroutine(PerformNormalAttack());
+                    StartCoroutine(PerformSlashAttack());
                 }
             }
             else
@@ -112,19 +112,32 @@ public class BossController : MonoBehaviour
         }
     }
 
-    private IEnumerator PerformNormalAttack()
+    private IEnumerator PerformSlashAttack()
     {
         isAttacking = true;
         StopMovement(); // Ensure the boss stops moving during the attack
 
         // Trigger normal attack animation
-        animator.SetTrigger("NormalAttack");
+        animator.SetTrigger("SlashAttack");
 
         // Wait for the attack animation to complete (customize timing based on animation length)
         yield return new WaitForSeconds(1f);
 
         // Reset attack state
         isAttacking = false;
+    }
+
+    public void DealSlashDamage()
+    {
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        if (distanceToPlayer <= attackRange)
+        {
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(normalAttackDamage);
+            }
+        }
     }
 
     // Called by Animation Event to enable the fire AOE during the special attack
