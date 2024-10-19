@@ -5,9 +5,11 @@
 ## Decision log
 * Decision: Save the game by quitting or by interacting with a bonfire
     * Reason: I chose to interact with a bonfire to save the games progress, rather than by quitting out. This adds another difficulty to the game, to prevent the game to be "too easy", therefore, to keep up with the progression of the game, the Player has to interact with a bonfire to save the game.
+    * The decision is also mentioned in the RQ in here under: 1234-33 ![Functional Requirements - Saving][01_FR]
     * Date: 29.09.2024
 * Decision: Choose the amount of offered Quests
     * Reason: I chose to only do 3 Quests in total, for the time management and the resources it takes to create a Quest, I chose 3 for a clean quick play through. Though theres always the possibility to add more quests to the game.
+    * The decision is also mentioned in the RQ in here under: 1234-29 ![Functional Requirements - Quests][01_FR]
     * Date: 08.09.2024
 * Decision: Choose between Paint.net or Illustrator
     * Reason: I chose Paint.net because I was able to animate my stuff in Unity and Paint.net is much easier to use and free.
@@ -22,3 +24,4 @@
 ![Decision Matrix][DM]
 
 [DM]: ../02_Resources/Images/03_DecisionMatrix.png
+[01_FR]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/01_Inform.md

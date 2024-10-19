@@ -11,20 +11,20 @@
 * I set myself a few goals and structurized my task list
 ![Brainstorm][BS]
 
-
 ## Resource plan [issue 42]
 * I created a Resource plan to track my time
 * When I can work on it, when the due dates are & dates I set myself
 * I marked the days when I will work on it and for how long in green
 * I marked the important dates as red
+* My available hours are 241 hours
 ![Resource Plan][RP]
-
 
 ## Using GitHub as a task list [issue 40]
 * I used Githubs internal Project function to identify my tasks and my time limit for each task.
 * For my tracking I used
     * Tasks: What tasks I have
-    * Time est.: My time estimate for the task/issue 
+    * Time est.: My time estimate for the task/issue
+        * By checking my past knowledge (If I had done something similar), the size of sub-tasks the task could generate and how confident I felt. With that I calculated my estimate
     * Actual Time: How much time it actually took
     * Date begin: The date I want to start work on the task
     * Date due: The latest time that the task should be finished
@@ -49,6 +49,10 @@
 * After an issue or a task was solved/finished, I checked them as Done
 * When Ive noticed that a Task created a bigger Subtask, I also added that as a Task itself
 
+## Creating a Gantt chart
+* I used Github's feature to create a Gantt chart with all the tasks I had included
+![Gantt Chart][GC]
+
 ## Checking my progress
 * I checked my tasklist what tasks I had open
 * I used due dates to track whether I can still finish the task to that date or if I already finished it
@@ -59,6 +63,7 @@
 [TL]: ../02_Resources/Images/02_TaskList.png
 [MS]: ../02_Resources/Images/02_Milestones.png
 [BS]: ../02_Resources/Images/02_Brainstorm.jpeg
+[GC]: ../02_Resources/Images/02_GanttChart.png
 
 [issue 40]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/40
 [issue 42]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/42
