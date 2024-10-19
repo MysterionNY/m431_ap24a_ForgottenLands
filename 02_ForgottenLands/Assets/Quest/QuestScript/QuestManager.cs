@@ -118,8 +118,6 @@ public class QuestManager : MonoBehaviour
             }
         }
 
-
-
         // Complete quests that are finished
         foreach (var quest in questsToComplete)
         {
@@ -138,6 +136,7 @@ public class QuestManager : MonoBehaviour
             quest.questState = QuestState.Accepted;
             activeQuests.Add(quest);
             questLog.UpdateQuestLogUI();
+            UpdateNPCQuestIndicator(quest);
         }
     }
 
@@ -150,6 +149,7 @@ public class QuestManager : MonoBehaviour
             completedQuests.Add(quest);
 
             questLog.UpdateQuestLogUI();
+            UpdateNPCQuestIndicator(quest);
         }
     }
 
@@ -162,7 +162,32 @@ public class QuestManager : MonoBehaviour
             completedQuests.Remove(quest);
             turnedInQuests.Add(quest);
             questLog.UpdateQuestLogUI();
+            UpdateNPCQuestIndicator(quest);
         }
+    }
+
+    void UpdateNPCQuestIndicator(Quest quest)
+    {
+        // Find the NPC associated with the quest (this may vary based on your implementation)
+        NPCQuestInteraction npc = FindNPCByQuest(quest.questName);
+
+        if (npc != null)
+        {
+            npc.UpdateQuestIndicator();
+        }
+    }
+
+    NPCQuestInteraction FindNPCByQuest(string questName)
+    {
+        NPCQuestInteraction[] npcs = FindObjectsOfType<NPCQuestInteraction>();
+        foreach (var npc in npcs)
+        {
+            if (npc.assignedQuests.Exists(q => q.questName == questName))
+            {
+                return npc;
+            }
+        }
+        return null;
     }
 
     void RewardPlayer(int goldAmount)

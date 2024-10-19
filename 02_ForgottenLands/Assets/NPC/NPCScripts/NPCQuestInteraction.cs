@@ -9,6 +9,7 @@ public class NPCQuestInteraction : MonoBehaviour
     public GameObject questAcceptCanvas;                // The panel that shows the quest
     public GameObject questInProgressCanvas;            // Shown when the quest is in progress
     public GameObject player;
+    public QuestIndicatorController questIndicator;
     public Button acceptButton;                         // Reference to the Accept button
     public float interactionRadius = 1f;
     public float closeDistance = 3f;
@@ -18,6 +19,7 @@ public class NPCQuestInteraction : MonoBehaviour
     void Start()
     {
         acceptButton.onClick.AddListener(AcceptQuest);  // Add listener to the Accept button
+        UpdateQuestIndicator();
     }
 
     void Update()
@@ -42,6 +44,7 @@ public class NPCQuestInteraction : MonoBehaviour
                 questInProgressCanvas.SetActive(false);  // Close quest in-progress canvas
             }
         }
+        UpdateQuestIndicator();
     }
 
     void HandleQuestInteraction()
@@ -104,5 +107,33 @@ public class NPCQuestInteraction : MonoBehaviour
 
         questManager.AcceptQuest(newQuest);
         questAcceptCanvas.SetActive(false);  // Hide quest accept canvas after accepting
+
+        UpdateQuestIndicator();
+    }
+
+    public void UpdateQuestIndicator()
+    {
+        // Ensure there's a quest to check
+        if (currentQuestIndex >= assignedQuests.Count)
+        {
+            questIndicator.UpdateQuestIndicator(QuestState.TurnedIn);
+            return;
+        }
+
+        Quest currentQuest = assignedQuests[currentQuestIndex];
+        Quest quest = questManager.GetQuestByName(currentQuest.questName);
+
+        if (quest == null || quest.questState == QuestState.NotStarted)
+        {
+            questIndicator.UpdateQuestIndicator(QuestState.NotStarted);
+        }
+        else if (quest.questState == QuestState.Accepted)
+        {
+            questIndicator.UpdateQuestIndicator(QuestState.Accepted);
+        }
+        else if (quest.questState == QuestState.Completed)
+        {
+            questIndicator.UpdateQuestIndicator(QuestState.Completed);
+        }
     }
 }
