@@ -120,7 +120,7 @@ Transform:
   m_Children:
   - {fileID: 7718843052603577525}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3454398847592164747
 SpriteRenderer:
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd1711c8a74a914dbb2b975428e3313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 80
+  maxHealth: 50
   currentHealth: 0
   isDead: 0
   dropsKeyItem: 0

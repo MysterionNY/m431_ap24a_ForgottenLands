@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource audioSource;
     private AudioSource tempSource; // A temporary AudioSource for crossfading
     public float fadeDuration = 4f; // Duration for the fade effect
-    public float targetVolume = 0.05f;
+    public float targetVolume = 0.15f;
     void Start()
     {
         // Initialize the temporary AudioSource for fading

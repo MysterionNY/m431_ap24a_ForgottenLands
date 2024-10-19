@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BossHealth : MonoBehaviour
@@ -92,6 +93,7 @@ public class BossHealth : MonoBehaviour
         OnDeath?.Invoke(gameObject);
         Debug.Log("Boss defeated!");
         questManager.EnemyKilled("Enemy");
+        SceneManager.LoadScene("CutSceneAfterKillingTheBoss");
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         HandleDeathAfterAnimation();

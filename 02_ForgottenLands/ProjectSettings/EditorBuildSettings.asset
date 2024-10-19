@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EnteringTheVillageCS.unity
     guid: 4cea36dda40417c418eb2826805713ea
+  - enabled: 1
+    path: Assets/Scenes/CutsceneAfterKillingTheBoss.unity
+    guid: ee91f0f065e67054d9d1c9a1e2bff8b0
   m_configObjects: {}
