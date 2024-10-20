@@ -1,7 +1,6 @@
-# m431_ap24a_ForgottenLands
-## Forgotten Lands
+# Forgotten Lands
 
-### Description
+## Description
 Forgotten Lands is an open- world 2D RPG. You have the possibility to explore every area that is accessible. 
 * Features
   * You can interact with NPCs, Treasure-Chests, Bonfires and much more.
@@ -9,10 +8,10 @@ Forgotten Lands is an open- world 2D RPG. You have the possibility to explore ev
   * During all of that, you can solve Quests and earn Gold. 
   * You can use that Gold to increase your damage.
 
-### Story Description
+## Story Description
 You enter a forgotten village in the middle of nowhere. You meet a family of 2, a father and a daughter. They tell you the story about goblins that cause chaos in the village. They ask you for help, will you help them?
 
-### Product Information
+## Product Information
 * Genre:
   * 2D
   * RPG
@@ -29,25 +28,25 @@ You enter a forgotten village in the middle of nowhere. You meet a family of 2, 
 * Published Date:
   * 29.10.2024
 
-### System Requirements
+## System Requirements
 * Minimum Requirements:
   * CPU: Intel I5 7400
   * GPU: GTX 960
   * RAM: 6GB
   * Storage: 300MB
 
-## Links
-### Tutorial how to Install
+# Links
+## Tutorial how to Install
 
-### Download
+## Download
 * A readable tutorial on how to install the game can also be found in this Link
   * [Download]
 
 [Download]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/releases/tag/1.0.0.0
 
-### Gameplay
+## Gameplay
 
-### Documentation
+## Documentation
 * The whole Document can be found in the Repository or by clicking the links below
  * [Proposal]
  * [Inform]
@@ -70,47 +69,47 @@ You enter a forgotten village in the middle of nowhere. You meet a family of 2, 
 [Control]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/05_Control.md
 [Assess]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/06_Control.md
 
-### Source Code
+## Source Code
 * Enemy Scripts:
-  * ![Boss Arena Trigger][BossArenaTrigger]
-  * ![Boss Controller][BossController]
-  * ![Boss Health][BossHealth]
-  * ![Enemy AI][EnemyAI]
-  * ![Enemy Health][EnemyHealth]
-  * ![Enemy Spawner][EnemySpawner]
+  * [Boss Arena Trigger][BossArenaTrigger]
+  * [Boss Controller][BossController]
+  * [Boss Health][BossHealth]
+  * [Enemy AI][EnemyAI]
+  * [Enemy Health][EnemyHealth]
+  * [Enemy Spawner][EnemySpawner]
 * Game Manager:
-  * ![Arena Music Trigger][ArenaMusicTrigger]
-  * ![Audio Manager][AudioManager]
-  * ![Currency Manager][CurrencyManager]
-  * ![Fade In Audio][FadeInAudio]
-  * ![Game Data][GameData]
-  * ![Game Manager][GameManager]
-  * ![Save Data][SaveData]
+  * [Arena Music Trigger][ArenaMusicTrigger]
+  * [Audio Manager][AudioManager]
+  * [Currency Manager][CurrencyManager]
+  * [Fade In Audio][FadeInAudio]
+  * [Game Data][GameData]
+  * [Game Manager][GameManager]
+  * [Save Data][SaveData]
 * Interface:
-  * ![Button Flash][ButtonFlash]
-  * ![Escape Menu][EscapeMenu]
-  * ![Main Menu Controller][MainMenuController]
-  * ![Potion Manager][PotionManager]
+  * [Button Flash][ButtonFlash]
+  * [Escape Menu][EscapeMenu]
+  * [Main Menu Controller][MainMenuController]
+  * [Potion Manager][PotionManager]
 * Items:
-  * ![Chest Interaction][ChestInteraction]
+  * [Chest Interaction][ChestInteraction]
 * Obstacle Scripts:
-  * ![Bonfire Interaction][BonfireInteraction]
+  * [Bonfire Interaction][BonfireInteraction]
 * NPC:
-  * ![Attack Upgrade Panel][AttackUpgradePanel]
-  * ![NPC Quest Interaction][NPCQuestInteraction]
+  * [Attack Upgrade Panel][AttackUpgradePanel]
+  * [NPC Quest Interaction][NPCQuestInteraction]
 * Quest:
-  * ![Drop Key Item][DropKeyItem]
-  * ![Quest][Quest]
-  * ![Quest Indicator Controller][QuestIndicatorController]
-  * ![Quest Log][QuestLog]
-  * ![Quest Manager][QuestManager]
+  * [Drop Key Item][DropKeyItem]
+  * [Quest][Quest]
+  * [Quest Indicator Controller][QuestIndicatorController]
+  * [Quest Log][QuestLog]
+  * [Quest Manager][QuestManager]
 * Player:
-  * ![Camera Follow][CameraFollow]
-  * ![Player Health][PlayerHealth]
-  * ![Player Stamina][PlayerStamina]
-  * ![Rogue Attack][RogueAttack]
-  * ![Rogue Movement][RogueMovement]
-  * ![Walking Sounds][WalkingSounds]
+  * [Camera Follow][CameraFollow]
+  * [Player Health][PlayerHealth]
+  * [Player Stamina][PlayerStamina]
+  * [Rogue Attack][RogueAttack]
+  * [Rogue Movement][RogueMovement]
+  * [Walking Sounds][WalkingSounds]
 
 
 
