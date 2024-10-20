@@ -34,7 +34,7 @@
 1. Add a camera object to the hierachy
 2. code and add CameraFollow.cs to the camera object
 3. Add Player object to the script
-4. Committed code: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/commit/ed01376cdbcd7fbdf365a573c278eb13d8790929#diff-01b8dac1c0774579d381e2273e44f48ff8aaf313bd6c9797d6b0c522b96a5864
+4. Committed code: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/CameraFollow.cs
 
 https://github.com/user-attachments/assets/3119ed5f-6dcb-4ca9-adec-56c4de09c5fe
 
@@ -43,14 +43,38 @@ https://github.com/user-attachments/assets/3119ed5f-6dcb-4ca9-adec-56c4de09c5fe
 1. Add UI Image
 2. Create Children Background and Foreground
 3. Code and add script Player Health to Health object
-4. Add images to the obvject
+4. Add images to the object
 5. Committed Codes: 
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/commit/ed01376cdbcd7fbdf365a573c278eb13d8790929#diff-1d16ac02826bc2314403ca9b6ac3bb5e60fbebcdc14a60c952435b14696c958f
-    2. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/commit/d073dbf4b4ff5ac60012d2221a4ea12b4434e051#diff-1d16ac02826bc2314403ca9b6ac3bb5e60fbebcdc14a60c952435b14696c958f
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerHealth.cs
 
 https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 
 
+## Player Stamina [issue 44]
+1. Add UI Image
+2. Create Children Background and Foreground
+3. Code and add script Player Stamina to Stamina object
+4. Add images to the object
+5. Committed Codes:
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerStamina.cs
 
-[issue 8]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/8 (Design a Health & stamina Potion)
-[issue 53]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/53 (Code Camera Follow)
+
+
+## Player Attack [issue 20]
+1. Add animation to the player gameobject
+2. Attach Player attack script to the gameobject
+3. Adjust code to run the animation via the Animator
+4. Committed Codes:
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueAttack.cs
+
+
+## Player Movement & Dash [issue 20] [issue 28]
+
+
+
+
+[issue 8]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/8
+[issue 20]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/20
+[issue 28]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/28
+[issue 44]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/44
+[issue 53]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/53

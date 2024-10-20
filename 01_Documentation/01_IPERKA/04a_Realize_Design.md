@@ -66,6 +66,7 @@
 
 ## Map design (Content) [issue 46] [issue 16]
 * Design content for the map
+
 ![Bonfire][bonfire]
 ![Treasure Chest][treasureChest]
 ![Key][key]
@@ -76,6 +77,7 @@
 * I wrote down the music I played, down on a note sheet
 * I used Unitys loop function, to loop through the song
 ![Main Theme Note Sheet][mainThemeNoteSheet]
+![Frost Bane Main Theme Note Sheet][frostBaneThemeSheet]
 
 https://github.com/user-attachments/assets/5e12be21-8c75-4faf-b605-bff890f14364
 
@@ -117,3 +119,4 @@ https://github.com/user-attachments/assets/5e12be21-8c75-4faf-b605-bff890f14364
 [treasurechest]: ../02_Resources/Images/04a_Treasurechest.png
 [fenceStructure]: ../02_Resources/Images/04a_FenceStructure.png
 [mainThemeNoteSheet]: ../02_Resources/Images/04a_MainThemeNoteSheet.jpg
+[frostBaneThemeSheet]: ../02_Resources/Images/04a_FrostBaneMainTheme.jpg
