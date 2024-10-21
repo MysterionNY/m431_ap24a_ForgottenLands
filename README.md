@@ -9,7 +9,7 @@ Forgotten Lands is an open- world 2D RPG. You have the possibility to explore ev
   * You can use that Gold to increase your damage.
 
 ## Story Description
-You enter a forgotten village in the middle of nowhere. You meet a family of 2, a father and a daughter. They tell you the story about goblins that cause chaos in the village. They ask you for help, will you help them?
+You enter a forgotten village in the middle of nowhere. You meet a family of 2, a father and a daughter. They tell you the story about Frost Bane, he who had turned the other villagers into Goblins. They ask you for help, will you help them?
 
 ## Product Information
 * Genre:

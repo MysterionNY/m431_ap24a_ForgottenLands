@@ -39,7 +39,7 @@
 https://github.com/user-attachments/assets/3119ed5f-6dcb-4ca9-adec-56c4de09c5fe
 
 
-## Player Health [issue 8]
+## Player Health [issue 9]
 1. Add UI Image
 2. Create Children Background and Foreground
 3. Code and add script Player Health to Health object
@@ -60,7 +60,7 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 
 
 
-## Player Attack [issue 20]
+## Player Attack [issue 9] [issue 20]
 1. Add animation to the player gameobject
 2. Attach Player attack script to the gameobject
 3. Adjust code to run the animation via the Animator
@@ -69,11 +69,24 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 
 
 ## Player Movement & Dash [issue 20] [issue 28]
+1. Add animation to the player gameobject
+2. Attach Player Movement script to the gameobject
+3. Adjust code to run the animation via the Animator
+4. Committed Codes:
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueMovement.cs
+
+# Implement Enemies 
+
+## EnemyAI [issue 10]
+
+## EnemyHealth [issue 9]
 
 
 
 
 [issue 8]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/8
+[issue 9]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/9
+[issue 10]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/10
 [issue 20]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/20
 [issue 28]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/28
 [issue 44]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/44
