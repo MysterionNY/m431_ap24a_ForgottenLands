@@ -81,6 +81,7 @@ You enter a forgotten village in the middle of nowhere. You meet a family of 2, 
   * [Arena Music Trigger][ArenaMusicTrigger]
   * [Audio Manager][AudioManager]
   * [Currency Manager][CurrencyManager]
+  * [Potion Manager][PotionManager]
   * [Fade In Audio][FadeInAudio]
   * [Game Data][GameData]
   * [Game Manager][GameManager]
@@ -89,7 +90,6 @@ You enter a forgotten village in the middle of nowhere. You meet a family of 2, 
   * [Button Flash][ButtonFlash]
   * [Escape Menu][EscapeMenu]
   * [Main Menu Controller][MainMenuController]
-  * [Potion Manager][PotionManager]
 * Items:
   * [Chest Interaction][ChestInteraction]
 * Obstacle Scripts:
@@ -114,42 +114,42 @@ You enter a forgotten village in the middle of nowhere. You meet a family of 2, 
 
 
 
-[BossArenaTrigger]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossArenaTrigger.cs
-[BossController]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossController.cs
-[BossHealth]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossHealth.cs
-[EnemyAI]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemyAI.cs
-[EnemyHealth]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemyHealth.cs
-[EnemySpawner]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemySpawner.cs
+[BossArenaTrigger]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossArenaTrigger.cs
+[BossController]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossController.cs
+[BossHealth]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossHealth.cs
+[EnemyAI]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemyAI.cs
+[EnemyHealth]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemyHealth.cs
+[EnemySpawner]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemySpawner.cs
 
-[ArenaMusicTrigger]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/GameManager/AreaMusicTrigger.cs
-[AudioManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/GameManager/AudioManager.cs
-[CurrencyManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/GameManager/CurrencyManager.cs
-[FadeInAudio]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/GameManager/FadeInAudio.cs
-[GameData]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/GameManager/GameData.cs
-[GameManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/GameManager/GameManager.cs
-[SaveData]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/GameManager/SaveData.cs
+[ArenaMusicTrigger]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/AreaMusicTrigger.cs
+[AudioManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/AudioManager.cs
+[CurrencyManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/CurrencyManager.cs
+[FadeInAudio]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/FadeInAudio.cs
+[GameData]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/GameData.cs
+[GameManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/GameManager.cs
+[SaveData]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/SaveData.cs
 
-[ButtonFlash]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Interface/InterfaceScripts/ButtonFlash.cs
-[EscapeMenu]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Interface/InterfaceScripts/EscapeMenu.cs
-[MainMenuController]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Interface/InterfaceScripts/MainMenuController.cs
-[PotionManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Interface/InterfaceScripts/PotionManager.cs
+[ButtonFlash]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/ButtonFlash.cs
+[EscapeMenu]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/EscapeMenu.cs
+[MainMenuController]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/MainMenuController.cs
+[PotionManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/PotionManager.cs
 
-[ChestInteraction]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Items/ItemScripts/ChestInteraction.cs
+[ChestInteraction]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Items/ItemScripts/ChestInteraction.cs
 
-[BonfireInteraction]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/MapObjects/ObstacleScripts/BonfireInteraction.cs
+[BonfireInteraction]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/MapObjects/ObstacleScripts/BonfireInteraction.cs
 
-[AttackUpgradePanel]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/NPC/NPCScripts/AttackUpgradePanel.cs
-[NPCQuestInteraction]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/NPC/NPCScripts/NPCQuestInteraction.cs
+[AttackUpgradePanel]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/NPC/NPCScripts/AttackUpgradePanel.cs
+[NPCQuestInteraction]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/NPC/NPCScripts/NPCQuestInteraction.cs
 
-[DropKeyItem]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Quest/QuestScript/DropKeyItem.cs
-[Quest]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Quest/QuestScript/Quest.cs
-[QuestIndicatorController]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Quest/QuestScript/QuestIndicatorController.cs
-[QuestLog]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Quest/QuestScript/QuestLog.cs
-[QuestManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Quest/QuestScript/QuestManager.cs
+[DropKeyItem]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/QuestScript/DropKeyItem.cs
+[Quest]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/QuestScript/Quest.cs
+[QuestIndicatorController]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/QuestScript/QuestIndicatorController.cs
+[QuestLog]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/QuestScript/QuestLog.cs
+[QuestManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/QuestScript/QuestManager.cs
 
-[CameraFollow]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/CameraFollow.cs
-[PlayerHealth]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerHealth.cs
-[PlayerStamina]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerStamina.cs
-[RogueAttack]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueAttack.cs
-[RogueMovement]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueMovement.cs
-[WalkingSounds]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/1.0.0.0/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/WalkingSounds.cs
+[CameraFollow]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/CameraFollow.cs
+[PlayerHealth]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerHealth.cs
+[PlayerStamina]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerStamina.cs
+[RogueAttack]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueAttack.cs
+[RogueMovement]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueMovement.cs
+[WalkingSounds]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/WalkingSounds.cs
