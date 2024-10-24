@@ -14,6 +14,7 @@
 11. Design the map (Houses, paths, etc)
 12. Compose music for the game
 13. Design testcases
+14. Design a controlled feedback
 
 ## Structure Files [issue 39]
 * Define my naming conventions for files
@@ -82,6 +83,8 @@
 https://github.com/user-attachments/assets/5e12be21-8c75-4faf-b605-bff890f14364
 
 ## Testcases
+
+## Controlled feedback
 
 [issue 2]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/2
 [issue 6]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/6
