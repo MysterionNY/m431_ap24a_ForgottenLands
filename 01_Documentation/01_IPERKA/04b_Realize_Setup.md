@@ -10,6 +10,7 @@
 ## Setup Unity & Visual Studio 2022 [issue 38]
 * Download and setup Unity
 * Install VS2022 with Unity
+
 ![Install Unity][unity1]
 ![Install Unity][unity2]
 ![Install Unity][unity3]
@@ -19,7 +20,9 @@
 
 ## Setup Paint.Net
 * Download and setup paint.net
+
 ![Install Paint.net][paint1]
+
 ![Install Paint.net][paint2]
 ![Install Paint.net][paint3]
 ![Install Paint.net][paint4]
@@ -29,6 +32,7 @@
 
 ## Setup ShareX
 * Download and setup ShareX
+
 ![Install ShareX][sharex1]
 ![Install ShareX][sharex2]
 ![Install ShareX][sharex3]

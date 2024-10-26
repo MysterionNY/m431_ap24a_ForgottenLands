@@ -139,6 +139,9 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 5. Committed code:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/CurrencyManager.cs
 
+![Currency with Gold][currencyManagerWG]
+![Currency with no Gold][currencyManagerNG]
+
 ## PotionManager [issue 29]
 1. Create a TMP text object that defines the current amount of potions
 2. Create an image object, that switches between Health, Stamina and empty potion
@@ -256,6 +259,32 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 1. [issue 52] - SaveData - the quest progress wasn't saved by the save system
 2. [issue 62] - Quest - Questkey can be collected before the quest was accepted, hence the quest didn't progress didn't work
 
+## References
+* Prevent Scriptable Objects from saving values inbetween sessions
+    * Reddit
+    * Retrieved: October 6, 2024
+    * from: https://www.reddit.com/r/Unity3D/comments/hhfzqt/how_to_stop_scriptable_objects_from_saving/
+* How to prevent faster movement when walking diagonally
+    * Youtube
+    * Retrieved: September 12, 2024
+    * from: https://www.youtube.com/shorts/0cYjreg7dpg
+* Create a Quest System with Scriptable Objects
+    * Reddit
+    * Retrieved: September 8, 2024
+    * from: https://www.reddit.com/r/Unity2D/comments/qq6dlg/learn_to_create_a_storyquest_system_in_unity_and/
+* Set up main menu buttons
+    * Youtube
+    * Retrieved: September 6, 2024
+    * from: https://www.youtube.com/watch?v=DX7HyN7oJjE
+* Set the hierachy of objects
+    * Unity discussions
+    * Retrieved: September 1, 2024
+    * from: https://discussions.unity.com/t/walking-in-front-of-behind-object-with-conditions/832982
+* Set up gitignore for Unity project Github
+    * Youtube
+    * Retrieved: August 28, 2024
+    * from: https://www.youtube.com/watch?v=qpXxcvS-g3g&t
+
 
 [issue 8]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/8
 [issue 9]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/9
@@ -285,3 +314,5 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 [testcases2]: ../02_Resources/Images/04c_Testcases2.png
 [testcases3]: ../02_Resources/Images/04c_Testcases3.png
 [testcases4]: ../02_Resources/Images/04c_Testcases4.png
+[currencyManagerNG]: ../02_Resources/Images/04c_CurrencyNoGold.png
+[currencyManagerWG]: ../02_Resources/Images/04c_CurrencyWithGold.png
