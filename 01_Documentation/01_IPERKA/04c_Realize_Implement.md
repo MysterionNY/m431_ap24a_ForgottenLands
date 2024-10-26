@@ -64,6 +64,12 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 5. Committed Codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerStamina.cs
 
+
+
+https://github.com/user-attachments/assets/ac5ff147-da64-4a92-a96a-42fc10ba97ea
+
+
+
 ## Player Attack [issue 9] [issue 20]
 1. Using the Flowchart from [issue 58] I created my script
 2. Add animation to the player gameobject
@@ -73,12 +79,23 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueAttack.cs
 
 
+
+https://github.com/user-attachments/assets/b9c1501b-a380-46db-8f70-7f61aa6e53f3
+
+
+
 ## Player Movement & Dash [issue 20] [issue 28]
 1. Add animation to the player gameobject
 2. Attach Player Movement script to the gameobject
 3. Adjust code to run the animation via the Animator
 4. Committed Codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueMovement.cs
+
+
+
+https://github.com/user-attachments/assets/09cf407f-cf4c-4c77-88dd-6ec0286b04de
+
+
 
 # Implement Enemies 
 
@@ -90,6 +107,12 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 5. Adjust the values in the script that is on the object
 6. Committed Codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemyAI.cs
+
+
+
+https://github.com/user-attachments/assets/20dd670a-ff19-4214-9fb0-2eeb7211b1ef
+
+
 
 ## EnemyHealth [issue 9]
 1. Add UI Image
@@ -114,6 +137,12 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 4. Adjust the values in the script that is on the object
 5. Committed Codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossController.cs
+  
+
+
+https://github.com/user-attachments/assets/f4d4c0cf-9cb2-4e59-921c-5277c9107aa6
+
+
 
 ## BossHealth [issue 33]
 1. Add UI Image
@@ -122,12 +151,24 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 4. Committed codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossHealth.cs
 
+
+
+https://github.com/user-attachments/assets/e5bdf369-3bcd-4f5f-9305-574b7e1815da
+
+
+
 ## BossArenaTrigger [issue 34]
 1. Create an empty gameobject
 2. Define a box collider set to trigger
 3. If Player enters that box collider area the Boss HP will appear
 4. Committed codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossArenaTrigger.cs
+
+
+
+https://github.com/user-attachments/assets/7a0c8991-b5ce-473f-826e-2091b8727a5f
+
+
 
 # Implement GameManager
 
@@ -150,6 +191,12 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 5. Committed codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/PotionManager.cs
 
+
+
+https://github.com/user-attachments/assets/2e9a999a-9f9b-4571-8d31-2b86bddd19c1
+
+
+
 ## GameData, GameManager & SaveData [issue 11]
 1. Using the Flowchart from [issue 58] I created my script
 2. Create an empty object
@@ -159,6 +206,12 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/GameData.cs
     2. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/GameManager.cs
     3. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/SaveData.cs
+
+
+
+https://github.com/user-attachments/assets/7f9d3f87-2eca-4d65-a244-e45c1d012817
+
+
 
 # Implement Interface
 
@@ -179,7 +232,6 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 5. Connect the button objects with the script
 6. Committed Codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/MainMenuController.cs
-
 
 # Implement Quests
 
@@ -216,6 +268,12 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
     3. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/NPC/NPCScripts/NPCQuestInteraction.cs
     4.  https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/NPC/NPCScripts/AttackUpgradePanel.cs
 
+
+
+https://github.com/user-attachments/assets/8a727a73-70fc-41f2-9674-5e07be32f388
+
+
+
 # Implement SFX
 
 ## AreaMusicTrigger [issue 36]
@@ -247,6 +305,12 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 # Enemy Prefabs
 1. Move the Enemy object from the hierachy to the assets folder
 2. Attach the prefab to the script from [issue 10]
+
+
+
+https://github.com/user-attachments/assets/944f5c96-cad2-4e7d-bbee-874da1ef61b9
+
+
 
 # Implement Testcases [issue 64]
 1. By checking through the requirements, I created my testcases
