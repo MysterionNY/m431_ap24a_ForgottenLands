@@ -224,6 +224,8 @@ https://github.com/user-attachments/assets/7f9d3f87-2eca-4d65-a244-e45c1d012817
 6. Committed Codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/EscapeMenu.cs
 
+![Escapemenu][escapemenu]
+
 ## MainMenuController [issue 30]
 1. Create a canvas
 2. Create and attach 4 button objects to the canvas
@@ -232,6 +234,8 @@ https://github.com/user-attachments/assets/7f9d3f87-2eca-4d65-a244-e45c1d012817
 5. Connect the button objects with the script
 6. Committed Codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/MainMenuController.cs
+
+![Main menu][mainMenu]
 
 # Implement Quests
 
@@ -251,6 +255,10 @@ https://github.com/user-attachments/assets/7f9d3f87-2eca-4d65-a244-e45c1d012817
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/QuestScript/Quest.cs
     2. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/QuestScript/QuestManager.cs
     3. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/QuestScript/QuestLog.cs
+
+![Questlog][questlog]
+![Accept Quest][acceptQuest]
+![Quest still active][questStillActive]
 
 # Implement World Surroundings
 
@@ -380,3 +388,8 @@ https://github.com/user-attachments/assets/944f5c96-cad2-4e7d-bbee-874da1ef61b9
 [testcases4]: ../02_Resources/Images/04c_Testcases4.png
 [currencyManagerNG]: ../02_Resources/Images/04c_CurrencyNoGold.png
 [currencyManagerWG]: ../02_Resources/Images/04c_CurrencyWithGold.png
+[escapeMenu]: ../02_Resources/Images/04c_EscapeMenu.png
+[mainMenu]: ../02_Resources/Images/04a_MainMenuBackground.jpeg
+[questlog]: ../02_Resources/Images/04c_QuestLog.png
+[acceptQuest]: ../02_Resources/Images/04c_AcceptQuest.png
+[questStillActive]: ../02_Resources/Images/04c_QuestStillActive.png
