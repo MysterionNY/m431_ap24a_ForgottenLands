@@ -20,17 +20,57 @@
 * I tested each scenario and received these results
 ![Testcase 1][testcases1]
 
+
+
+https://github.com/user-attachments/assets/05bd590d-1315-49ff-b0b7-017b85f5e412
+
+
+
 ### Testcase 2
 * I tested each scenario and received these results
 ![Testcase 2][testcases2]
+
+
+
+https://github.com/user-attachments/assets/d78ce06b-f36a-4285-bea9-866f813b6264
+
+
+
+https://github.com/user-attachments/assets/72ed1130-fb12-4aa1-9eb3-622639bdd3c7
+
+
+
+https://github.com/user-attachments/assets/6fae08f8-11e1-40cb-ba54-8b0436b2c7da
+
+
 
 ### Testcase 3
 * I tested each scenario and received these results
 ![Testcase 3][testcases3]
 
+
+
+https://github.com/user-attachments/assets/f74490d3-933d-4ca3-bd5e-83b156583412
+
+
+
+https://github.com/user-attachments/assets/7a291735-dd09-4deb-b4ce-7feaa098997f
+
+
+
+https://github.com/user-attachments/assets/bf3f37eb-43c1-4f5a-84e4-dc19c7ff32e2
+
+
+
 ### Testcase 4
 * I tested each scenario and received these results
 ![Testcase 4][testcases4]
+
+
+
+https://github.com/user-attachments/assets/679c9a9e-fd3b-4c87-b3a0-87f262fd7cbc
+
+
 
 ## Review the code
 * I used my coding knowledge and checked through the code if I kept up the syntax
@@ -51,6 +91,7 @@
 * The feedback returned successful results
 * One bug was found by 2 of the 3 testers
 * I received feedback for future suggestions
+
 ![Feedback 1][feedback1]
 ![Feedback 2][feedback2]
 ![Feedback 3][feedback3]
