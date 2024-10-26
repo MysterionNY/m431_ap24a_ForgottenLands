@@ -78,7 +78,7 @@ You enter a forgotten village in the middle of nowhere. You meet a family of 2, 
   * [Enemy Health][EnemyHealth]
   * [Enemy Spawner][EnemySpawner]
 * Game Manager:
-  * [Arena Music Trigger][ArenaMusicTrigger]
+  * [Area Music Trigger][AreaMusicTrigger]
   * [Audio Manager][AudioManager]
   * [Currency Manager][CurrencyManager]
   * [Potion Manager][PotionManager]
@@ -121,7 +121,7 @@ You enter a forgotten village in the middle of nowhere. You meet a family of 2, 
 [EnemyHealth]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemyHealth.cs
 [EnemySpawner]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemySpawner.cs
 
-[ArenaMusicTrigger]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/AreaMusicTrigger.cs
+[AreaMusicTrigger]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/AreaMusicTrigger.cs
 [AudioManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/AudioManager.cs
 [CurrencyManager]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/CurrencyManager.cs
 [FadeInAudio]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/GameManager/FadeInAudio.cs

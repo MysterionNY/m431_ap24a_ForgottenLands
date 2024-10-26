@@ -9,11 +9,71 @@
 6. Final Summary
 
 ## Designing testcases
+* I checked my functional requirements and identified testcases
+* For each testcase I set up a possible tests, what to do and what result was expected
+* I then tested each testcase 3 times before returning my final result
+* Each testcase looks for functionality and if it meets the expect results
+* The testcases can be found under implement testcases in: [Implementing testcases](https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/04c_Realize_Implement.md)
 
+## Testing the testcases
+### Testcase 1
+* I tested each scenario and received these results
+![Testcase 1][testcases1]
+
+### Testcase 2
+* I tested each scenario and received these results
+![Testcase 2][testcases2]
+
+### Testcase 3
+* I tested each scenario and received these results
+![Testcase 3][testcases3]
+
+### Testcase 4
+* I tested each scenario and received these results
+![Testcase 4][testcases4]
+
+## Review the code
+* I used my coding knowledge and checked through the code if I kept up the syntax
+* By using knowledge that I was taught during my work, I checked through the semantics if they made sense
+* I asked a good friend who's a full-stack developer
+* He told me:
+    * I should split functions into more classes, instead of keeping so many in a single class
+    * I shouldn't use Scriptable Objects to create quests in future and bigger games, because they aren't such a good practice for quest systems
+
+## Review the documentation
+* I checked through my documentation requirements, which were set by Mr. Devlin
+* I checked through each requirement if I finished them
+![Document requirements 1][documentRQ1]
+![Document requirements 2][documentRQ2]
 
 ## Colleagues review
-* By using the controlled feedback forms I created in ISSUE XX I received feedback
+* By using the controlled feedback forms I created in [issue 59] I received feedback
 * The feedback returned successful results
-* No additional bug was found by any of the players
+* One bug was found by 2 of the 3 testers
 * I received feedback for future suggestions
-* I will be reviewing those in more detail in the assessment
+![Feedback 1][feedback1]
+![Feedback 2][feedback2]
+![Feedback 3][feedback3]
+
+## Final Summary
+* All my testcases were successful
+* The test protocol can be seen below
+![Testcase results][testcaseResults]
+
+
+## Open bugs
+* [issue 62] - Quest - Questkey can be collected before the quest was accepted
+
+
+[issue 59]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/59
+
+[testcases1]: ../02_Resources/Images/05_Testcase1.png
+[testcases2]: ../02_Resources/Images/05_Testcase2.png
+[testcases3]: ../02_Resources/Images/05_Testcase3.png
+[testcases4]: ../02_Resources/Images/05_Testcase4.png
+[documentRQ1]: ../02_Resources/Images/05_DocumentRequirements01_Status.png
+[documentRQ2]: ../02_Resources/Images/05_DocumentRequirements02_Status.png
+[feedback1]: ../02_Resources/Images/05_Feedback1.png
+[feedback2]: ../02_Resources/Images/05_Feedback2.png
+[feedback3]: ../02_Resources/Images/05_Feedback3.png
+[testcaseResults]: ../02_Resources/Images/05_TestcaseResults.png

@@ -12,9 +12,10 @@
 9. Design a boss
 10. Sketch a map for my ingame world
 11. Design the map (Houses, paths, etc)
-12. Compose music for the game
-13. Design testcases
-14. Design a controlled feedback
+12. _Design a main menu background_
+13. Compose music for the game
+14. Design testcases
+15. Design a controlled feedback
 
 ## Structure Files [issue 39]
 * Define my naming conventions for files
@@ -73,6 +74,11 @@
 ![Key][key]
 ![Fence Structure][fenceStructure]
 
+## Design a main menu background [issue 61]
+* _I used Microsoft's AI Image Generator to generate the game's main menu background_
+* _The Prompt can be found under input in the [issue 61]
+![Main Menu Background][mainMenuBackground]
+
 ## Compose music [issue 35]
 * I composed a theme song with my piano
 * I wrote down the music I played, down on a note sheet
@@ -82,9 +88,18 @@
 
 https://github.com/user-attachments/assets/5e12be21-8c75-4faf-b605-bff890f14364
 
-## Testcases
 
-## Controlled feedback
+
+## Testcases [issue 60]
+* I reviewed my functional requirements and set up testcases which can be found in implement
+![Testcases][testcases]
+
+## Controlled feedback [issue 59]
+* I used Google Forms to create a controlled feedback
+* I stated questions that will cause the user to return me a useful answer
+![Controlled Feedback 1][controlledFeedback1]
+![Controlled Feedback 2][controlledFeedback2]
+![Controlled Feedback 3][controlledFeedback3]
 
 [issue 2]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/2
 [issue 6]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/6
@@ -98,6 +113,9 @@ https://github.com/user-attachments/assets/5e12be21-8c75-4faf-b605-bff890f14364
 [issue 39]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/39
 [issue 46]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/46
 [issue 58]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/58
+[issue 59]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/59
+[issue 60]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/60
+[issue 61]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/61
 
 [namingFiles]: ../02_Resources/Images/04a_NamingConventions.png
 [mapSketchAll]: ../02_Resources/Images/04a_MapSketchAll.jpg
@@ -123,3 +141,8 @@ https://github.com/user-attachments/assets/5e12be21-8c75-4faf-b605-bff890f14364
 [fenceStructure]: ../02_Resources/Images/04a_FenceStructure.png
 [mainThemeNoteSheet]: ../02_Resources/Images/04a_MainThemeNoteSheet.jpg
 [frostBaneThemeSheet]: ../02_Resources/Images/04a_FrostBaneMainTheme.jpg
+[mainMenuBackground]: ../02_Resources/Images/04a_MainMenuBackground.jpeg
+[controlledFeedback1]: ../02_Resources/Images/04a_ControlledFeedback1.png
+[controlledFeedback2]: ../02_Resources/Images/04a_ControlledFeedback2.png
+[controlledFeedback3]: ../02_Resources/Images/04a_ControlledFeedback3.png
+[testcases]: ../02_Resources/Images/04a_Testcases.png
