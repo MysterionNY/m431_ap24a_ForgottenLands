@@ -5,6 +5,7 @@
 2. A plan for my time management
 3. My list of milestones
 4. My list of tasks to achieve my final goal
+5. Checking my progress
 
 ## Brainstorm
 * I thought of how long certain tasks will take and what I will have to do
