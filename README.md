@@ -33,7 +33,7 @@ You enter a forgotten village in the middle of nowhere. You meet a family of two
   * CPU: Intel I5 7400
   * GPU: GTX 960
   * RAM: 6GB
-  * Storage: 100MB
+  * Storage: 200MB
 
 # Links
 ## Tutorial how to Install
