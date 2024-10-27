@@ -20,6 +20,7 @@ public class QuestManager : MonoBehaviour
     public CurrencyManager currencyManager;
     public static QuestManager instance;
 
+
     private void Awake()
     {
         // If an instance already exists and it's not this one, destroy this one
@@ -38,6 +39,8 @@ public class QuestManager : MonoBehaviour
         return Instantiate(quest);  // Creates a runtime copy
     }
 
+    // Checks if the enemy was killed when quest is active
+    // Parameter checks for the enemy type (Goblin, Boss etc)
     public void EnemyKilled(string enemyType)
     {
         // Temporary list to store quests that need to be processed
@@ -92,6 +95,8 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    // Checks if the quest is active
+    // Parameter checks if the quest name matches to know where to assign it to
     public void ItemCollected(string questName)
     {
         List<Quest> questsToComplete = new List<Quest>();
@@ -129,6 +134,8 @@ public class QuestManager : MonoBehaviour
         questLog.UpdateQuestLogUI();
     }
 
+    // Accepts Quest
+    // Parameter checks if the list of quest states already contain that quest
     public void AcceptQuest(Quest quest)
     {
         if (!activeQuests.Contains(quest) && !completedQuests.Contains(quest) && !turnedInQuests.Contains(quest))
@@ -140,6 +147,8 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    // Complete Quest
+    // Parameter checks if the list of quest states already contain that quest
     public void CompleteQuest(Quest quest)
     {
         if (quest.CheckCompletion())
@@ -153,6 +162,8 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    // Turn in quest
+    // Parameter checks if the list of quest states already contain that quest
     public void TurnInQuest(Quest quest)
     {
         if (quest.questState == QuestState.Completed)
@@ -166,9 +177,10 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    // Update Quest Indicator
+    // Checks for the available quests the NPC has by calling the FindNPCByQuest function
     void UpdateNPCQuestIndicator(Quest quest)
     {
-        // Find the NPC associated with the quest (this may vary based on your implementation)
         NPCQuestInteraction npc = FindNPCByQuest(quest.questName);
 
         if (npc != null)
@@ -177,6 +189,8 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    // Checks for the assigned quests to an NPC
+    // Parameter checks if the questname matches
     NPCQuestInteraction FindNPCByQuest(string questName)
     {
         NPCQuestInteraction[] npcs = FindObjectsOfType<NPCQuestInteraction>();
@@ -190,11 +204,15 @@ public class QuestManager : MonoBehaviour
         return null;
     }
 
+    // When a quest was solved, give the player gold, by calling the add gold function
     void RewardPlayer(int goldAmount)
     {
         currencyManager.AddGold(goldAmount);
     }
 
+    // Gets the quest by checking their name
+    // Parameter checks if any of the quest states match up the quest name
+    // Returns the current quest
     public Quest GetQuestByName(string questName)
     {
         Debug.Log($"Searching for quest: {questName}");
@@ -211,7 +229,8 @@ public class QuestManager : MonoBehaviour
         return quest;
     }
 
-
+    // Loads quest information
+    // Parameters checks for any saved Quests and if there is an active one, their quest steps
     public void LoadQuestData(List<QuestData> savedQuests, List<QuestStepData> questStepData)
     {
         Debug.Log("Loading quest data...");

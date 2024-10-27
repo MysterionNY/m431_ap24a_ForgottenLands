@@ -7,6 +7,7 @@ public class FadeInAudio : MonoBehaviour
     public float fadeInDuration = 1.0f; // Duration of fade-in effect
     private bool hasFadedIn = false;   // To track if fade-in has already occurred
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -18,7 +19,7 @@ public class FadeInAudio : MonoBehaviour
         }
     }
 
-
+    // Plays the sound when called
     public void PlaySound()
     {
         if (audioSource != null)
@@ -34,6 +35,7 @@ public class FadeInAudio : MonoBehaviour
         }
     }
 
+    // Sound slowly fades in
     private IEnumerator FadeIn()
     {
         audioSource.Play();

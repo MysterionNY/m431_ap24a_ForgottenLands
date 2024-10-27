@@ -27,9 +27,9 @@ public class BossController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public AudioSource fireSound;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
-        // Initialization
         specialAttackTimer = specialAttackCooldown;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -54,6 +54,7 @@ public class BossController : MonoBehaviour
         SetNewIdleTarget();
     }
 
+    // Constantly updates certain functions
     void Update()
     {
         if (player == null) return;
@@ -89,11 +90,14 @@ public class BossController : MonoBehaviour
         }
     }
 
+    // Checks the timer whether the special attack is available again or not
+    // returns a boolean true or false
     private bool CanUseSpecialAttack()
     {
         return specialAttackTimer <= 0 && !isUsingSpecialAttack;
     }
 
+    // If the Player is near the Boss, the Boss will use his special attack
     private void UseSpecialAttack()
     {
         if (isUsingSpecialAttack) return;
@@ -112,6 +116,9 @@ public class BossController : MonoBehaviour
         }
     }
 
+    // Stops movement to perform attack with the given animation
+    // IEnumerator gives us the possibility to use a couroutine
+    // Couroutine gives us the possibility to execute code over time
     private IEnumerator PerformSlashAttack()
     {
         isAttacking = true;
@@ -127,6 +134,8 @@ public class BossController : MonoBehaviour
         isAttacking = false;
     }
 
+    // If player stands in the given attack distance, player will take damage
+    // return is void, it just checks if for the players position
     public void DealSlashDamage()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
@@ -165,6 +174,7 @@ public class BossController : MonoBehaviour
         }
     }
 
+    // Chases the Player if he is in the given radius
     private void ChasePlayer()
     {
         if (isAttacking) return;
@@ -181,12 +191,14 @@ public class BossController : MonoBehaviour
         spriteRenderer.flipX = rb.velocity.x < 0;
     }
 
+    // Stops movement
     private void StopMovement()
     {
         rb.velocity = Vector2.zero;
         animator.SetBool("IsWalking", false);
     }
 
+    // If Player isn't around, the Boss will idle
     private void IdleBehavior()
     {
         if (isIdle)
@@ -211,7 +223,8 @@ public class BossController : MonoBehaviour
             SetNewIdleTarget();
         }
     }
-
+    
+    // If player is in the given radius, the boss will move towards the player
     private void MoveTowards(Vector2 target)
     {
         if (isAttacking) return; // Do not move if attacking
@@ -225,12 +238,14 @@ public class BossController : MonoBehaviour
         spriteRenderer.flipX = rb.velocity.x < 0;
     }
 
+    // Defines the idle spot
     private void SetNewIdleTarget()
     {
         // Pick a random point within the idle radius around the idle center
         Vector2 randomPoint = Random.insideUnitCircle * idleRadius;
         idleTarget = (Vector2)idleCenter.position + randomPoint;
     }
+
 
     private IEnumerator WaitBeforeNewIdleTarget()
     {
@@ -240,6 +255,8 @@ public class BossController : MonoBehaviour
         isIdle = true;
     }
 
+    // If player stands close enough to the boss, it will trigger the special attack
+    // Parameter is checking for the Tag "Player"
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (fireAOECollider != null && fireAOECollider.enabled && other.CompareTag("Player"))
@@ -252,6 +269,8 @@ public class BossController : MonoBehaviour
         }
     }
 
+    // This plays the fire sound and increases it over time
+    // Parameter defines by how much it should increase the volume
     private IEnumerator AdjustFireSoundVolume(bool increase)
     {
         float duration = 0.2f;
@@ -272,6 +291,7 @@ public class BossController : MonoBehaviour
         }
     }
 
+    // Stops idle behaviour
     private void StopIdleBehavior()
     {
         isIdle = false; // Stop idling when chasing the player

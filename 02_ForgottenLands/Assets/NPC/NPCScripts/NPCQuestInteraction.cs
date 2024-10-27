@@ -16,12 +16,13 @@ public class NPCQuestInteraction : MonoBehaviour
 
     public int currentQuestIndex = 0;                  // Tracks the current quest in the list
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         acceptButton.onClick.AddListener(AcceptQuest);  // Add listener to the Accept button
         UpdateQuestIndicator();
     }
-
+    // Updates every frame
     void Update()
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
@@ -47,6 +48,7 @@ public class NPCQuestInteraction : MonoBehaviour
         UpdateQuestIndicator();
     }
 
+    // Checks what the current quest status is and what information to return to us
     void HandleQuestInteraction()
     {
         if (currentQuestIndex >= assignedQuests.Count)
@@ -79,6 +81,8 @@ public class NPCQuestInteraction : MonoBehaviour
         }
     }
 
+    // Displays questdetails
+    // Calls the Parameter class quest to showcase what information to display
     void DisplayQuestDetails(Quest questToDisplay)
     {
         // Assuming you have text objects in the accept canvas showing quest details
@@ -86,6 +90,7 @@ public class NPCQuestInteraction : MonoBehaviour
         questAcceptCanvas.transform.Find("QuestDescription").GetComponent<TMPro.TextMeshProUGUI>().text = questToDisplay.questDescription;
     }
 
+    // Updates the questmanager information that a new quest was accepted and updates the indicators
     public void AcceptQuest()
     {
         if (currentQuestIndex >= assignedQuests.Count)
@@ -111,6 +116,7 @@ public class NPCQuestInteraction : MonoBehaviour
         UpdateQuestIndicator();
     }
 
+    // Showcases the Quest indicators above the NPCs head
     public void UpdateQuestIndicator()
     {
         // Ensure there's a quest to check

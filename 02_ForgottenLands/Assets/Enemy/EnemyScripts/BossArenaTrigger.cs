@@ -5,6 +5,9 @@ public class BossArenaTrigger : MonoBehaviour
     public GameObject bossHPUI;  // Reference to the boss HP UI
     public GameObject boss;      // Reference to the boss object
 
+    // Checks if the Player is in the given arena
+    // Parameter checks that the collider is infact an object with the Tag "Player"
+    // Void, its based off a trigger event
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -15,6 +18,9 @@ public class BossArenaTrigger : MonoBehaviour
         }
     }
 
+    // Checks if the Player has left the arena
+    // Parameter checks that the collider is infact an object with the Tag "Player"
+    // Void, its based off a trigger event
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

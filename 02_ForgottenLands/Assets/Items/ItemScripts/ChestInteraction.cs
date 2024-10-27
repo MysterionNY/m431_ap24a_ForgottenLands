@@ -9,6 +9,7 @@ public class ChestInteraction : MonoBehaviour
     public bool chestOpened = false;
     public float interactionRadius = 1f;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         currency = FindObjectOfType <CurrencyManager>();
@@ -24,6 +25,7 @@ public class ChestInteraction : MonoBehaviour
         }
     }
 
+    // When interacted with, call currency class to give the player 400 gold
     void openChest()
     {
         if (!chestOpened)

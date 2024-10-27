@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public List<EnemyHealth> enemies;
     public GameSettings gameSettings;
     public PotionManager potionManager;
-    public QuestManager questManager; // Ensure this is assigned in the editor
+    public QuestManager questManager;
     public List<ChestInteraction> chestInteraction;
     public CurrencyManager currencyManager;
     public RogueAttack rogueAttack;
@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         potionManager = FindObjectOfType<PotionManager>();
@@ -43,33 +44,21 @@ public class GameManager : MonoBehaviour
         audioManager = FindObjectOfType<AudioManager>();
     }
 
+    // Deletes savefiles and creates a new instance of the game
     public void StartNewGame()
     {
         SaveData.DeleteSaveFile();
-        /*
-        player.currentHealth = gameSettings.initialPlayerHealth;
-        player.transform.position = gameSettings.playerStartPosition;
-        potionManager.healthPotionsAvailable = gameSettings.healthPotions;
-        potionManager.staminaPotionsAvailable = gameSettings.staminaPotions;
-
-        for (int i = 0; i < enemies.Count; i++)
-        {
-            enemies[i].currentHealth = gameSettings.enemyInitialHealths[i];
-            enemies[i].transform.position = gameSettings.enemyStartPositions[i];
-            enemies[i].isDead = false;
-            enemies[i].gameObject.SetActive(true);
-        }
-*/
-
         Debug.Log("New Game started. Save file deleted, and game state reset.");
     }
 
+    // Saves the games information
     public void SaveGameData()
     {
         SaveData.SaveGameData(player, enemies, potionManager, questManager.allQuests, questManager.activeQuests, questManager.completedQuests, questManager.turnedInQuests, currencyManager, rogueAttack, questSteps, npcQuestInteraction, chestInteraction, audioManager);
         Debug.Log("Game data saved.");
     }
 
+    // Loads the game information and passes them back to the classes variables
     public void LoadPlayer()
     {
         GameData data = SaveData.LoadGameData();

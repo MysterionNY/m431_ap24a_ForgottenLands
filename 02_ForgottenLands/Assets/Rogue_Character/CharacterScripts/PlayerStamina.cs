@@ -13,6 +13,8 @@ public class PlayerStamina : MonoBehaviour
 
     public Image StaminaBarForeground;
     private RogueMovement rm;
+
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         rm = GetComponent<RogueMovement>(); // Get the RogueMovement component
@@ -24,7 +26,7 @@ public class PlayerStamina : MonoBehaviour
         UpdateStaminaBar();
     }
 
-
+    // When this function is called, it will update the stamina bar
     public void UpdateStaminaBar()
     {
         if (StaminaBarForeground == null)

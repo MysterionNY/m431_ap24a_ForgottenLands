@@ -1,17 +1,17 @@
 # Realize_Design
 
 # High Level
-1. Define how I want to structure my File names
+1. Define how I want to structure my file names
 2. Define a Github directory structure
-3. Create an Flowchart for the game scripts/logic
+3. Create an flowchart for the game scripts/logic
 4. Design a player character with animations
-5. Design two NPCS (A Questgiver & a blacksmith)
+5. Design two NPC's (A questgiver & a blacksmith)
 6. Design an interface
-7. Design Quests
-8. Design an Enemy with animations
+7. Design quests
+8. Design an enemy with animations
 9. Design a boss
 10. Sketch a map for my ingame world
-11. Design the map (Houses, paths, etc)
+11. Design the map (houses, paths, etc)
 12. _Design a main menu background_
 13. Compose music for the game
 14. Design testcases
@@ -36,20 +36,20 @@
 ![Rogue Death Animation][rogueDeath]
 
 ## NPCs [issue 17]
-* Design 2 NPCs
+* Design 2 NPC's
 ![Blacksmith][blacksmith]
 ![Blacksmith's Daughter][blacksmithDaughter]
 
 ## Interface [issue 15]
-* Design an interface for the Players overview
+* Design an interface for the players overview
 ![Interface][interface]
 
 ## Quests [issue 6]
-* Design a QuestLog to showcase the active Quests
+* Design a questLog to showcase the active quests
 ![Quest Log][questLog]
 
 ## Enemies [issue 7]
-* Design an Enemy with animations
+* Design an enemy with animations
 ![Goblin Idle][goblinIdle]
 ![Goblin Attack][goblinAttack]
 
@@ -76,7 +76,7 @@
 
 ## Design a main menu background [issue 61]
 * _I used Microsoft's AI Image Generator to generate the game's main menu background_
-* _The Prompt can be found under input in the [issue 61]
+* _The prompt can be found under input in the [issue 61]_
 ![Main Menu Background][mainMenuBackground]
 
 ## Compose music [issue 35]

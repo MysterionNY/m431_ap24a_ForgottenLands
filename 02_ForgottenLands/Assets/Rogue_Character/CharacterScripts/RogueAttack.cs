@@ -22,6 +22,7 @@ public class RogueAttack : MonoBehaviour
 
     private CurrencyManager currencyManager; // Reference to the currency manager
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         ps = GetComponent<PlayerStamina>();
@@ -37,6 +38,7 @@ public class RogueAttack : MonoBehaviour
         }
     }
 
+    // Updates every frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.J) && Time.time >= lastAttackTime + attackCooldown && !isAttacking && ps.currentStamina >= attackStaminaCost)
@@ -45,6 +47,9 @@ public class RogueAttack : MonoBehaviour
         }
     }
 
+    // Stops movement to perform attack with the given animation
+    // IEnumerator gives us the possibility to use a couroutine
+    // Couroutine gives us the possibility to execute code over time
     IEnumerator PerformAttack()
     {
         isAttacking = true;
@@ -63,6 +68,7 @@ public class RogueAttack : MonoBehaviour
         animator.SetTrigger("Idle");
     }
 
+    // Deals damage if the enemy is tagged with "enemy" or with "boss"
     void DealDamage()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, 0.5f); 
@@ -94,6 +100,7 @@ public class RogueAttack : MonoBehaviour
     }
 
     // Method to handle upgrading attack damage
+    // returns a bool that is true when you have enough gold and damage level isnt higher than 10
     public bool UpgradeAttack()
     {
         if (currentAttackLevel < maxAttackLevel && currencyManager.gold >= upgradeCost)
@@ -117,6 +124,8 @@ public class RogueAttack : MonoBehaviour
         }
     }
 
+    // Loads attack information
+    // Data loads the saved information
     public void LoadAttackData(GameData data)
     {
         attackDamage = data.attackDamage;

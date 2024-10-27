@@ -10,8 +10,8 @@
 ## What went well
 * Task list: My task list was well structured and gave me a good overview what I had to do, when and the time consumption
 * Time management: I gave myself enough time for the project and always left a good amount of room for my task estimation
-* Designs: I ended up being pretty happy with the designs I had created, despite the fact I am horrible at designing
-* Documentation: In my opinion, my documentation was pretty well structured and included everything important, I am pretty happy about it
+* Designs: I ended up being pretty happy with the designs I had created, despite the fact I am not the best at designing
+* Documentation: In my opinion, my documentation was pretty well structured and included everything important, I am happy about it
 
 ## What could be improved
 * I could definitely structure my classes better, I put more functions in a single class, which I could have seperated
@@ -24,7 +24,7 @@
     * I checked in my google forms if I managed to receive 3 reviews
     * I achieved my goal of 3 reviews
 * Downloads:
-    * I checked my total downloads on this website provided by github
+    * I checked my total downloads on this website provided by Github
     * Link: https://img.shields.io/github/downloads/MysterionNY/m431_ap24a_ForgottenLands/total?color=%23007EC6&style=for-the-badge=s
     * I achieved my goal of atleast 3 downloads
 

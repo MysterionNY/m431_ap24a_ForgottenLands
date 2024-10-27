@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
     private int currentFlash = 0;
     private float originalWidth;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -41,12 +42,15 @@ public class PlayerHealth : MonoBehaviour
         originalWidth = hpBarForeground.rectTransform.sizeDelta.x;
     }
 
+    // Updates every frame
     void Update()
     {
         // Handle flashing
         HandleFlashingEffect();
     }
 
+    // When taking damage, the player will lower his hp or die if hes at 0
+    // Parameter defines how much damage the player will take
     public void TakeDamage(float damage)
     {
         if (isDead) return;  // Prevent damage if the player is dead
@@ -68,6 +72,7 @@ public class PlayerHealth : MonoBehaviour
         UpdateHealthBar();
     }
 
+    // Lets the player die and calls HandleDeathAfterAnimation
     void Die()
     {
         if (isDead) return;  // Prevent multiple death triggers
@@ -86,6 +91,7 @@ public class PlayerHealth : MonoBehaviour
         StartCoroutine(HandleDeathAfterAnimation());
     }
 
+    // Deactivate player object when he dies and return back to main menu
     private IEnumerator HandleDeathAfterAnimation()
     {
         yield return new WaitForSeconds(1.5f);
@@ -94,6 +100,8 @@ public class PlayerHealth : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    // Lets the player heal
+    // Parameter defines the amount 
     public void Heal(int amount)
     {
         currentHealth += amount;
@@ -102,6 +110,7 @@ public class PlayerHealth : MonoBehaviour
         UpdateHealthBar();
     }
 
+    // Changes object color to indicate damage being taken
     void HandleFlashingEffect()
     {
         if (isFlashing)
@@ -125,6 +134,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    // Updates health bar when health changes
     public void UpdateHealthBar()
     {
         if (hpBarForeground == null)

@@ -1,15 +1,15 @@
 # Forgotten Lands
 
 ## Description
-Forgotten Lands is an open- world 2D RPG. You have the possibility to explore every area that is accessible. 
+Forgotten Lands is an open world 2D RPG. You have the possibility to explore every area that is accessible. 
 * Features
   * You can interact with NPCs, Treasure-Chests, Bonfires and much more.
-  * You can attack, use Potions and also dash from spot A to B.
-  * During all of that, you can solve Quests and earn Gold. 
-  * You can use that Gold to increase your damage.
+  * You can attack, use potions and also dash from spot A to B.
+  * During all of that, you can solve quests and earn gold. 
+  * You can use that gold to increase your damage.
 
 ## Story Description
-You enter a forgotten village in the middle of nowhere. You meet a family of 2, a father and a daughter. They tell you the story about Frost Bane, he who had turned the other villagers into Goblins. They ask you for help, will you help them?
+You enter a forgotten village in the middle of nowhere. You meet a family of two, a father and his daughter. They tell you the story about Frost Bane, he who had turned the other villagers into goblins. They ask you to help them, will you?
 
 ## Product Information
 * Genre:
@@ -33,7 +33,7 @@ You enter a forgotten village in the middle of nowhere. You meet a family of 2, 
   * CPU: Intel I5 7400
   * GPU: GTX 960
   * RAM: 6GB
-  * Storage: 300MB
+  * Storage: 100MB
 
 # Links
 ## Tutorial how to Install
@@ -44,7 +44,7 @@ You enter a forgotten village in the middle of nowhere. You meet a family of 2, 
 * A readable tutorial on how to install the game can also be found in this Link
   * [Download]
 
-[Download]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/releases/tag/1.0.0.0
+[Download]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/releases/tag/1.0.0.1
 
 ## Gameplay
 * I recorded a gameplay for the game (Not showcasing everything, but it shows how to play through it)
@@ -52,7 +52,7 @@ You enter a forgotten village in the middle of nowhere. You meet a family of 2, 
 
 
 ## Documentation
-* The whole Document can be found in the Repository or by clicking the links below
+* The whole Document can be found in the repository or by clicking the links below
  * [Proposal]
  * [Inform]
  * [Plan]
@@ -72,7 +72,7 @@ You enter a forgotten village in the middle of nowhere. You meet a family of 2, 
 [Setup]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/04b_Realize_Setup.md
 [Implement]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/04c_Realize_Implement.md
 [Control]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/05_Control.md
-[Assess]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/06_Control.md
+[Assess]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/06_Assess.md
 
 ## Source Code
 * Enemy Scripts:

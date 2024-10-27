@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// Create a scriptableobject to create quests
 [CreateAssetMenu(fileName = "NewQuest", menuName = "Quest System/Quest")]
 public class Quest : ScriptableObject
 {
@@ -25,9 +27,7 @@ public class Quest : ScriptableObject
     }
 }
 
-
-
-
+// A list of quest status
 public enum QuestState
 {
     NotStarted,
@@ -37,8 +37,10 @@ public enum QuestState
     TurnedIn
 }
 
+// A list of quest types
 public enum QuestStepType { KillEnemies, CollectItems, TalkToNPC, KillBoss }
 
+// Showcases queststeps
 [Serializable]
 public class QuestStep
 {

@@ -18,6 +18,7 @@ public class PotionManager : MonoBehaviour
     private PlayerHealth playerHealth;        // Reference to PlayerHealth
     private PlayerStamina playerStamina;      // Reference to PlayerStamina
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         playerHealth = FindObjectOfType<PlayerHealth>();
@@ -43,6 +44,7 @@ public class PotionManager : MonoBehaviour
         }
     }
 
+    // Use the currenct potion that is chosen
     void UseActivePotion()
     {
         if (isHealthPotionActive)
@@ -68,6 +70,7 @@ public class PotionManager : MonoBehaviour
         UpdatePotionDisplay();
     }
 
+    // Update potion display when a potion is being used or if it switches to a different potion
     public void UpdatePotionDisplay()
     {
         // Update the UI based on the active potion
@@ -83,7 +86,8 @@ public class PotionManager : MonoBehaviour
         }
     }
 
-    // Load both potion counts
+    // Load both potion counts to the savefile
+    // Data calls the saved information
     public void LoadPotionData(GameData data)
     {
         healthPotionsAvailable = data.healthPotions;

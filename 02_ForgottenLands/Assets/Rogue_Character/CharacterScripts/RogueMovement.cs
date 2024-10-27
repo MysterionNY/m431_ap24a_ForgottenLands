@@ -24,6 +24,7 @@ public class RogueMovement : MonoBehaviour
     private PlayerStamina ps;
     private AudioSource walkingSound;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();           // Get the Rigidbody2D component
@@ -33,6 +34,7 @@ public class RogueMovement : MonoBehaviour
         walkingSound = GetComponent<AudioSource>();
     }
 
+    // Updates every frame
     void Update()
     {
         // Get movement input
@@ -71,6 +73,7 @@ public class RogueMovement : MonoBehaviour
         
     }
 
+    // Checks if the player isn't dashing and then makes the player move normally
     void FixedUpdate()
     {
         if (!isDashing)
@@ -80,6 +83,8 @@ public class RogueMovement : MonoBehaviour
         }
     }
 
+    // Fullfils a dash from point a to point b
+    // Reduces stamina and checks for cooldown
     IEnumerator Dash()
     {
         isDashing = true;

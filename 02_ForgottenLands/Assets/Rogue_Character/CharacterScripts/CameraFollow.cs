@@ -8,6 +8,7 @@ public class CameraFollow : MonoBehaviour
     public float smoothSpeed = 0.125f;  // Smoothness factor
     public Vector3 offset;  // Offset from the character
 
+    // Updates the current player's position and lets the camera follow him
     void LateUpdate()
     {
         Vector3 desiredPosition = player.position + offset;  // Calculate the desired position

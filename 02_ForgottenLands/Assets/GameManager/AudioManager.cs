@@ -7,6 +7,8 @@ public class AudioManager : MonoBehaviour
     private AudioSource tempSource; // A temporary AudioSource for crossfading
     public float fadeDuration = 4f; // Duration for the fade effect
     public float targetVolume = 0.15f;
+
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         // Initialize the temporary AudioSource for fading
@@ -14,6 +16,8 @@ public class AudioManager : MonoBehaviour
         tempSource.loop = true; // Ensure looping for area music
     }
 
+    // Change between songs
+    // Parameter defines the new sound that should be played
     public void ChangeMusic(AudioClip newClip)
     {
         if (tempSource.isPlaying)
@@ -26,6 +30,8 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    // Slowly fade out the previous sound
+    // Switch to the new sound
     private IEnumerator FadeOutAndChangeMusic(AudioClip newClip)
     {
         float currentTime = 0;
@@ -60,6 +66,8 @@ public class AudioManager : MonoBehaviour
         Destroy(tempSource); // Destroy the temporary source
     }
 
+    // Smoothly fade into the new sound
+    // Play the new sound
     private IEnumerator FadeInNewMusic(AudioClip newClip)
     {
         audioSource.clip = newClip;

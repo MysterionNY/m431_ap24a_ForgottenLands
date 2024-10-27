@@ -2,11 +2,11 @@
 
 ## The Product
 ### Forgotten Lands
-* A game 2D RPG about a Wanderer in the Forgotten Lands, solving Quests, fighting off Monsters & heading for the Final Boss, to free the Lands.
+* A game 2D RPG about a wanderer in the Forgotten Lands, solving Quests, fighting off monsters & heading for the finalboss, to free the lands.
 * Features
-  * Fight Monsters
-  * Explore Areas
-  * Collect Items
+  * Fight monsters
+  * Explore areas
+  * Collect items
   * Upgrade items
   * Complete quests
   * Save your progress
@@ -17,9 +17,9 @@
 * Presentation
  
 ## Important Dates
-* 27.08.2024 Receive Approval for the Product
+* 27.08.2024 Receive approval for the product
 * 03.09-01.10.2024 IPERKA
-* 19.10.2024 Testing Phase & Bug fixing
+* 19.10.2024 Testing phase & bug fixing
 * 29.10.2024 Hand in the Assignment
 * 05.11.2024 Present the Assignment
 
@@ -31,9 +31,8 @@
 * Lehrmeister
 * Neil Devlin
 
-
 ## Documentation
-* The whole Document can be found in the Repository or by clicking the links below
+* The whole document can be found in the repository or by clicking the links below
  * [Inform]
  * [Plan]
  * [Decide]

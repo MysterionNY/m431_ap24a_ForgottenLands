@@ -17,6 +17,7 @@ public class AttackUpgradePanel : MonoBehaviour
     private GameObject player;
     private bool isPanelOpen = false;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         rogueAttack = FindObjectOfType<RogueAttack>(); // Find the RogueAttack script in the scene
@@ -28,6 +29,7 @@ public class AttackUpgradePanel : MonoBehaviour
         upgradePanel.SetActive(false); // Hide panel at start
     }
 
+    // Updates on every frame
     void Update()
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
@@ -48,6 +50,7 @@ public class AttackUpgradePanel : MonoBehaviour
         }
     }
 
+    // Calls the deactivate or activate panel
     void TogglePanel()
     {
         if (upgradePanel.activeSelf)
@@ -60,6 +63,7 @@ public class AttackUpgradePanel : MonoBehaviour
         }
     }
 
+    // Opens the panel to showcase the upgrades
     public void OpenPanel()
     {
         if (rogueAttack != null)
@@ -79,12 +83,14 @@ public class AttackUpgradePanel : MonoBehaviour
         }
     }
 
+    // Closes the panel
     public void ClosePanel()
     {
         upgradePanel.SetActive(false); // Hide the panel
         isPanelOpen = false;
     }
 
+    // calls for the function to upgrade attack from the player attack class
     public void UpgradeAttack()
     {
         if (rogueAttack != null && rogueAttack.UpgradeAttack())

@@ -20,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
     public delegate void EnemyDeathHandler(GameObject enemy);
     public event EnemyDeathHandler OnDeath;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -31,6 +32,7 @@ public class EnemyHealth : MonoBehaviour
         currencyManager = FindObjectOfType<CurrencyManager>();
     }
 
+    // Take damage by the player and calls the function die or StartCoroutine
     public void TakeDamage(float damage)
     {
         if (isDead) return;
@@ -47,6 +49,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    // When the enemy takes damage, flash the object colors to indicate damage
     private IEnumerator FlashRed()
     {
         Color originalColor = spriteRenderer.color;
@@ -66,6 +69,8 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    // When the enemy dies, give the player a potion and 25 gold
+    // Call function Dropkeyitem and handleDeathAfterAnimation
     public void Die()
     {
         if (isDead) return; // Prevent Die from being called multiple times
@@ -103,11 +108,13 @@ public class EnemyHealth : MonoBehaviour
         StartCoroutine(HandleDeathAfterAnimation());
     }
 
+    // When the enemy dies, drop a key item for the quest
     private void DropKeyItem()
     {
         Instantiate(keyItemPrefab, transform.position, Quaternion.identity);
     }
 
+    // When the enemy dies, deactivate the object
     private IEnumerator HandleDeathAfterAnimation()
     {
         // Wait for the animation to finish (assuming the animation length is 1.5 seconds)

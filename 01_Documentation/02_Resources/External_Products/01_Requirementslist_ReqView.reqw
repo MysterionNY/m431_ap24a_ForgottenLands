@@ -12,7 +12,7 @@
         "email": "mert2003@live.com",
         "company": ""
       },
-      "lastChangedOn": "2024-10-27T15:46:06.990Z",
+      "lastChangedOn": "2024-10-27T16:18:14.317Z",
       "lastChangedBy": {
         "name": "Mert",
         "email": "mert2003@live.com",
@@ -526,7 +526,7 @@
         {
           "id": "9",
           "guid": "cc671a4a-4bd5-4244-8ca5-07e8e4d3ee5e",
-          "heading": "Presentation Requirements (Teachter)",
+          "heading": "Presentation Requirements (Teacher)",
           "history": [
             {
               "affectedNodeId": "#",
@@ -549,6 +549,17 @@
                 "name": "Mert Bal"
               },
               "changedOn": "2024-10-01T13:09:24.157Z"
+            },
+            {
+              "attributesChanged": {
+                "heading": "Presentation Requirements (Teachter)"
+              },
+              "changedBy": {
+                "company": "",
+                "email": "mert2003@live.com",
+                "name": "Mert"
+              },
+              "changedOn": "2024-10-27T16:18:14.317Z"
             }
           ],
           "children": [

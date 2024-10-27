@@ -24,6 +24,7 @@ public class EnemyAI : MonoBehaviour
     private bool isIdle = true; // Track whether enemy is idling
     private bool isChasingPlayer = false;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -46,6 +47,7 @@ public class EnemyAI : MonoBehaviour
         SetNewIdleTarget();
     }
 
+    // Constantly updates certain functions
     void Update()
     {
         if (player == null) return;
@@ -68,6 +70,7 @@ public class EnemyAI : MonoBehaviour
         attackCooldownTimer -= Time.deltaTime;
     }
 
+    // Chases the Player if he is in the given radius
     void ChasePlayer()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
@@ -91,6 +94,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    // If Player isn't around, the enemy will idle
     void IdleBehavior()
     {
         if (isIdle)
@@ -111,12 +115,14 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    // Defines the idle spot
     void SetNewIdleTarget()
     {
         // Pick a random point within the idle radius around the idle center
         Vector2 randomPoint = Random.insideUnitCircle * idleRadius;
         idleTarget = (Vector2)idleCenter.position + randomPoint;
     }
+
 
     IEnumerator WaitBeforeNewIdleTarget()
     {
@@ -126,6 +132,7 @@ public class EnemyAI : MonoBehaviour
         isIdle = true;
     }
 
+    // If player is in the given radius, the boss will move towards the player
     void MoveTowards(Vector2 target)
     {
         if (isAttacking) return; // Do not move if attacking
@@ -147,7 +154,8 @@ public class EnemyAI : MonoBehaviour
         // Update walking animation
         animator.SetBool("IsWalking", rb.velocity.magnitude > 0);
     }
-
+    
+    // Stops movement
     void StopMovement()
     {
         isMoving = false;
@@ -155,6 +163,9 @@ public class EnemyAI : MonoBehaviour
         animator.SetBool("IsWalking", false);
     }
 
+    // Stops movement to perform attack with the given animation
+    // IEnumerator gives us the possibility to use a couroutine
+    // Couroutine gives us the possibility to execute code over time
     IEnumerator PerformAttack()
     {
         isAttacking = true;

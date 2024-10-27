@@ -25,6 +25,8 @@ public class GameData
     public List<QuestData> quests = new List<QuestData>(); // Store quest data
     public List<QuestStepData> questStepsData = new List<QuestStepData>();
 
+    // Stores the information in seperate values
+    // Calls the classes as parameters to access the variables
     public GameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> allQuests, List<Quest> activeQuests, List<Quest> completedQuests, List<Quest> turnedInQuests, CurrencyManager currencyManager, RogueAttack rogueAttack, QuestStep questStep, NPCQuestInteraction npcQuestInteraction, List<ChestInteraction> chestInteraction, AudioManager audioManager)
     {
         targetAudioVolume = audioManager.targetVolume;
@@ -105,6 +107,8 @@ public class GameData
     }
 }
 
+// Stores the Quest information
+// Calls the quest class to access the variables
 [System.Serializable]
 public class QuestData
 {
@@ -135,6 +139,8 @@ public class QuestData
     }
 }
 
+// Stores the QuestStep information
+// Calls the QuestStep class to access the variables
 [System.Serializable]
 public class QuestStepData
 {

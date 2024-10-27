@@ -26,6 +26,7 @@ public class BossHealth : MonoBehaviour
     public delegate void EnemyDeathHandler(GameObject enemy);
     public event EnemyDeathHandler OnDeath;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -45,7 +46,8 @@ public class BossHealth : MonoBehaviour
         // Handle flashing
         HandleFlashingEffect();
     }
-
+    
+    // When the Boss takes damage, he will flash through different colors to indicate damage
     void HandleFlashingEffect()
     {
         if (isFlashing)
@@ -69,6 +71,8 @@ public class BossHealth : MonoBehaviour
         }
     }
 
+    // The Boss will receive damage when getting attacked
+    // It updates the health bar or calls the Die function
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
@@ -85,6 +89,7 @@ public class BossHealth : MonoBehaviour
         UpdateHealthBar();
     }
 
+    // When the boss dies, play the final cutscene scene
     void Die()
     {
         if (isDead) return;
@@ -99,6 +104,7 @@ public class BossHealth : MonoBehaviour
         HandleDeathAfterAnimation();
     }
 
+    // Deactivate boss when he died
     private IEnumerator HandleDeathAfterAnimation()
     {
         // Wait for the animation to finish (assuming the animation length is 1.5 seconds)
@@ -109,6 +115,7 @@ public class BossHealth : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    // When the boss receives damage, update the healthbar
     public void UpdateHealthBar()
     {
         if (hpBarForeground == null)

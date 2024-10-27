@@ -11,11 +11,13 @@ public class BonfireInteraction : MonoBehaviour
     public float textMoveDistance = 50f;
     public float fadeDuration = 2f;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         gameSavedText.gameObject.SetActive(false);
     }
 
+    // Updates every frame
     void Update()
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
@@ -25,6 +27,7 @@ public class BonfireInteraction : MonoBehaviour
         }
     }
 
+    // When interacted with, call function ShowGameSavedText
     void activateBonfire()
     {
         GameManager gameManager = FindObjectOfType<GameManager>();
@@ -39,6 +42,8 @@ public class BonfireInteraction : MonoBehaviour
         }
     }
 
+
+    // Starts a coroutine and displays a text slowly disappearing into non-existence
     IEnumerator ShowGameSavedText()
     {
         // Make the text visible

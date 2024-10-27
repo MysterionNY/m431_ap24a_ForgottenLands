@@ -7,7 +7,7 @@ public class WalkingSounds : MonoBehaviour
     public AudioSource walkingSound;
     public AudioSource slashingSound;
 
-    // Method to be called by Animation Event
+    // Plays the walking sounds when called by animation event
     public void PlayFootstepSound()
     {
         if (walkingSound != null)
@@ -16,6 +16,7 @@ public class WalkingSounds : MonoBehaviour
         }
     }
 
+    // Plays the slashing sound when called by animation event
     public void PlaySlashingSound()
     {
         if (slashingSound != null)

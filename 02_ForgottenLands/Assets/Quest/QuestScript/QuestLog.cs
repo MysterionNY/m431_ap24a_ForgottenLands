@@ -16,12 +16,14 @@ public class QuestLog : MonoBehaviour
     private QuestManager questManager;
     private bool isQuestLogOpen = false;  // Tracks whether the quest log is open or not
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         questManager = FindObjectOfType<QuestManager>();
         questLogPanel.SetActive(false);  // Ensure the quest log is closed at start
     }
 
+    // Updates on every frame
     void Update()
     {
         // Check for the Tab key press to toggle the quest log
@@ -45,6 +47,7 @@ public class QuestLog : MonoBehaviour
         }
     }
 
+    // Update the quest log ui to show the active quests
     public void UpdateQuestLogUI()
     {
         if (questListParent == null)
@@ -79,6 +82,8 @@ public class QuestLog : MonoBehaviour
         }
     }
 
+    // Show the quest details when opened
+    // Parameter calls the Quest class to check for the current quest step details
     public void ShowQuestDetails(Quest quest)
     {
         questNameText.text = quest.questName;
@@ -94,6 +99,8 @@ public class QuestLog : MonoBehaviour
         // Show rewards
         questRewardText.text = "Gold Reward: " + quest.rewardGold.ToString();
     }
+
+    // When this function is called, it will remove all the quest information
     public void ClearQuestDetails()
     {
         questNameText.text = "";

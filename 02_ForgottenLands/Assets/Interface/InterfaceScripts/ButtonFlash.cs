@@ -9,6 +9,7 @@ public class ButtonFlash : MonoBehaviour
     private Color originalColor;
     private Image buttonImage;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         if (button == null)
@@ -22,11 +23,13 @@ public class ButtonFlash : MonoBehaviour
         button.onClick.AddListener(OnButtonClick);
     }
 
+    // If pressed call FlashButton
     void OnButtonClick()
     {
         StartCoroutine(FlashButton());
     }
 
+    // Creates a color switch throughout time to symbolize a click event happening
     IEnumerator FlashButton()
     {
         // Create a flash color with reduced opacity

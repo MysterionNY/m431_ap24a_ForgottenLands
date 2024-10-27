@@ -8,12 +8,14 @@ public class EscapeMenu : MonoBehaviour
     private bool isPaused = false;
     private bool showingControls = false;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         escapeMenuUI.SetActive(false);
         controlsUI.SetActive(false);
     }
 
+    // Updates on every call
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -33,6 +35,7 @@ public class EscapeMenu : MonoBehaviour
         }
     }
 
+    // When called, it will deactivate the panel
     public void Resume()
     {
         escapeMenuUI.SetActive(false);
@@ -40,6 +43,7 @@ public class EscapeMenu : MonoBehaviour
         isPaused = false;
     }
 
+    // When called it will pause the game
     public void Pause()
     {
         escapeMenuUI.SetActive(true);
@@ -47,6 +51,7 @@ public class EscapeMenu : MonoBehaviour
         isPaused = true;
     }
 
+    // When called it will showcase controls panel
     public void Controls()
     {
         escapeMenuUI.SetActive(false);  // Hide the escape menu UI
@@ -54,6 +59,7 @@ public class EscapeMenu : MonoBehaviour
         showingControls = true;         // Mark that we are on the Controls screen
     }
 
+    // When called it will return back to menu
     public void BackToMenu()
     {
         controlsUI.SetActive(false);   // Hide controls image
@@ -61,14 +67,10 @@ public class EscapeMenu : MonoBehaviour
         showingControls = false;       // No longer in Controls screen
     }
 
+    // When called it will return back to main menu
     public void LoadMainMenu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
-    }
-
-    public void QuitGame()
-    {
-        Application.Quit();
     }
 }

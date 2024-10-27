@@ -82,7 +82,7 @@ https://github.com/user-attachments/assets/679c9a9e-fd3b-4c87-b3a0-87f262fd7cbc
 
 ## Review the documentation
 * I checked through my documentation requirements, which were set by Mr. Devlin
-* I checked through each requirement if I finished them
+* I checked through each requirement if I had finished them
 ![Document requirements 1][documentRQ1]
 ![Document requirements 2][documentRQ2]
 

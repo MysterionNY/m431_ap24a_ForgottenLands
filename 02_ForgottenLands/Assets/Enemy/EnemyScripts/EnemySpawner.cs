@@ -13,6 +13,7 @@ public class EnemySpawner : MonoBehaviour
 
     private Dictionary<Transform, int> enemiesPerArea;  // Track enemies per area
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         enemiesPerArea = new Dictionary<Transform, int>();
@@ -24,6 +25,7 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine(SpawnEnemies());
     }
 
+    // Spawn enemies in certain spawn areas
     IEnumerator SpawnEnemies()
     {
         while (true)
@@ -44,11 +46,13 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    // Define the random spawn radius
     Transform GetRandomSpawnArea()
     {
         return spawnAreas[Random.Range(0, spawnAreas.Length)];
     }
 
+    // Spawn enemies in a random radius of the spawn point
     void SpawnEnemy(Transform spawnArea, int areaIndex)
     {
         // Pick a random position within the spawn area radius

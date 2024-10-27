@@ -5,11 +5,14 @@ using System.Collections.Generic;
 
 public static class SaveData
 {
+    // Automatically defines a path where the savefile should be saved
     private static string GetFilePath()
     {
         return Application.persistentDataPath + "/savegame.dat";
     }
 
+    // Saves the game data and in what format it shall be created
+    // Parameter calls the classes it should save from
     public static void SaveGameData(PlayerHealth player, List<EnemyHealth> enemies, PotionManager potionManager, List<Quest> allQuests, List<Quest> activeQuests, List<Quest> completedQuests, List<Quest> turnedInQuests, CurrencyManager currencyManager, RogueAttack rogueAttack, QuestStep questSteps, NPCQuestInteraction npcQuestInteraction, List<ChestInteraction> chestInteraction, AudioManager audioManager)
     {
         GameData data = new GameData(player, enemies, potionManager, allQuests, activeQuests, completedQuests, turnedInQuests, currencyManager, rogueAttack, questSteps, npcQuestInteraction, chestInteraction, audioManager);
@@ -21,6 +24,7 @@ public static class SaveData
         stream.Close();
     }
 
+    // Loads the savefile back up when called
     public static GameData LoadGameData()
     {
         string path = GetFilePath();
@@ -41,6 +45,7 @@ public static class SaveData
         }
     }
 
+    // Deletes the savefile when called
     public static void DeleteSaveFile()
     {
         string path = GetFilePath();

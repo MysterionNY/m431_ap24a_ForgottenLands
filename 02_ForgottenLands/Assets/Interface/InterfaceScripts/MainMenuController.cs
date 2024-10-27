@@ -11,6 +11,7 @@ public class MainMenuController : MonoBehaviour
     public GameObject controlsUI;
     private bool showingControls = false;
 
+    // Once the game instance has started, these are the starting arguments
     void Start()
     {
         newGameButton.onClick.AddListener(OnNewGame);
@@ -21,6 +22,7 @@ public class MainMenuController : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    // Updates on every call
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -32,7 +34,8 @@ public class MainMenuController : MonoBehaviour
         }
     }
 
-
+    // Loads the scene "Ingame" when called
+    // Parameters define what scene to load
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "Ingame")
@@ -48,29 +51,34 @@ public class MainMenuController : MonoBehaviour
         }
     }
 
+    // Deletes existing savefile to create a new game instance when called and starts with a cutscene scene
     public void OnNewGame()
     {
         SaveData.DeleteSaveFile();
         SceneManager.LoadScene("EnteringTheVillageCS");
     }
 
+    // Loads back into ingame when called
     public void OnLoadGame()
     {
         SceneManager.LoadScene("Ingame");
     }
 
+    // Shows Controls panel when called
     public void Controls()
     {
         controlsUI.SetActive(true);     // Show the controls image
         showingControls = true;         // Mark that we are on the Controls screen
     }
 
+    // Returns back to menu when called
     public void BackToMenu()
     {
         controlsUI.SetActive(false);   // Hide controls image
         showingControls = false;       // No longer in Controls screen
     }
 
+    // Quits out the game when called
     public void OnExit()
     {
         Application.Quit();
