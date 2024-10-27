@@ -107,7 +107,7 @@ https://github.com/user-attachments/assets/9b8d9dcf-560d-4397-8d1b-05ee061d119f
 
 [issue 2]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/2
 [issue 6]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/6
-[issue 6]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/7
+[issue 7]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/7
 [issue 15]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/15
 [issue 16]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/16
 [issue 17]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/17
