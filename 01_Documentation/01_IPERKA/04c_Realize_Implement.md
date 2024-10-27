@@ -31,7 +31,9 @@
     * Code Player/Enemy Sounds
 9. Create Enemy Prefabs
 10. Implement Testcases
-11. List of issues encountered
+11. List of bugs encountered
+12. Glossary
+13. References
 
 
 # Implement Player
@@ -188,8 +190,11 @@ https://github.com/user-attachments/assets/7a0c8991-b5ce-473f-826e-2091b8727a5f
 2. Create an image object, that switches between Health, Stamina and empty potion
 3. Code and add PotionManager script to PotionManager object
 4. Add image and text object to the PotionManager script
-5. Committed codes:
+5. PotionManager references to PlayerHP & PlayerStamina
+6. Committed codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/PotionManager.cs
+    2. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerHealth.cs
+    3. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerStamina.cs
 
 
 
@@ -270,11 +275,13 @@ https://github.com/user-attachments/assets/7f9d3f87-2eca-4d65-a244-e45c1d012817
 5. Create an object with the NPC sprites & animations attached to it
 6. Code and attach the NPCQuestInteraction & AttackUpgradePanel script to it
 7. Attach the ScriptableObject Quest script from [issue 31] to the NPC that gives the Quests
-8. Committed Codes:
+8. AttackUpgradePanel NPC references to PlayerAttack
+9. Committed Codes:
     1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Items/ItemScripts/ChestInteraction.cs
     2. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/MapObjects/ObstacleScripts/BonfireInteraction.cs
     3. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/NPC/NPCScripts/NPCQuestInteraction.cs
-    4.  https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/NPC/NPCScripts/AttackUpgradePanel.cs
+    4. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/NPC/NPCScripts/AttackUpgradePanel.cs
+    5. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueAttack.cs
 
 
 
@@ -330,6 +337,13 @@ https://github.com/user-attachments/assets/944f5c96-cad2-4e7d-bbee-874da1ef61b9
 # Bugs encountered
 1. [issue 52] - SaveData - the quest progress wasn't saved by the save system
 2. [issue 62] - Quest - Questkey can be collected before the quest was accepted, hence the quest didn't progress didn't work
+
+## Glossary
+* HP = Health Points
+* SFX = Sound effects
+* Dash = Move from point A to point B quickly
+* UI = User Interface
+* Prefab = Fully functional gameobjects which can be reused
 
 ## References
 * Prevent Scriptable Objects from saving values inbetween sessions

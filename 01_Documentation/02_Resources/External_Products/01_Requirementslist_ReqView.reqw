@@ -12,9 +12,9 @@
         "email": "mert2003@live.com",
         "company": ""
       },
-      "lastChangedOn": "2024-10-01T13:54:20.409Z",
+      "lastChangedOn": "2024-10-27T15:46:06.990Z",
       "lastChangedBy": {
-        "name": "Mert Bal",
+        "name": "Mert",
         "email": "mert2003@live.com",
         "company": ""
       },
@@ -1207,7 +1207,7 @@
               "id": "35",
               "guid": "7b426a8d-1f60-44f5-ba03-898511033af9",
               "heading": "Feedback",
-              "text": "<ul><li>Get atleast 1 person to write a feedback on Github</li><li>&nbsp; &nbsp; Measured by checking the Issues section on Github</li><li>&nbsp; &nbsp; Achievable and realistic</li><li>&nbsp; &nbsp; Time: 1 after the first goal was achieved</li></ul>",
+              "text": "<ul><li>Get atleast 3 people to write a feedback on my google forms</li><li>&nbsp; &nbsp; Measured by checking my google forms section</li><li>&nbsp; &nbsp; Achievable and realistic</li><li>&nbsp; &nbsp; Time: 1 week after uploading a Release on Github</li></ul>",
               "history": [
                 {
                   "affectedNodeId": "34",
@@ -1253,6 +1253,17 @@
                   "changedOn": "2024-10-01T13:54:20.409Z",
                   "docId": "1234",
                   "structureAction": "SwapUp"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<ul><li>Get atleast 1 person to write a feedback on Github</li><li>&nbsp; &nbsp; Measured by checking the Issues section on Github</li><li>&nbsp; &nbsp; Achievable and realistic</li><li>&nbsp; &nbsp; Time: 1 after the first goal was achieved</li></ul>"
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "mert2003@live.com",
+                    "name": "Mert"
+                  },
+                  "changedOn": "2024-10-27T15:46:06.990Z"
                 }
               ]
             },

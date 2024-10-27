@@ -107,6 +107,7 @@ https://github.com/user-attachments/assets/679c9a9e-fd3b-4c87-b3a0-87f262fd7cbc
 
 
 [issue 59]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/59
+[issue 62]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/62
 
 [testcases1]: ../02_Resources/Images/05_Testcase1.png
 [testcases2]: ../02_Resources/Images/05_Testcase2.png

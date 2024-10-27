@@ -24,7 +24,6 @@
 * For my tracking I used
     * Tasks: What tasks I have
     * Time est.: My time estimate for the task/issue
-        * By checking my past knowledge (If I had done something similar), the size of sub-tasks the task could generate and how confident I felt. With that I calculated my estimate
     * Actual Time: How much time it actually took
     * Date begin: The date I want to start work on the task
     * Date due: The latest time that the task should be finished
@@ -32,12 +31,14 @@
 ## Milestones [issue 43]
 * With Githubs milestones, I was able to track my goals for certain dates and also my time consumption
 ![Milestones][MS]
+![Updated Milestones][MSN]
 
 ## How I created the task list
 * I identified which Major Tasks I had
 * With Github Projects I could also commit my issues and track them
 * For the tasks:
     * I estimated how long a task would take
+        * By checking my past knowledge (If I had done something similar), the size of sub-tasks the task could generate and how confident I felt. With that I calculated my estimate
     * I tracked my time how long I actually took
     * I've checked whether a Task would create a bigger Subtask or not
 * After creating the tasks and making up my estimate, I tried to not exceed my available hours from my resource plan
@@ -58,12 +59,28 @@
 * I used due dates to track whether I can still finish the task to that date or if I already finished it
 * By keeping an eye on my clock how much time I had spent for a certain task, I was able to make sure whether I am in my estimated time range or not
 * I compared my project with the requirements and the due date suggestions from the teacher, to know if I am doing good with my progression
+* Weekly I made an entry on my progress via excel
+![Checking my progress][progress1]
+![Checking my progress 2][progress2]
+![Checking my progress with excel][progressExcel]
+
+## Did my planning work?
+* Throughout the planning period I structured the tasklist a certain way
+* I logically set the tasks by order whether they made sense or not
+* It makes no sense to create a script for attacking, if I dont have the character to attack with
+* When I noticed that I had more time than expected, I created a few more subtasks that can be done quickly
+* The tasklist was easy to follow and my structure worked out for me
+* In the future I would definitely divide certain tasks to more subtasks for a better overview
 
 [RP]: ../02_Resources/Images/02_ResourcePlan.png
 [TL]: ../02_Resources/Images/02_TaskList.png
 [MS]: ../02_Resources/Images/02_Milestones.png
+[MSN]: ../02_Resources/Images/02_MilestonesNew.png
 [BS]: ../02_Resources/Images/02_Brainstorm.jpeg
 [GC]: ../02_Resources/Images/02_GanttChart.png
+[progress1]: ../02_Resources/Images/02_CheckingMyProgress1.png
+[progress2]: ../02_Resources/Images/02_CheckingMyProgress2.png
+[progressExcel]: ../02_Resources/Images/02_CheckingMyProgressExcel.png
 
 [issue 40]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/40
 [issue 42]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/42
