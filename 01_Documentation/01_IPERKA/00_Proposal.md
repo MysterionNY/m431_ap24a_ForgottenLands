@@ -50,5 +50,5 @@
 [Setup]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/04b_Realize_Setup.md
 [Implement]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/04c_Realize_Implement.md
 [Control]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/05_Control.md
-[Assess]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/06_Control.md
+[Assess]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/06_Assess.md
 
