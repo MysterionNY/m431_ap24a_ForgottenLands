@@ -42,7 +42,7 @@
 1. Add a camera object to the hierachy
 2. Code and add CameraFollow.cs to the camera object
 3. Add player object to the script
-4. Committed code: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/Characterscripts/CameraFollow.cs
+4. Committed code: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/CameraFollow.cs
 
 https://github.com/user-attachments/assets/3119ed5f-6dcb-4ca9-adec-56c4de09c5fe
 
@@ -53,7 +53,7 @@ https://github.com/user-attachments/assets/3119ed5f-6dcb-4ca9-adec-56c4de09c5fe
 3. Code and add script player health to health object
 4. Add images to the object
 5. Committed Codes: 
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/Characterscripts/PlayerHealth.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerHealth.cs
 
 https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 
@@ -64,7 +64,7 @@ https://github.com/user-attachments/assets/c97c2fbd-9a99-416d-9f35-e915104c26a0
 3. Code and add script player stamina to stamina object
 4. Add images to the object
 5. Committed Codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/Characterscripts/PlayerStamina.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerStamina.cs
 
 
 
@@ -78,7 +78,7 @@ https://github.com/user-attachments/assets/ac5ff147-da64-4a92-a96a-42fc10ba97ea
 3. Attach player attack script to the object
 4. Adjust code to run the animation via the animator
 5. Committed Codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/Characterscripts/RogueAttack.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueAttack.cs
 
 
 
@@ -91,7 +91,7 @@ https://github.com/user-attachments/assets/b9c1501b-a380-46db-8f70-7f61aa6e53f3
 2. Attach player movement script to the object
 3. Adjust code to run the animation via the animator
 4. Committed Codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/Characterscripts/RogueMovement.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueMovement.cs
 
 
 
@@ -108,7 +108,7 @@ https://github.com/user-attachments/assets/09cf407f-cf4c-4c77-88dd-6ec0286b04de
 4. Code and add the EnemyAI script to the enemy object
 5. Adjust the values in the script that is on the object
 6. Committed Codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/Enemyscripts/EnemyAI.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemyAI.cs
 
 
 
@@ -119,7 +119,7 @@ https://github.com/user-attachments/assets/20dd670a-ff19-4214-9fb0-2eeb7211b1ef
 ## EnemyHealth [issue 9]
 1. Code and add script EnemyHealth to enemy object
 2. Committed codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/Enemyscripts/EnemyHealth.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemyHealth.cs
 
 ## EnemySpawner [issue 10]
 1. Using the flowchart from [issue 58] I created my script
@@ -128,7 +128,7 @@ https://github.com/user-attachments/assets/20dd670a-ff19-4214-9fb0-2eeb7211b1ef
 4. Add the empty object to the dedicated spot in the script
 5. Adjust the values
 6. Committed codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/Enemyscripts/EnemySpawner.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/EnemySpawner.cs
 
 ## BossController [issue 33]
 1. Create boss object
@@ -136,7 +136,7 @@ https://github.com/user-attachments/assets/20dd670a-ff19-4214-9fb0-2eeb7211b1ef
 3. Code and add the BossController script to the boss object
 4. Adjust the values in the script that is on the object
 5. Committed Codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/Enemyscripts/BossController.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossController.cs
   
 
 
@@ -149,7 +149,7 @@ https://github.com/user-attachments/assets/f4d4c0cf-9cb2-4e59-921c-5277c9107aa6
 2. Create Children Background and Foreground
 3. Code and add script BossHealth to health object
 4. Committed codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/Enemyscripts/BossHealth.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossHealth.cs
 
 
 
@@ -162,7 +162,7 @@ https://github.com/user-attachments/assets/e5bdf369-3bcd-4f5f-9305-574b7e1815da
 2. Define a box collider set to trigger
 3. If Player enters that box collider area the Boss HP will appear
 4. Committed codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/Enemyscripts/BossArenaTrigger.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Enemy/EnemyScripts/BossArenaTrigger.cs
 
 
 
@@ -190,9 +190,9 @@ https://github.com/user-attachments/assets/7a0c8991-b5ce-473f-826e-2091b8727a5f
 4. Add image and text object to the PotionManager script
 5. PotionManager references to PlayerHP & PlayerStamina
 6. Committed codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/Interfacescripts/PotionManager.cs
-    2. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/Characterscripts/PlayerHealth.cs
-    3. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/Characterscripts/PlayerStamina.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/PotionManager.cs
+    2. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerHealth.cs
+    3. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/PlayerStamina.cs
 
 
 
@@ -225,7 +225,7 @@ https://github.com/user-attachments/assets/7f9d3f87-2eca-4d65-a244-e45c1d012817
 4. Code and attach EscapeMenu script to the canvas
 5. Connect the button objects with the script
 6. Committed Codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/Interfacescripts/EscapeMenu.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/EscapeMenu.cs
 
 ![Escapemenu][escapemenu]
 
@@ -236,7 +236,7 @@ https://github.com/user-attachments/assets/7f9d3f87-2eca-4d65-a244-e45c1d012817
 4. Code and attach MainMenuController script to the canvas
 5. Connect the button objects with the script
 6. Committed Codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/Interfacescripts/MainMenuController.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Interface/InterfaceScripts/MainMenuController.cs
 
 ![Main menu][mainMenu]
 
@@ -255,9 +255,9 @@ https://github.com/user-attachments/assets/7f9d3f87-2eca-4d65-a244-e45c1d012817
 10. Create quests in the assets folder
 11. Encountered [issue 62], quest key can be collected before quest was accepted - Quest can't progress
 12. Committed Codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/Questscript/Quest.cs
-    2. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/Questscript/QuestManager.cs
-    3. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/Questscript/QuestLog.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/QuestScript/Quest.cs
+    2. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/QuestScript/QuestManager.cs
+    3. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Quest/QuestScript/QuestLog.cs
 
 ![Questlog][questlog]
 ![Accept Quest][acceptQuest]
@@ -275,11 +275,11 @@ https://github.com/user-attachments/assets/7f9d3f87-2eca-4d65-a244-e45c1d012817
 7. Attach the scriptableobject quest script from [issue 31] to the NPC that gives the quests
 8. AttackUpgradePanel NPC references to PlayerAttack
 9. Committed Codes:
-    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Items/Itemscripts/ChestInteraction.cs
-    2. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Mapobjects/Obstaclescripts/BonfireInteraction.cs
-    3. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/NPC/NPCscripts/NPCQuestInteraction.cs
-    4. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/NPC/NPCscripts/AttackUpgradePanel.cs
-    5. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/Characterscripts/RogueAttack.cs
+    1. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Items/ItemScripts/ChestInteraction.cs
+    2. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/MapObjects/ObstacleScripts/BonfireInteraction.cs
+    3. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/NPC/NPCScripts/NPCQuestInteraction.cs
+    4. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/NPC/NPCScripts/AttackUpgradePanel.cs
+    5. https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/02_ForgottenLands/Assets/Rogue_Character/CharacterScripts/RogueAttack.cs
 
 
 

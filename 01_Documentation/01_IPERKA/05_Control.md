@@ -8,14 +8,14 @@
 5. Let colleagues review the game
 6. Final Summary
 
-## Designing testcases
+## Designing testcases [issue 60]
 * I checked my functional requirements and identified testcases
 * For each testcase I set up a possible tests, what to do and what result was expected
 * I then tested each testcase 3 times before returning my final result
 * Each testcase looks for functionality and if it meets the expect results
 * The testcases can be found under implement testcases in: [Implementing testcases](https://github.com/MysterionNY/m431_ap24a_ForgottenLands/blob/main/01_Documentation/01_IPERKA/04c_Realize_Implement.md)
 
-## Testing the testcases
+## Testing the testcases [issue 24]
 ### Testcase 1
 * I tested each scenario and received these results
 ![Testcase 1][testcases1]
@@ -106,7 +106,9 @@ https://github.com/user-attachments/assets/679c9a9e-fd3b-4c87-b3a0-87f262fd7cbc
 * [issue 62] - Quest - Questkey can be collected before the quest was accepted
 
 
+[issue 24]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/24
 [issue 59]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/59
+[issue 60]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/60
 [issue 62]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/62
 
 [testcases1]: ../02_Resources/Images/05_Testcase1.png

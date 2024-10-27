@@ -18,7 +18,7 @@
 ![Install Unity][unity5]
 ![Install Unity][unity6]
 
-## Setup Paint.Net
+## Setup Paint.Net [issue 65]
 * Download and setup paint.net
 
 ![Install Paint.net][paint1]
@@ -27,17 +27,17 @@
 ![Install Paint.net][paint3]
 ![Install Paint.net][paint4]
 
-## Setup Github Desktop
+## Setup Github Desktop [issue 66]
 * Start the executable and it will start automatically after the installation is finished
 
-## Setup ShareX
+## Setup ShareX [issue 67]
 * Download and setup ShareX
 
 ![Install ShareX][sharex1]
 ![Install ShareX][sharex2]
 ![Install ShareX][sharex3]
 
-## Setup ReqView
+## Setup ReqView [issue 68]
 * Start the executable and it will start automatically after the installation is finished 
 
 # Downloads
@@ -53,6 +53,11 @@
     * https://www.reqview.com/download/
 
 [issue 38]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/38
+[issue 65]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/65
+[issue 66]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/66
+[issue 67]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/67
+[issue 68]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/68
+
 
 [unity1]: ../02_Resources/Images/04b_UnityInstall1.png
 [unity2]: ../02_Resources/Images/04b_UnityInstall2.png
