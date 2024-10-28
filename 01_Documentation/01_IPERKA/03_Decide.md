@@ -26,5 +26,6 @@
 ## Glossary
 * UE = Unreal Engine
 * C# = C Sharp (Coding language)
+* 2D = Two Dimensional
 
 [DM]: ../02_Resources/Images/03_DecisionMatrix.png
