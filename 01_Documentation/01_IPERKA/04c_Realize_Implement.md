@@ -30,10 +30,11 @@
     * Code FadeInSound
     * Code Player/Enemy Sounds
 9. Create Enemy Prefabs
-10. Implement Testcases
-11. List of bugs encountered
-12. Glossary
-13. References
+10. Implement Background
+11. Implement Testcases
+12. List of bugs encountered
+13. Glossary
+14. References
 
 
 # Implement Player
@@ -325,6 +326,14 @@ https://github.com/user-attachments/assets/944f5c96-cad2-4e7d-bbee-874da1ef61b9
 
 
 
+# Implement Background [issue 16]
+1. Create a 2D tilemap object
+2. Add Tilemap Renderer to it
+3. Open Tile Palette
+4. Implement the map
+![Background 1][background1]
+![Background 2][background2]
+
 # Implement Testcases [issue 64]
 1. By checking through the requirements, I created my testcases
 ![Testcase 1][testcases1]
@@ -374,6 +383,7 @@ https://github.com/user-attachments/assets/944f5c96-cad2-4e7d-bbee-874da1ef61b9
 [issue 9]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/9
 [issue 10]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/10
 [issue 11]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/11
+[issue 16]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/16
 [issue 17]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/17
 [issue 20]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/20
 [issue 28]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/issues/28
@@ -405,3 +415,5 @@ https://github.com/user-attachments/assets/944f5c96-cad2-4e7d-bbee-874da1ef61b9
 [questlog]: ../02_Resources/Images/04c_QuestLog.png
 [acceptQuest]: ../02_Resources/Images/04c_AcceptQuest.png
 [questStillActive]: ../02_Resources/Images/04c_QuestStillActive.png
+[background1]: ../02_Resources/Images/04c_background1.png
+[background2]: ../02_Resources/Images/04c_background2.png

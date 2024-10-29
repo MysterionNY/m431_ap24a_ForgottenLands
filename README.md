@@ -44,7 +44,7 @@ You enter a forgotten village in the middle of nowhere. You meet a family of two
 * A readable tutorial on how to install the game can also be found in this Link
   * [Download]
 
-[Download]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/releases/tag/1.0.0.2
+[Download]: https://github.com/MysterionNY/m431_ap24a_ForgottenLands/releases/tag/1.0.0.3
 
 ## Gameplay
 * I recorded a gameplay for the game (Not showcasing everything, but it shows how to play through it)
