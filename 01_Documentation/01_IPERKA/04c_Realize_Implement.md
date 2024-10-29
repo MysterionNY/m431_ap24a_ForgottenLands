@@ -21,20 +21,20 @@
 4. Implement Interface
     * Code Escape Menu
     * Code MenuController
-6. Implement Quests
+5. Implement Quests
     * Code Quest, QuestManager, QuestLog
-7. Implement World Surroundings
+6. Implement World Surroundings
     * Code Interactions (Treasurechest, Bonfire, NPC etc)
-8. Implement SFX
+7. Implement SFX
     * Code AreaMusicTrigger
     * Code FadeInSound
     * Code Player/Enemy Sounds
-9. Create Enemy Prefabs
-10. Implement Background
-11. Implement Testcases
-12. List of bugs encountered
-13. Glossary
-14. References
+8. Create Enemy Prefabs
+9. Implement Background
+10. Implement Testcases
+11. List of bugs encountered
+12. Glossary
+13. References
 
 
 # Implement Player
@@ -331,6 +331,7 @@ https://github.com/user-attachments/assets/944f5c96-cad2-4e7d-bbee-874da1ef61b9
 2. Add Tilemap Renderer to it
 3. Open Tile Palette
 4. Implement the map
+
 ![Background 1][background1]
 ![Background 2][background2]
 
